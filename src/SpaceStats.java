@@ -166,7 +166,6 @@ public class SpaceStats {
 		d.sort();
 		
 		String[][] rides = getTSV("https://planet4589.org/space/astro/tsv/rides.tsv");
-		datalist 
 		
 		
 		datalist peopleInSpace = new datalist();
