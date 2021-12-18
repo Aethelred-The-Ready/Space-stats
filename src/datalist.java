@@ -1,4 +1,5 @@
 
+import java.time.Instant;
 import java.time.ZonedDateTime;
 import java.time.format.DateTimeFormatter;
 import java.util.ArrayList;
@@ -12,6 +13,16 @@ public class datalist {
 	
 	public void sort() {
 		vals.sort((v1, v2) -> v1.time.compareTo(v2.time));
+	}
+	
+	public String getLatestVal(long t) {
+		this.sort();
+		for(int i = vals.size() - 1; i >= 0;i--) {
+			if(vals.get(i).time.toInstant().isBefore(Instant.ofEpochSecond(t))) {
+				return vals.get(i).val;
+			}
+		}
+		return "";
 	}
 }
 
@@ -38,5 +49,17 @@ class val {
 		str = str.replaceAll("Dec", "12") + "Z";
 		time = ZonedDateTime.parse(str, DateTimeFormatter.ofPattern("yyyy MM dd HHmmX"));
 	}
+	
+	
 }
 
+
+class UpDown {
+	String up;
+	String down;
+	
+	public UpDown(String up, String down) {
+		this.up = up;
+		this.down = down;
+	}
+}

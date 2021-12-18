@@ -15,14 +15,17 @@ import java.time.ZoneId;
 import java.time.ZonedDateTime;
 import java.time.format.DateTimeFormatter;
 import java.util.ArrayList;
+import java.util.Hashtable;
 
 import javax.swing.JFrame;
 import javax.swing.JPanel;
+import javax.swing.text.AttributeSet.ColorAttribute;
 
 public class SpaceStats {
 	static ArrayList<val> people = new ArrayList<val>();
 	static ArrayList<val> maxPeople = new ArrayList<val>();
 	static ArrayList<val> peopleAtTime = new ArrayList<val>();
+	static datalist curPeopleList = new datalist();
 	private static int mouseX = 0;
 	private static int mouseY = 0;
 	private static boolean toolTipVisible = false;
@@ -47,6 +50,23 @@ public class SpaceStats {
 		@Override
 		public void keyPressed(KeyEvent e) {
 			// TODO Auto-generated method stub
+			
+			long d = (maxTime - minTime) / 10;
+
+			if(e.getKeyCode() == KeyEvent.VK_D) {
+				maxTime += d;
+				minTime += d;
+			}else if(e.getKeyCode() == KeyEvent.VK_A) {
+				maxTime -= d;
+				minTime -= d;
+			}
+			
+			if(minTime < absMinTime) {
+				minTime = absMinTime;
+			}
+			if(maxTime > absMaxTime) {
+				maxTime = absMaxTime;
+			}
 
 			j.repaint();
 		}
@@ -149,6 +169,7 @@ public class SpaceStats {
 	public static void main(String[] args) {
 		
 		String[][] missions = getTSV("https://planet4589.org/space/astro/tsv/missions.tsv");
+		Hashtable<String, UpDown> missionTimes = new Hashtable<String, UpDown>(missions.length);
 		
 		datalist d = new datalist();
 		String now = ZonedDateTime.now().format(DateTimeFormatter.ofPattern("yyyy MM dd HHmm"));
@@ -157,16 +178,58 @@ public class SpaceStats {
 				d.addVal(missions[i][5], (missions[i][8].substring(3)));
 				if(missions[i][6].contains("-")) {
 					d.addVal(now, "-" + missions[i][8].substring(3));
+				    missionTimes.put(missions[i][0], new UpDown(missions[i][5],now));
 				}else {
 					d.addVal(missions[i][6], "-" + missions[i][8].substring(3));
+				    missionTimes.put(missions[i][0], new UpDown(missions[i][5],missions[i][6]));
 				}
 			}
 		}
 		
 		d.sort();
 		
-		String[][] rides = getTSV("https://planet4589.org/space/astro/tsv/rides.tsv");
+		String[][] rideTSV = getTSV("https://planet4589.org/space/astro/tsv/rides.tsv");
+		datalist peopleList = new datalist();
 		
+		for(int i = 2; i < rideTSV.length; i++) {
+			if(rideTSV[i][5] == null) { continue; }
+			UpDown ud = missionTimes.get(rideTSV[i][5]);
+			if(ud != null) {
+				peopleList.addVal(rideTSV[i][12], "up;" + rideTSV[i][0].trim() + ";" + rideTSV[i][7].trim() + ";" + rideTSV[i][10].trim() + ";");
+				
+				ZonedDateTime up = peopleList.vals.get(peopleList.vals.size() - 1).time;
+				
+				String downTime = now;
+				
+				String duration = rideTSV[i][13].trim();
+				duration = duration.replaceAll("\\?", "");
+				if(duration.indexOf('*') == -1) {
+					String[] bits = duration.split(":");
+					up = up.plusDays(Integer.parseInt(bits[0])).plusHours(Integer.parseInt(bits[1])).plusMinutes(Integer.parseInt(bits[2]));
+					if(bits.length == 4) {
+						up = up.plusSeconds(Integer.parseInt(bits[3]));
+					}
+					downTime = up.format(DateTimeFormatter.ofPattern("yyyy MM dd HHmm"));
+				}
+				
+				peopleList.addVal(downTime, "down;" + rideTSV[i][0].trim() + ";");
+			}
+		}
+		
+		peopleList.sort();
+		String curPeople = "";
+		for(int i = 0; i < peopleList.vals.size();i++) {
+			String t = peopleList.vals.get(i).time.format(DateTimeFormatter.ofPattern("yyyy MM dd HHmm"));
+			String[] stuff = peopleList.vals.get(i).val.split(";");
+			if(stuff[0].equals("up")) {
+				curPeople+=stuff[1] + ";" + stuff[2] + ";" + stuff[3] + ";";
+			} else {
+				int ind = curPeople.indexOf(stuff[1] + ";");
+				int lastInd = curPeople.indexOf(";", curPeople.indexOf(";", curPeople.indexOf(";", ind + 1) + 1) + 1);
+				curPeople = curPeople.substring(0, ind) + curPeople.substring(lastInd + 1);
+			}
+			curPeopleList.addVal(t, curPeople);
+		}
 		
 		datalist peopleInSpace = new datalist();
 		datalist maxPeopleInSpace = new datalist();
@@ -260,29 +323,56 @@ public class SpaceStats {
 		j = new JPanel(){
 			public void paint(Graphics p) {	
 				
-				int yScale = 50;
+				int yScale = 40;
 				
 				int prevXPos = 20;
 				int prevYVal = 0;
 				p.setColor(Color.WHITE);
 				p.fillRect(0, 0, 2000, 2000);
 				p.setColor(Color.BLACK);
-				p.drawLine(0, 800, 2000, 800);
+				p.drawLine(0, 700, 2000, 700);
 				p.drawLine(20, 0, 20, 2000);
 				for(int i = 0; i < people.size();i ++) {
 					long t = people.get(i).time.toEpochSecond();
 					int xPos = posFromTime(t);
-					p.setColor(new Color(0, 0, 255, 120));
-					p.fillRect(prevXPos, 800 - prevYVal * yScale, xPos - prevXPos, prevYVal * yScale);
+					String[] curPeopleData = curPeopleList.getLatestVal(t - 100).split(";");
+					Color[] agencies = getAgencies(curPeopleData);
+					//p.setColor(new Color(0, 0, 255, 120));
+					for(int j = 0; j < agencies.length;j++) {
+						p.setColor(agencies[j]);
+						p.fillRect(prevXPos, 700 - (j + 1) * yScale, xPos - prevXPos, yScale);
+					}
+					//p.fillRect(prevXPos, 700 - prevYVal * yScale, xPos - prevXPos, prevYVal * yScale);
 					p.setColor(Color.BLACK);
+					/*p.drawLine(
+							prevXPos, 	700 - prevYVal * yScale,
+							xPos, 		700 - prevYVal * yScale);
 					p.drawLine(
-							prevXPos, 	800 - prevYVal * yScale,
-							xPos, 		800 - prevYVal * yScale);
-					p.drawLine(
-							xPos, 		800 - prevYVal * yScale,
-							xPos, 		800 - Integer.parseInt(people.get(i).val) * yScale);
+							xPos, 		700 - prevYVal * yScale,
+							xPos, 		700 - Integer.parseInt(people.get(i).val) * yScale);
+					*/
 					prevXPos = xPos;
 					prevYVal = Integer.parseInt(people.get(i).val);
+					/*long t = curPeopleList.vals.get(i).time.toEpochSecond();
+					int xPos = posFromTime(t);
+					String[] curPeopleData = curPeopleList.vals.get(i).val.split(";");
+					Color[] agencies = getAgencies(curPeopleData);
+					//p.setColor(new Color(0, 0, 255, 120));
+					for(int j = 0; j < agencies.length;j++) {
+						p.setColor(agencies[j]);
+						p.fillRect(prevXPos, 700 - (j + 1) * yScale, xPos - prevXPos, yScale);
+					}
+					//p.fillRect(prevXPos, 700 - prevYVal * yScale, xPos - prevXPos, prevYVal * yScale);
+					p.setColor(Color.BLACK);
+					/*p.drawLine(
+							prevXPos, 	700 - prevYVal * yScale,
+							xPos, 		700 - prevYVal * yScale);
+					p.drawLine(
+							xPos, 		700 - prevYVal * yScale,
+							xPos, 		700 - Integer.parseInt(people.get(i).val) * yScale);
+					prevXPos = xPos;
+					prevYVal = agencies.length;
+					*/
 				}
 				prevXPos = 20;
 				prevYVal = 0;
@@ -291,11 +381,11 @@ public class SpaceStats {
 					long t = maxPeople.get(i).time.toEpochSecond();
 					int xPos = posFromTime(t);
 					p.drawLine(
-							prevXPos, 	800 - prevYVal * yScale,
-							xPos, 		800 - prevYVal * yScale);
+							prevXPos, 	700 - prevYVal * yScale,
+							xPos, 		700 - prevYVal * yScale);
 					p.drawLine(
-							xPos, 		800 - prevYVal * yScale,
-							xPos, 		800 - Integer.parseInt(maxPeople.get(i).val) * yScale);
+							xPos, 		700 - prevYVal * yScale,
+							xPos, 		700 - Integer.parseInt(maxPeople.get(i).val) * yScale);
 					prevXPos = xPos;
 					prevYVal = Integer.parseInt(maxPeople.get(i).val);
 				}
@@ -319,23 +409,33 @@ public class SpaceStats {
 					long t = temp.toEpochSecond();
 					int xPos = posFromTime(t);
 					if(gap >= 0.5) {
-						p.drawString(i + "", xPos - 15, 815);
+						p.drawString(i + "", xPos - 15, 715);
 					} else {
-						p.drawString(temp.format(DateTimeFormatter.ofPattern("YYYY MMM")), xPos - 15, 815);
+						p.drawString(temp.format(DateTimeFormatter.ofPattern("YYYY MMM")), xPos - 15, 715);
 					}
-					p.drawLine(xPos, 800, xPos, 805);
+					p.drawLine(xPos, 700, xPos, 705);
 				}
 				for(int i = 0; i < 30; i ++) {
-					p.drawString(i + "", 3, 803 - i * yScale);
-					p.drawLine(15, 800 - i * yScale, 20, 800 - i * yScale);
+					p.drawString(i + "", 3, 703 - i * yScale);
+					p.drawLine(15, 700 - i * yScale, 20, 700 - i * yScale);
 				}
 				
 				if(toolTipVisible) {
+					String[] peopleData = curPeopleList.getLatestVal(toolTipTime).split(";");
+					int noPeople = (int)(peopleData.length/3);
 					p.setColor(Color.WHITE);
-					p.fillRect(mouseX, mouseY, 300, 50);
+					p.fillRect(mouseX, mouseY, 300, 25 + 10 * noPeople);
 					p.setColor(Color.BLACK);
-					p.drawRect(mouseX, mouseY, 300, 50);
+					p.drawRect(mouseX, mouseY, 300, 25 + 10 * noPeople);
 					p.drawString(ZonedDateTime.ofInstant(Instant.ofEpochSecond(toolTipTime), ZoneId.of("Z")).format(DateTimeFormatter.ofPattern("YYYY MMM dd")), mouseX + 5, mouseY + 15);
+					for(int i = 0; i < noPeople;i++) {
+						String name = peopleData[3 * i + 1];
+						if(name.indexOf(',') != -1) {
+							name = name.substring(0, name.indexOf(','));
+						}
+						p.drawString(name, mouseX + 5, mouseY + 25 + 10 * i);
+						p.drawString(peopleData[3 * i + 2], mouseX + 200, mouseY + 25 + 10 * i);
+					}
 				}
 
 			}
@@ -352,11 +452,75 @@ public class SpaceStats {
 	}
 	
 	public static int posFromTime(long t) {
-		return (int) (((t - minTime) * 1400 )/ (maxTime - minTime)) + 20;
+		return (int) (((t - minTime) * 1000 )/ (maxTime - minTime)) + 20;
 	}
 	
 	public static long timeFromPos(int p) {
-		return ((p - 20) * (maxTime - minTime)) / 1400 + minTime;
+		return ((p - 20) * (maxTime - minTime)) / 1000 + minTime;
 	}
 
+	private static Color[] getAgencies(String[] data) {
+		ArrayList<Color> colors = new ArrayList<Color>();
+		for(int i = 0; i < data.length / 3;i++) {
+			Color ta = Color.BLACK;
+			switch (data[i * 3 + 2].strip()) {
+			case "NASA":
+			case "USAF":
+			case "USAIC":
+			case "MDAC":
+				ta = Color.BLUE;
+				break;
+			case "SPX":
+			case "SPAD":
+				ta = new Color(0, 120, 255);
+			break;
+			case "TSPK":
+			case "TSKPR":
+			case "TSPKR":
+			case "RKKE":
+			case "NPOE":
+			case "IMBP":
+			case "OKB1":
+			case "TSKPR/PERVK":
+				ta = Color.RED;
+				break;
+			case "HYD":
+				ta = Color.YELLOW;
+				break;
+			case "ESA":
+			case "CNES":
+			case "DLR":
+			case "DFVLR":
+			case "ASI":
+				ta = Color.ORANGE;
+				break;
+			case "JAXA":
+			case "NASDA":
+				ta = Color.GREEN;
+				break;
+			case "KARI":
+				ta = Color.GRAY;
+				break;
+			case "CSA":
+				ta = Color.MAGENTA;
+				break;
+			}
+			ta = new Color(ta.getRed(), ta.getGreen(), ta.getBlue(), 120);
+			colors.add(ta);
+		}
+		colors.sort((v1, v2) -> cmpCol(v1, v2));
+		return colors.toArray(new Color[colors.size()]);
+	}
+
+	public static int cmpCol(Color v1, Color v2) {
+		if(v1.getRed() == v2.getRed() && v1.getGreen() == v2.getGreen()) {
+			return v1.getBlue() - v2.getBlue();
+		}
+
+		if(v1.getRed() == v2.getRed()) {
+			return v1.getGreen() - v2.getGreen();
+		}
+		return v2.getRed() - v1.getRed();
+	}
+	
 }
