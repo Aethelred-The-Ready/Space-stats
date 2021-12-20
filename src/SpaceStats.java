@@ -35,8 +35,9 @@ public class SpaceStats {
 	
 	final static long absMinTime = ZonedDateTime.of(1960, 1, 1, 0, 0, 0, 0, ZoneId.of("Z")).toEpochSecond();
 	final static long absMaxTime = ZonedDateTime.now().toEpochSecond();
-	static long minTime = -315619200;//absMinTime;
-	static long maxTime = -265248380;//absMaxTime;
+	static long minTime = absMinTime;
+	static long maxTime = absMaxTime;
+	static int yScale = 40;
 	static int zoom = 0;
 	
 	private static KeyListener k = new KeyListener() {
@@ -59,6 +60,10 @@ public class SpaceStats {
 			}else if(e.getKeyCode() == KeyEvent.VK_A) {
 				maxTime -= d;
 				minTime -= d;
+			}else if(e.getKeyCode() == KeyEvent.VK_R) {
+				yScale *= 2;
+			}else if(e.getKeyCode() == KeyEvent.VK_F) {
+				yScale /= 2;
 			}
 			
 			if(minTime < absMinTime) {
@@ -325,8 +330,6 @@ public class SpaceStats {
 		j = new JPanel(){
 			public void paint(Graphics p) {	
 				
-				int yScale = 40;
-				
 				int prevXPos = 20;
 				int prevYVal = 0;
 				p.setColor(Color.WHITE);
@@ -360,7 +363,7 @@ public class SpaceStats {
 					int xPos = posFromTime(t);
 					if(xPos < -1000) {
 						continue;
-					}else if(xPos > 4000) {
+					}else if(xPos > 8000) {
 						break;
 					}
 					String vals = curPeopleList.vals.get(i - 1).val;
@@ -416,7 +419,7 @@ public class SpaceStats {
 					}
 					p.drawLine(xPos, 700, xPos, 705);
 				}
-				for(int i = 0; i < 30; i ++) {
+				for(int i = 0; i < 2000 / yScale; i ++) {
 					p.drawString(i + "", 3, 703 - i * yScale);
 					p.drawLine(15, 700 - i * yScale, 20, 700 - i * yScale);
 				}
@@ -428,7 +431,8 @@ public class SpaceStats {
 					p.fillRect(mouseX, mouseY, 300, 25 + 10 * noPeople);
 					p.setColor(Color.BLACK);
 					p.drawRect(mouseX, mouseY, 300, 25 + 10 * noPeople);
-					p.drawString(ZonedDateTime.ofInstant(Instant.ofEpochSecond(toolTipTime), ZoneId.of("Z")).format(DateTimeFormatter.ofPattern("YYYY MMM dd")), mouseX + 5, mouseY + 15);
+					p.drawString(ZonedDateTime.ofInstant(Instant.ofEpochSecond(toolTipTime), ZoneId.of("Z")).format(DateTimeFormatter.ofPattern("YYYY MMM dd HH:mm:ss")), mouseX + 5, mouseY + 15);
+					p.drawString("" + noPeople,  mouseX + 280, mouseY + 13);
 					for(int i = 0; i < noPeople;i++) {
 						String name = peopleData[3 * i + 1];
 						if(name.indexOf(',') != -1) {
@@ -458,6 +462,58 @@ public class SpaceStats {
 	
 	public static long timeFromPos(int p) {
 		return ((p - 20) * (maxTime - minTime)) / 1000 + minTime;
+	}
+	
+	private static void drawAgencies(String[] data) {
+		ArrayList<String> agencies = new ArrayList<String>();
+		for(int i = 0; i < data.length / 3;i++) {
+			Color ta = Color.BLACK;
+			switch (data[i * 3 + 2].strip()) {
+			case "NASA":
+			case "USAF":
+			case "USAIC":
+			case "MDAC":
+				agencies.add("NASA");
+				break;
+			case "SPX":
+				agencies.add("SPX");
+				break;
+			case "SPAD":
+				agencies.add("SPAD");
+			break;
+			case "TSPK":
+			case "TSKPR":
+			case "TSPKR":
+			case "RKKE":
+			case "NPOE":
+			case "IMBP":
+			case "OKB1":
+			case "TSKPR/PERVK":
+				agencies.add("ROS");
+				break;
+			case "HYD":
+				agencies.add("HYD");
+				break;
+			case "ESA":
+			case "CNES":
+			case "DLR":
+			case "DFVLR":
+			case "ASI":
+				agencies.add("ESA");
+				break;
+			case "JAXA":
+			case "NASDA":
+				agencies.add("JAXA");
+				break;
+			case "KARI":
+				agencies.add("KARI");
+				break;
+			case "CSA":
+				agencies.add("CSA");
+				break;
+			}
+		}
+		agencies.sort(String.CASE_INSENSITIVE_ORDER);
 	}
 
 	private static Color[] getAgencies(String[] data) {
