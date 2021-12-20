@@ -35,8 +35,8 @@ public class SpaceStats {
 	
 	final static long absMinTime = ZonedDateTime.of(1960, 1, 1, 0, 0, 0, 0, ZoneId.of("Z")).toEpochSecond();
 	final static long absMaxTime = ZonedDateTime.now().toEpochSecond();
-	static long minTime = absMinTime;
-	static long maxTime = absMaxTime;
+	static long minTime = -315619200;//absMinTime;
+	static long maxTime = -265248380;//absMaxTime;
 	static int zoom = 0;
 	
 	private static KeyListener k = new KeyListener() {
@@ -218,6 +218,7 @@ public class SpaceStats {
 		
 		peopleList.sort();
 		String curPeople = "";
+		curPeopleList.addVal("1960 Jan 01 0000", "");
 		for(int i = 0; i < peopleList.vals.size();i++) {
 			String t = peopleList.vals.get(i).time.format(DateTimeFormatter.ofPattern("yyyy MM dd HHmm"));
 			String[] stuff = peopleList.vals.get(i).val.split(";");
@@ -230,6 +231,7 @@ public class SpaceStats {
 			}
 			curPeopleList.addVal(t, curPeople);
 		}
+		curPeopleList.sort();
 		
 		datalist peopleInSpace = new datalist();
 		datalist maxPeopleInSpace = new datalist();
@@ -332,8 +334,9 @@ public class SpaceStats {
 				p.setColor(Color.BLACK);
 				p.drawLine(0, 700, 2000, 700);
 				p.drawLine(20, 0, 20, 2000);
-				for(int i = 0; i < people.size();i ++) {
-					long t = people.get(i).time.toEpochSecond();
+				
+				for(int i = 1; i < curPeopleList.vals.size();i ++) {
+					/*long t = people.get(i).time.toEpochSecond();
 					int xPos = posFromTime(t);
 					String[] curPeopleData = curPeopleList.getLatestVal(t - 100).split(";");
 					Color[] agencies = getAgencies(curPeopleData);
@@ -350,29 +353,27 @@ public class SpaceStats {
 					p.drawLine(
 							xPos, 		700 - prevYVal * yScale,
 							xPos, 		700 - Integer.parseInt(people.get(i).val) * yScale);
-					*/
 					prevXPos = xPos;
 					prevYVal = Integer.parseInt(people.get(i).val);
-					/*long t = curPeopleList.vals.get(i).time.toEpochSecond();
+					*/
+					long t = curPeopleList.vals.get(i).time.toEpochSecond();
 					int xPos = posFromTime(t);
-					String[] curPeopleData = curPeopleList.vals.get(i).val.split(";");
+					if(xPos < -1000) {
+						continue;
+					}else if(xPos > 4000) {
+						break;
+					}
+					String vals = curPeopleList.vals.get(i - 1).val;
+					String[] curPeopleData = vals.split(";");
 					Color[] agencies = getAgencies(curPeopleData);
-					//p.setColor(new Color(0, 0, 255, 120));
 					for(int j = 0; j < agencies.length;j++) {
 						p.setColor(agencies[j]);
 						p.fillRect(prevXPos, 700 - (j + 1) * yScale, xPos - prevXPos, yScale);
 					}
-					//p.fillRect(prevXPos, 700 - prevYVal * yScale, xPos - prevXPos, prevYVal * yScale);
 					p.setColor(Color.BLACK);
-					/*p.drawLine(
-							prevXPos, 	700 - prevYVal * yScale,
-							xPos, 		700 - prevYVal * yScale);
-					p.drawLine(
-							xPos, 		700 - prevYVal * yScale,
-							xPos, 		700 - Integer.parseInt(people.get(i).val) * yScale);
 					prevXPos = xPos;
 					prevYVal = agencies.length;
-					*/
+					
 				}
 				prevXPos = 20;
 				prevYVal = 0;
