@@ -7,9 +7,13 @@ import java.awt.event.MouseListener;
 import java.awt.event.MouseWheelEvent;
 import java.awt.event.MouseWheelListener;
 import java.io.BufferedInputStream;
+import java.io.File;
+import java.io.FileInputStream;
+import java.io.FileOutputStream;
 import java.io.IOException;
 import java.net.HttpURLConnection;
 import java.net.URL;
+import java.net.UnknownHostException;
 import java.time.Instant;
 import java.time.ZoneId;
 import java.time.ZonedDateTime;
@@ -229,12 +233,17 @@ public class SpaceStats {
 			String[] stuff = peopleList.vals.get(i).val.split(";");
 			if(stuff[0].equals("up")) {
 				curPeople+=stuff[1] + ";" + stuff[2] + ";" + stuff[3] + ";";
+				curPeopleList.addVal(t, curPeople);
+			} else if (i != peopleList.vals.size() - 1 && peopleList.vals.get(i + 1).time.equals(peopleList.vals.get(i).time)) {
+				int ind = curPeople.indexOf(stuff[1] + ";");
+				int lastInd = curPeople.indexOf(";", curPeople.indexOf(";", curPeople.indexOf(";", ind + 1) + 1) + 1);
+				curPeople = curPeople.substring(0, ind) + curPeople.substring(lastInd + 1);
 			} else {
 				int ind = curPeople.indexOf(stuff[1] + ";");
 				int lastInd = curPeople.indexOf(";", curPeople.indexOf(";", curPeople.indexOf(";", ind + 1) + 1) + 1);
 				curPeople = curPeople.substring(0, ind) + curPeople.substring(lastInd + 1);
+				curPeopleList.addVal(t, curPeople);
 			}
-			curPeopleList.addVal(t, curPeople);
 		}
 		curPeopleList.sort();
 		
@@ -269,13 +278,26 @@ public class SpaceStats {
 	public static String[][] getTSV(String url){
 		try {
 			
-			HttpURLConnection con = (HttpURLConnection) new URL(url).openConnection();
+			HttpURLConnection con = (HttpURLConnection) new URL(url).openConnection();	
 			con.setRequestMethod("GET");
-			con.connect();
-			BufferedInputStream in = new BufferedInputStream(con.getInputStream());
-
-
+			
+			BufferedInputStream in;
+			
+			File backup = new File(url.substring(url.lastIndexOf('/') + 1));
+			try {
+				con.connect();
+				in = new BufferedInputStream(con.getInputStream());
+			}catch(UnknownHostException e) {
+				FileInputStream fis = new FileInputStream(backup);
+				in = new BufferedInputStream(fis);
+			}
+			
 			byte[] bytes = in.readAllBytes();
+			in.close();
+			
+			FileOutputStream fos = new FileOutputStream(backup);
+			fos.write(bytes);
+			fos.close();
 			
 			int r = 0, c = 0, mc = 0;
 			for(int i = 0; i < bytes.length;i++) {
@@ -370,8 +392,16 @@ public class SpaceStats {
 					String[] curPeopleData = vals.split(";");
 					Color[] agencies = getAgencies(curPeopleData);
 					for(int j = 0; j < agencies.length;j++) {
+						String name = curPeopleData[3 * j + 1];
+						if(name.indexOf(',') != -1) {
+							name = name.substring(0, name.indexOf(','));
+						}
 						p.setColor(agencies[j]);
 						p.fillRect(prevXPos, 700 - (j + 1) * yScale, xPos - prevXPos, yScale);
+						if(!curPeopleList.vals.get(i).val.contains(name)) {
+							p.setColor(Color.BLACK);
+							p.drawLine(xPos, 700 - (j + 1) * yScale, xPos, 700 - j * yScale);
+						}
 					}
 					p.setColor(Color.BLACK);
 					prevXPos = xPos;
@@ -426,20 +456,21 @@ public class SpaceStats {
 				
 				if(toolTipVisible) {
 					String[] peopleData = curPeopleList.getLatestVal(toolTipTime).split(";");
+					int x = posFromTime(toolTipTime);
 					int noPeople = (int)(peopleData.length/3);
 					p.setColor(Color.WHITE);
-					p.fillRect(mouseX, mouseY, 300, 25 + 10 * noPeople);
+					p.fillRect(x, mouseY, 300, 25 + 10 * noPeople);
 					p.setColor(Color.BLACK);
-					p.drawRect(mouseX, mouseY, 300, 25 + 10 * noPeople);
-					p.drawString(ZonedDateTime.ofInstant(Instant.ofEpochSecond(toolTipTime), ZoneId.of("Z")).format(DateTimeFormatter.ofPattern("YYYY MMM dd HH:mm:ss")), mouseX + 5, mouseY + 15);
-					p.drawString("" + noPeople,  mouseX + 280, mouseY + 13);
+					p.drawRect(x, mouseY, 300, 25 + 10 * noPeople);
+					p.drawString(ZonedDateTime.ofInstant(Instant.ofEpochSecond(toolTipTime), ZoneId.of("Z")).format(DateTimeFormatter.ofPattern("YYYY MMM dd HH:mm:ss")), x + 5, mouseY + 15);
+					p.drawString("" + noPeople,  x + 280, mouseY + 13);
 					for(int i = 0; i < noPeople;i++) {
 						String name = peopleData[3 * i + 1];
 						if(name.indexOf(',') != -1) {
 							name = name.substring(0, name.indexOf(','));
 						}
-						p.drawString(name, mouseX + 5, mouseY + 25 + 10 * i);
-						p.drawString(peopleData[3 * i + 2], mouseX + 200, mouseY + 25 + 10 * i);
+						p.drawString(name, x + 5, mouseY + 25 + 10 * i);
+						p.drawString(peopleData[3 * i + 2], x + 200, mouseY + 25 + 10 * i);
 					}
 				}
 
@@ -513,7 +544,6 @@ public class SpaceStats {
 				break;
 			}
 		}
-		agencies.sort(String.CASE_INSENSITIVE_ORDER);
 	}
 
 	private static Color[] getAgencies(String[] data) {
@@ -565,7 +595,6 @@ public class SpaceStats {
 			ta = new Color(ta.getRed(), ta.getGreen(), ta.getBlue(), 120);
 			colors.add(ta);
 		}
-		colors.sort((v1, v2) -> cmpCol(v1, v2));
 		return colors.toArray(new Color[colors.size()]);
 	}
 
