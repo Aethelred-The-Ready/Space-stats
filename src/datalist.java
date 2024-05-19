@@ -22,7 +22,29 @@ public class datalist {
 				return vals.get(i).val;
 			}
 		}
-		return "";
+		return "0";
+	}
+
+	public ArrayList<val> getValsBetween (long t1, long t2) {
+		ArrayList<val> trvals = new ArrayList<val>();
+		
+		this.sort();
+		for(int i = 0; i < vals.size();i++) {
+			if(vals.get(i).time.toInstant().isAfter(Instant.ofEpochSecond(t1))) {
+				while (i < vals.size() && vals.get(i).time.toInstant().isBefore(Instant.ofEpochSecond(t2))) {
+					trvals.add(vals.get(i));
+					i++;
+				}
+				break;
+			}
+		}
+		
+		return trvals;
+	}
+	
+	public ZonedDateTime getMaxTime() {
+		this.sort();
+		return vals.get(vals.size() - 1).time;
 	}
 }
 
@@ -48,6 +70,11 @@ class val {
 		str = str.replaceAll("Nov", "11");
 		str = str.replaceAll("Dec", "12") + "Z";
 		time = ZonedDateTime.parse(str, DateTimeFormatter.ofPattern("yyyy MM dd HHmmX"));
+	}
+	
+	public val(ZonedDateTime t, String val) {
+		this.val = val;
+		time = t;
 	}
 	
 	

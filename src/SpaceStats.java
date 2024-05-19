@@ -16,8 +16,10 @@ import java.net.URL;
 import java.net.UnknownHostException;
 import java.time.Instant;
 import java.time.ZoneId;
+import java.time.ZoneOffset;
 import java.time.ZonedDateTime;
 import java.time.format.DateTimeFormatter;
+import java.time.temporal.ChronoUnit;
 import java.util.ArrayList;
 import java.util.Hashtable;
 
@@ -26,24 +28,33 @@ import javax.swing.JPanel;
 import javax.swing.text.AttributeSet.ColorAttribute;
 
 public class SpaceStats {
+	// Rolling average config variables
+	static int avgPeopleRollingPeriod = 2; // Average over how long in years
+	static int avgPeopleCalculationPeriod = 1; // Average over how in days
+	static boolean EndOfRollingPeriod = false; // Display the rolling average at the end of the rolling period? false is in the middle
+
+	// Other config variables
+	final private static boolean fetch = true; // Fetch data from the internet
+	final private static int elemPerPerson = 3; // how many elements of data are there per line per person
+	final static long absMinTime = ZonedDateTime.of(1960, 1, 1, 0, 0, 0, 0, ZoneId.of("Z")).toEpochSecond();
+	final static long absMaxTime = ZonedDateTime.now().toEpochSecond();
+
 	static ArrayList<val> people = new ArrayList<val>();
 	static ArrayList<val> maxPeople = new ArrayList<val>();
+	static ArrayList<val> avgPeople = new ArrayList<val>();
 	static ArrayList<val> peopleAtTime = new ArrayList<val>();
 	static datalist curPeopleList = new datalist();
+	static datalist avgPeopleList = new datalist();
 	private static int mouseX = 0;
 	private static int mouseY = 0;
 	private static boolean toolTipVisible = false;
 	private static long toolTipTime = 0;
 	private static JPanel j;
 	private static String name;
-	final private static boolean fetch = true;
-	final private static int elemPerPerson = 3;
 	
-	final static long absMinTime = ZonedDateTime.of(1960, 1, 1, 0, 0, 0, 0, ZoneId.of("Z")).toEpochSecond();
-	final static long absMaxTime = ZonedDateTime.now().toEpochSecond();
 	static long minTime = absMinTime;
 	static long maxTime = absMaxTime;
-	static int yScale = 50;
+	static int yScale = 40;
 	static int zoom = 0;
 	
 	private static KeyListener k = new KeyListener() {
@@ -285,8 +296,44 @@ public class SpaceStats {
 		}
 		maxPeopleInSpace.addVal(now, "" + curMax);
 		
+		datalist avgPeopleInSpace = new datalist();
+		ZonedDateTime start = ZonedDateTime.parse("1960-01-01T00:00:00Z");
+		ZonedDateTime end = ZonedDateTime.parse((1960 + avgPeopleRollingPeriod) + "-01-01T00:00:00Z");
+		
+		while (end.isBefore(ZonedDateTime.ofInstant(Instant.ofEpochSecond(absMaxTime), ZoneOffset.UTC))) {
+			double avgPeople = 0;
+			
+			start = start.plusDays(avgPeopleCalculationPeriod);
+			end = end.plusDays(avgPeopleCalculationPeriod);
+			
+			ArrayList<val> tmpList = peopleInSpace.getValsBetween(start.toEpochSecond(), end.toEpochSecond());
+			
+			long secondsInPeriod = start.until(end, ChronoUnit.SECONDS);
+			int latestVal = Integer.parseInt(peopleInSpace.getLatestVal(start.toEpochSecond()));
+			long latestInstant = start.toEpochSecond();
+			for (int i = 0; i < tmpList.size(); i++) {
+				long curTime = tmpList.get(i).time.toEpochSecond();
+				//System.out.println(latestVal + " lv");
+				double toAdd = latestVal * ((curTime - latestInstant) / (1.0 * secondsInPeriod));
+				//System.out.println(toAdd + " ta");
+				avgPeople += toAdd;
+				latestVal = Integer.parseInt(tmpList.get(i).val);
+				latestInstant = curTime;
+			}
+			avgPeople += latestVal * ((end.toEpochSecond() - latestInstant) / (1.0 * secondsInPeriod));
+			//System.out.println(avgPeople + " ap");
+			if (EndOfRollingPeriod) {
+				avgPeopleInSpace.vals.add(new val(end, "" + avgPeople));
+			} else {
+				ZonedDateTime middle = start.plusSeconds(start.until(end, ChronoUnit.SECONDS)/2);
+				avgPeopleInSpace.vals.add(new val(middle, "" + avgPeople));
+			}
+		}
+		
 		people = peopleInSpace.vals;
 		maxPeople = maxPeopleInSpace.vals;
+		avgPeople = avgPeopleInSpace.vals;
+		avgPeopleList = avgPeopleInSpace;
 		
 		render();
 		 
@@ -448,6 +495,25 @@ public class SpaceStats {
 					prevXPos = xPos;
 					prevYVal = Integer.parseInt(maxPeople.get(i).val);
 				}
+				prevXPos = 20;
+				prevYVal = 0;
+				double prevYValdouble = 0;
+				p.setColor(Color.PINK);
+				for(int i = 0; i < avgPeople.size();i ++) {
+					long t = avgPeople.get(i).time.toEpochSecond();
+					int xPos = posFromTime(t);
+					double nextYVal = Double.parseDouble(avgPeople.get(i).val);
+					//	System.out.println(nextYVal);
+					p.drawLine(
+							prevXPos, 	yFloor - (int)(prevYValdouble * yScale),
+							xPos, 		yFloor - (int)(prevYValdouble * yScale));
+					p.drawLine(
+							xPos, 		yFloor - (int)(prevYValdouble * yScale),
+							xPos, 		yFloor - (int)(nextYVal * yScale));
+					prevXPos = xPos;
+					prevYValdouble = nextYVal;
+				}
+				p.setColor(Color.BLACK);
 				double gap = 2;
 				if(zoom == 1) {
 					gap = 1;
@@ -462,8 +528,8 @@ public class SpaceStats {
 				}else if(zoom >= 7) {
 					gap = 0.08;
 				}
-
-				for(double i = 1960 + gap; i < 2030; i += gap) {
+				
+				for(double i = 1960 + gap; i <= 2040; i += gap) {
 					ZonedDateTime temp = ZonedDateTime.of((int)i, (int) (12 * (i - (int)i) + 1), 1, 0, 0, 0, 0, ZoneId.of("Z"));
 					long t = temp.toEpochSecond();
 					int xPos = posFromTime(t);
@@ -483,12 +549,15 @@ public class SpaceStats {
 					String[] peopleData = curPeopleList.getLatestVal(toolTipTime).split(";");
 					int x = posFromTime(toolTipTime);
 					int noPeople = (int)(peopleData.length/elemPerPerson);
+					double avgPeopleVal = Double.parseDouble(avgPeopleList.getLatestVal(toolTipTime));
+					avgPeopleVal = (int)(avgPeopleVal * 1000)/1000.0;
 					p.setColor(Color.WHITE);
 					p.fillRect(x, mouseY, 300, 25 + 10 * noPeople);
 					p.setColor(Color.BLACK);
 					p.drawRect(x, mouseY, 300, 25 + 10 * noPeople);
 					p.drawString(ZonedDateTime.ofInstant(Instant.ofEpochSecond(toolTipTime), ZoneId.of("Z")).format(DateTimeFormatter.ofPattern("YYYY MMM dd HH:mm:ss")), x + 5, mouseY + 15);
-					p.drawString("" + noPeople,  x + 280, mouseY + 13);
+					p.drawString(avgPeopleRollingPeriod + " year avg: " + avgPeopleVal,  x + 140, mouseY + 15);
+					p.drawString("" + noPeople,  x + 280, mouseY + 15);
 					for(int i = 0; i < noPeople;i++) {
 						int personNo = (noPeople - i - 1);
 						String name = peopleData[elemPerPerson * personNo + 1];

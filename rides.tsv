@@ -1,5 +1,5 @@
 #No	Program	Categ	RoleCode	Mission	HSFID	Role	Name	Rank	Employer	Sponsor	ID	LDate	Duration	Segments
-# Updated 2022 Jun 03 03:10:47
+# Updated 2024 May 19 16:55:12
 #
 # Human Space Rides
 #
@@ -24,7 +24,7 @@
     19	RU	C	VKH1/NS	Voskhod	H00018	Nauchniy Sotrudnik	Konstantin Petrovich Feoktistov	-	OKB1	OKB1	AS-00017	1964 Oct 12 0730:01	    1:00:17:03	-
     20	RU	M	VKH1/VR	Voskhod	H00018	Vrach	Boris Borisovich Yegorov, Kapt. M.S. VVS	Kapt.M.S. VVS	IMBP	TSPK	AS-00018	1964 Oct 12 0730:01	    1:00:17:03	-
     21	RU	M	VKH2/KDR	Voskhod-2	H00019	Komandir	Pavel Ivanovich Belyaev, Pol. VVS	Pol. VVS	VVS	TSPK	AS-00019	1965 Mar 18 0700:00	    1:02:02:17	-
-    22	RU	M	VKH2/VP	Voskhod-2	H00019	Vtoroy Pilot	Aleksey Arkhipovich Leonov, Podpol. VVS	Pol. VVS	VVS	TSPK	AS-00020	1965 Mar 18 0700:00	    1:02:02:17	-
+    22	RU	M	VKH2/VP	Voskhod-2	H00019	Vtoroy Pilot	Aleksey Arkhipovich Leonov, Podpol. VVS	Podpol. VVS	VVS	TSPK	AS-00020	1965 Mar 18 0700:00	    1:02:02:17	-
     23	NASA	M	GT3/CDR	Gemini III	H00020	Command Pilot	Virgil Ivan Grissom, Maj USAF, NASA	Maj. USAF	USAF	NASA	AS-00003	1965 Mar 23 1424:00	    0:04:52:31	-
     24	NASA	M	GT3/PLT	Gemini III	H00020	Pilot	John Watts Young, LtCdr USN, NASA	LtCdr USN	USN	NASA	AS-00021	1965 Mar 23 1424:00	    0:04:52:31	-
     25	NASA	M	GT4/CDR	Gemini IV	H00021	Command Pilot	James Alton McDivitt, Maj USAF, NASA	Maj. USAF	USAF	NASA	AS-00022	1965 Jun  3 1516:00	    4:01:56:11	-
@@ -63,17 +63,17 @@
     58	NASA	M	A8/PLT	Apollo 8	H00041	Pilot	William Alison Anders, Maj USAF, NASA	Maj. USAF	USAF	NASA	AS-00042	1968 Dec 21 1251:00	    6:03:00:42	-
     59	RU	M	S4/KDR	Soyuz-4	H00042	Komandir	Vladimir Aleksandrovich Shatalov, Pol. VVS	Pol. VVS	VVS	TSPK	AS-00043	1969 Jan 14 0730:00	    2:23:20:47	-
     60	RU	M	S5/KDR	Soyuz-5	H00043	Komandir	Boris Valentinovich Volynov, Pol VVS	Pol. VVS	VVS	TSPK	AS-00044	1969 Jan 15 0704:57	    3:00:54:15	-
-    61	RU	C	S5/BI	Soyuz-5	H00043	Bortinzhener	Aleksey Stanislavovich Yeliseev	-	OKB1	OKB1	AS-00045	1969 Jan 15 0704:57	    1:23:45 	S4:3
-    62	RU	M	S5/II	Soyuz-5	H00043	Inzhener-ispitatel'	Yevgeniy Vasilevich Khrunov, PodPol. VVS	Podpol. VVS	VVS	TSPK	AS-00046	1969 Jan 15 0704:57	    1:23:45 	S4:3
-    63	NASA	M	A9/CDR	Apollo 9	H00044	Commander	James Alton McDivitt, Col USAF, NASA	Col. USAF	USAF	NASA	AS-00022	1969 Mar  3 1600:00	   10:01:00 	LM3:3,A9:4
+    61	RU	C	S5/BI	Soyuz-5	H00043	Bortinzhener	Aleksey Stanislavovich Yeliseev	-	OKB1	OKB1	AS-00045	1969 Jan 15 0704:57	    1:23:45:50	S4:3
+    62	RU	M	S5/II	Soyuz-5	H00043	Inzhener-ispitatel'	Yevgeniy Vasilevich Khrunov, PodPol. VVS	Podpol. VVS	VVS	TSPK	AS-00046	1969 Jan 15 0704:57	    1:23:45:50	S4:3
+    63	NASA	M	A9/CDR	Apollo 9	H00044	Commander	James Alton McDivitt, Col USAF, NASA	Col. USAF	USAF	NASA	AS-00022	1969 Mar  3 1600:00	   10:01:00:54	LM3,A9:4
     64	NASA	M	A9/CMP	Apollo 9	H00044	Command Module Pilot	David Randolph Scott, Col USAF, NASA	Col. USAF	USAF	NASA	AS-00031	1969 Mar  3 1600:00	   10:01:00:54	-
-    65	NASA	C	A9/LMP	Apollo 9	H00044	Lunar Module Pilot	Russell Louis Schweickart, NASA (USAF ret.)	-	NASA	NASA	AS-00047	1969 Mar  3 1600:00	   10:01:00 	LM3:3,A9:4
-    66	NASA	M	A10/CDR	Apollo 10	H00045	Commander	Thomas Patten Stafford, Col USAF, NASA	Col. USAF	USAF	NASA	AS-00029	1969 May 18 1649:00	    8:00:03 	LM4:4,A10:6
+    65	NASA	C	A9/LMP	Apollo 9	H00044	Lunar Module Pilot	Russell Louis Schweickart, NASA (USAF ret.)	-	NASA	NASA	AS-00047	1969 Mar  3 1600:00	   10:01:00:54	LM3,A9:4
+    66	NASA	M	A10/CDR	Apollo 10	H00045	Commander	Thomas Patten Stafford, Col USAF, NASA	Col. USAF	USAF	NASA	AS-00029	1969 May 18 1649:00	    8:00:03:23	LM4:4,A10:6
     67	NASA	M	A10/CMP	Apollo 10	H00045	Command Module Pilot	John Watts Young, Cdr USN, NASA	Cdr. USN	USN	NASA	AS-00021	1969 May 18 1649:00	    8:00:03:23	-
-    68	NASA	M	A10/LMP	Apollo 10	H00045	Lunar Module Pilot	Eugene Andrew Cernan, Cdr USN, NASA	Cdr. USN	USN	NASA	AS-00032	1969 May 18 1649:00	    8:00:03 	LM4:4,A10:6
-    69	NASA	C	A11/CDR	Apollo 11	H00046	Commander	Neil Alden Armstrong, NASA	Lt j.g. USN (ret)	NASA	NASA	AS-00030	1969 Jul 16 1332:00	    8:03:18 	LM5:5,A11:7
+    68	NASA	M	A10/LMP	Apollo 10	H00045	Lunar Module Pilot	Eugene Andrew Cernan, Cdr USN, NASA	Cdr. USN	USN	NASA	AS-00032	1969 May 18 1649:00	    8:00:03:23	LM4:4,A10:6
+    69	NASA	C	A11/CDR	Apollo 11	H00046	Commander	Neil Alden Armstrong, NASA	Lt j.g. USN (ret)	NASA	NASA	AS-00030	1969 Jul 16 1332:00	    8:03:18:35	LM5:4,A11:6
     70	NASA	M	A11/CMP	Apollo 11	H00046	Command Module Pilot	Michael Collins, Lt Col USAF, NASA	LtCol. USAF	USAF	NASA	AS-00033	1969 Jul 16 1332:00	    8:03:18:35	-
-    71	NASA	M	A11/LMP	Apollo 11	H00046	Lunar Module Pilot	Edwin Eugene Aldrin, Jr, Col USAF, NASA	Col. USAF	USAF	NASA	AS-00036	1969 Jul 16 1332:00	    8:03:18 	LM5:5,A11:7
+    71	NASA	M	A11/LMP	Apollo 11	H00046	Lunar Module Pilot	Edwin Eugene Aldrin, Jr, Col USAF, NASA	Col. USAF	USAF	NASA	AS-00036	1969 Jul 16 1332:00	    8:03:18:35	LM5:4,A11:6
     72	RU	M	S6/KDR	Soyuz-6	H00047	Komandir	Georgiy Stepanovich Shonin, Podpol. VVS	Podpol. VVS	VVS	TSPK	AS-00048	1969 Oct 11 1110:00	    4:22:42:47	-
     73	RU	C	S6/BI	Soyuz-6	H00047	Bortinzhener	Valeriy Nikolaevich Kubasov	-	OKB1	OKB1	AS-00049	1969 Oct 11 1110:00	    4:22:42:47	-
     74	RU	M	S7/KDR	Soyuz-7	H00048	Komandir	Anatoli Vasilevich Filipchenko, Podpol. VVS	Podpol. VVS	VVS	TSPK	AS-00050	1969 Oct 12 1044:42	    4:22:40:23	-
@@ -81,123 +81,123 @@
     76	RU	M	S7/II	Soyuz-7	H00048	Inzhener-ispitatel'	Viktor Vasilevich Gorbatko, Podpol. VVS	Podpol. VVS	VVS	TSPK	AS-00052	1969 Oct 12 1044:42	    4:22:40:23	-
     77	RU	M	S8/KDR	Soyuz-8	H00049	Komandir	Vladimir Aleksandrovich Shatalov, Pol. VVS	Pol. VVS	VVS	TSPK	AS-00043	1969 Oct 13 1019:09	    4:22:50:49	-
     78	RU	C	S8/BI	Soyuz-8	H00049	Bortinzhener	Aleksey Stanislavovich Yeliseev	-	OKB1	OKB1	AS-00045	1969 Oct 13 1019:09	    4:22:50:49	-
-    79	NASA	M	A12/CDR	Apollo 12	H00050	Commander	Charles Conrad, Cdr USN, NASA	Cdr. USN	USN	NASA	AS-00025	1969 Nov 14 1622:00	   10:04:36 	LM6:5,A12:7
+    79	NASA	M	A12/CDR	Apollo 12	H00050	Commander	Charles Conrad, Cdr USN, NASA	Cdr. USN	USN	NASA	AS-00025	1969 Nov 14 1622:00	   10:04:36:33	LM6:4,A12:6
     80	NASA	M	A12/CMP	Apollo 12	H00050	Command Module Pilot	Richard Francis Gordon, Cdr USN, NASA	Cdr. USN	USN	NASA	AS-00034	1969 Nov 14 1622:00	   10:04:36:33	-
-    81	NASA	M	A12/LMP	Apollo 12	H00050	Lunar Module Pilot	Alan Lavern Bean, Cdr. USN, NASA	Cdr. USN	USN	NASA	AS-00053	1969 Nov 14 1622:00	   10:04:36 	LM6:5,A12:7
-    82	NASA	M	A13/CDR	Apollo 13	H00051	Commander	James Arthur Lovell, Jr, Capt. USN, NASA	Capt. USN	USN	NASA	AS-00028	1970 Apr 11 1913:03	    5:22:54 	LM7:3,A13:8
-    83	NASA	C	A13/CMP	Apollo 13	H00051	Command Module Pilot	John Leonard Swigert, NASA	-	NASA	NASA	AS-00054	1970 Apr 11 1913:03	    5:22:54 	LM7:3,A13:8
-    84	NASA	C	A13/LMP	Apollo 13	H00051	Lunar Module Pilot	Frederick Wallace Haise, NASA   (USMC, Ret.)	-	NASA	NASA	AS-00055	1970 Apr 11 1913:03	    5:22:54 	LM7:3,A13:8
+    81	NASA	M	A12/LMP	Apollo 12	H00050	Lunar Module Pilot	Alan Lavern Bean, Cdr. USN, NASA	Cdr. USN	USN	NASA	AS-00053	1969 Nov 14 1622:00	   10:04:36:33	LM6:4,A12:6
+    82	NASA	M	A13/CDR	Apollo 13	H00051	Commander	James Arthur Lovell, Jr, Capt. USN, NASA	Capt. USN	USN	NASA	AS-00028	1970 Apr 11 1913:03	    5:22:54:38	LM7,A13:6
+    83	NASA	C	A13/CMP	Apollo 13	H00051	Command Module Pilot	John Leonard Swigert, NASA	-	NASA	NASA	AS-00054	1970 Apr 11 1913:03	    5:22:54:38	LM7:3,A13:6
+    84	NASA	C	A13/LMP	Apollo 13	H00051	Lunar Module Pilot	Frederick Wallace Haise, NASA   (USMC, Ret.)	-	NASA	NASA	AS-00055	1970 Apr 11 1913:03	    5:22:54:38	LM7:3,A13:6
     85	RU	M	S9/KDR	Soyuz-9	H00052	Komandir	Andrian Grigorevich Nikolaev, Pol. VVS	Pol. VVS	VVS	TSPK	AS-00008	1970 Jun  1 1900:00	   17:16:58:55	-
     86	RU	C	S9/BI	Soyuz-9	H00052	Bortinzhener	Vitaliy Ivanovich Sevastyanov	-	OKB1	OKB1	AS-00056	1970 Jun  1 1900:00	   17:16:58:55	-
-    87	NASA	M	A14/CDR	Apollo 14	H00053	Commander	Alan Bartlett Shepard, Jr, Capt USN, NASA	Capt. USN	USN	NASA	AS-00002	1971 Jan 31 2103:02	    9:00:01 	LM8:5,A14:7
+    87	NASA	M	A14/CDR	Apollo 14	H00053	Commander	Alan Bartlett Shepard, Jr, Capt USN, NASA	Capt. USN	USN	NASA	AS-00002	1971 Jan 31 2103:02	    9:00:01:57	LM8:4,A14:6
     88	NASA	M	A14/CMP	Apollo 14	H00053	Command Module Pilot	Stuart Allen Roosa, Maj USAF, NASA	Maj. USAF	USAF	NASA	AS-00057	1971 Jan 31 2103:02	    9:00:01:57	-
-    89	NASA	M	A14/LMP	Apollo 14	H00053	Lunar Module Pilot	Edgar Dean Mitchell, PhD, Capt USN, NASA	Capt. USN	USN	NASA	AS-00058	1971 Jan 31 2103:02	    9:00:01 	LM8:5,A14:7
-    90	RU	M	S10/KDR	Soyuz-10	H00054	Komandir	Vladimir Aleksandrovich Shatalov, Pol. VVS	Pol. VVS	VVS	TSPK	AS-00043	1971 Apr 22 2354:06	    1:23:45 	D1EX1,S10:3
-    91	RU	C	S10/BI	Soyuz-10	H00054	Bortinzhener	Aleksey Stanislavovich Yeliseev	-	OKB1	OKB1	AS-00045	1971 Apr 22 2354:06	    1:23:45 	D1EX1,S10:3
-    92	RU	C	S10/II	Soyuz-10	H00054	Inzhener-ispitatel'	Nikolai Nikolaevich Rukavishnikov	-	OKB1	OKB1	AS-00059	1971 Apr 22 2354:06	    1:23:45 	D1EX1,S10:3
-    93	RU	M	S11/KDR	Soyuz-11	H00055	Komandir	Georgiy Timofeevich Dobrovol'skiy, Podpol. VVS	Podpol. VVS	VVS	TSPK	AS-00060	1971 Jun  6 0455:09	   23:18:21 	D1EX2,S11:3
-    94	RU	C	S11/BI	Soyuz-11	H00055	Bortinzhener	Vladislav Nikolaevich Volkov	-	OKB1	OKB1	AS-00051	1971 Jun  6 0455:09	   23:18:21 	D1EX2,S11:3
-    95	RU	C	S11/II	Soyuz-11	H00055	Inzhener-ispitatel'	Viktor Ivanovich Patsaev	-	OKB1	OKB1	AS-00061	1971 Jun  6 0455:09	   23:18:21 	D1EX2,S11:3
-    96	NASA	M	A15/CDR	Apollo 15	H00056	Commander	David Randolph Scott, Col USAF, NASA	Col. USAF	USAF	NASA	AS-00031	1971 Jul 26 1334:00	   12:07:11 	LM10:5,A15:7
+    89	NASA	M	A14/LMP	Apollo 14	H00053	Lunar Module Pilot	Edgar Dean Mitchell, PhD, Capt USN, NASA	Capt. USN	USN	NASA	AS-00058	1971 Jan 31 2103:02	    9:00:01:57	LM8:4,A14:6
+    90	RU	M	S10/KDR	Soyuz-10	H00054	Komandir	Vladimir Aleksandrovich Shatalov, Pol. VVS	Pol. VVS	VVS	TSPK	AS-00043	1971 Apr 22 2354:06	    1:23:45:54	D1EX1,S10:3
+    91	RU	C	S10/BI	Soyuz-10	H00054	Bortinzhener	Aleksey Stanislavovich Yeliseev	-	OKB1	OKB1	AS-00045	1971 Apr 22 2354:06	    1:23:45:54	D1EX1,S10:3
+    92	RU	C	S10/II	Soyuz-10	H00054	Inzhener-ispitatel'	Nikolai Nikolaevich Rukavishnikov	-	OKB1	OKB1	AS-00059	1971 Apr 22 2354:06	    1:23:45:54	D1EX1,S10:3
+    93	RU	M	S11/KDR	Soyuz-11	H00055	Komandir	Georgiy Timofeevich Dobrovol'skiy, Podpol. VVS	Podpol. VVS	VVS	TSPK	AS-00060	1971 Jun  6 0455:09	   23:18:21:43	D1EX2,S11:3
+    94	RU	C	S11/BI	Soyuz-11	H00055	Bortinzhener	Vladislav Nikolaevich Volkov	-	OKB1	OKB1	AS-00051	1971 Jun  6 0455:09	   23:18:21:43	D1EX2,S11:3
+    95	RU	C	S11/II	Soyuz-11	H00055	Inzhener-ispitatel'	Viktor Ivanovich Patsaev	-	OKB1	OKB1	AS-00061	1971 Jun  6 0455:09	   23:18:21:43	D1EX2,S11:3
+    96	NASA	M	A15/CDR	Apollo 15	H00056	Commander	David Randolph Scott, Col USAF, NASA	Col. USAF	USAF	NASA	AS-00031	1971 Jul 26 1334:00	   12:07:11:53	LM10:4,A15:6
     97	NASA	M	A15/CMP	Apollo 15	H00056	Command Module Pilot	Alfred Merrill Worden, Maj USAF, NASA	Maj. USAF	USAF	NASA	AS-00062	1971 Jul 26 1334:00	   12:07:11:53	-
-    98	NASA	M	A15/LMP	Apollo 15	H00056	Lunar Module Pilot	James Benson Irwin, Lt Col USAF, NASA	LtCol. USAF	USAF	NASA	AS-00063	1971 Jul 26 1334:00	   12:07:11 	LM10:5,A15:7
-    99	NASA	M	A16/CDR	Apollo 16	H00057	Commander	John Watts Young, Capt USN, NASA	Capt. USN	USN	NASA	AS-00021	1972 Apr 16 1754:00	   11:01:51 	LM11:5,A16:7
+    98	NASA	M	A15/LMP	Apollo 15	H00056	Lunar Module Pilot	James Benson Irwin, Lt Col USAF, NASA	LtCol. USAF	USAF	NASA	AS-00063	1971 Jul 26 1334:00	   12:07:11:53	LM10:4,A15:6
+    99	NASA	M	A16/CDR	Apollo 16	H00057	Commander	John Watts Young, Capt USN, NASA	Capt. USN	USN	NASA	AS-00021	1972 Apr 16 1754:00	   11:01:51:05	LM11:4,A16:6
    100	NASA	M	A16/CMP	Apollo 16	H00057	Command Module Pilot	Thomas Kenneth Mattingly, Lt Cdr USN, NASA	LtCdr. USN	USN	NASA	AS-00064	1972 Apr 16 1754:00	   11:01:51:05	-
-   101	NASA	M	A16/LMP	Apollo 16	H00057	Lunar Module Pilot	Charles Moss Duke, Lt Col USAF, NASA	LtCol. USAF	USAF	NASA	AS-00065	1972 Apr 16 1754:00	   11:01:51 	LM11:5,A16:7
-   102	NASA	M	A17/CDR	Apollo 17	H00058	Commander	Eugene Andrew Cernan, Capt USN, NASA	Capt. USN	USN	NASA	AS-00032	1972 Dec  7 0533:00	   12:13:51 	LM12:5,A17:7
+   101	NASA	M	A16/LMP	Apollo 16	H00057	Lunar Module Pilot	Charles Moss Duke, Lt Col USAF, NASA	LtCol. USAF	USAF	NASA	AS-00065	1972 Apr 16 1754:00	   11:01:51:05	LM11:4,A16:6
+   102	NASA	M	A17/CDR	Apollo 17	H00058	Commander	Eugene Andrew Cernan, Capt USN, NASA	Capt. USN	USN	NASA	AS-00032	1972 Dec  7 0533:00	   12:13:51:59	LM12:4,A17:6
    103	NASA	M	A17/CMP	Apollo 17	H00058	Command Module Pilot	Ronald Ellwin Evans, Cdr USN, NASA	Cdr. USN	USN	NASA	AS-00066	1972 Dec  7 0533:00	   12:13:51:59	-
-   104	NASA	C	A17/LMP	Apollo 17	H00058	Lunar Module Pilot	Harrison Hagan Schmitt, PhD, NASA	-	NASA	NASA	AS-00067	1972 Dec  7 0533:00	   12:13:51 	LM12:5,A17:7
-   105	NASA	M	SL2/CDR	Skylab SL-2	H00059	Commander	Charles Conrad, Capt USN, NASA	Capt. USN	USN	NASA	AS-00025	1973 May 25 1300:00	   28:00:49 	SL1EX1,SL2:5
-   106	NASA	M	SL2/SPLT	Skylab SL-2	H00059	Science Pilot	Joseph Peter Kerwin, MD, Cdr USN, NASA	Cdr. USN	USN	NASA	AS-00068	1973 May 25 1300:00	   28:00:49 	SL1EX1,SL2:5
-   107	NASA	M	SL2/PLT	Skylab SL-2	H00059	Pilot	Paul Joseph Weitz, Cdr USN, NASA	Cdr. USN	USN	NASA	AS-00069	1973 May 25 1300:00	   28:00:49 	SL1EX1,SL2:5
-   108	NASA	M	SL3/CDR	Skylab SL-3	H00060	Commander	Alan Lavern Bean, Capt USN, NASA	Capt. USN	USN	NASA	AS-00053	1973 Jul 28 1110:50	   59:11:09 	SL1EX2,SL3:3
-   109	NASA	C	SL3/SPLT	Skylab SL-3	H00060	Science Pilot	Owen K Garriott, PhD, NASA	-	NASA	NASA	AS-00070	1973 Jul 28 1110:50	   59:11:09 	SL1EX2,SL3:3
-   110	NASA	M	SL3/PLT	Skylab SL-3	H00060	Pilot	Jack Robert Lousma, Maj USMC, NASA	Maj. USMC	USMC	NASA	AS-00071	1973 Jul 28 1110:50	   59:11:09 	SL1EX2,SL3:3
+   104	NASA	C	A17/LMP	Apollo 17	H00058	Lunar Module Pilot	Harrison Hagan Schmitt, PhD, NASA	-	NASA	NASA	AS-00067	1972 Dec  7 0533:00	   12:13:51:59	LM12:4,A17:6
+   105	NASA	M	SL2/CDR	Skylab SL-2	H00059	Commander	Charles Conrad, Capt USN, NASA	Capt. USN	USN	NASA	AS-00025	1973 May 25 1300:00	   28:00:49:48	SL1EX1,SL2:5
+   106	NASA	M	SL2/SPLT	Skylab SL-2	H00059	Science Pilot	Joseph Peter Kerwin, MD, Cdr USN, NASA	Cdr. USN	USN	NASA	AS-00068	1973 May 25 1300:00	   28:00:49:48	SL1EX1,SL2:5
+   107	NASA	M	SL2/PLT	Skylab SL-2	H00059	Pilot	Paul Joseph Weitz, Cdr USN, NASA	Cdr. USN	USN	NASA	AS-00069	1973 May 25 1300:00	   28:00:49:48	SL1EX1,SL2:5
+   108	NASA	M	SL3/CDR	Skylab SL-3	H00060	Commander	Alan Lavern Bean, Capt USN, NASA	Capt. USN	USN	NASA	AS-00053	1973 Jul 28 1110:50	   59:11:09:04	SL1EX2,SL3:3
+   109	NASA	C	SL3/SPLT	Skylab SL-3	H00060	Science Pilot	Owen K Garriott, PhD, NASA	-	NASA	NASA	AS-00070	1973 Jul 28 1110:50	   59:11:09:04	SL1EX2,SL3:3
+   110	NASA	M	SL3/PLT	Skylab SL-3	H00060	Pilot	Jack Robert Lousma, Maj USMC, NASA	Maj. USMC	USMC	NASA	AS-00071	1973 Jul 28 1110:50	   59:11:09:04	SL1EX2,SL3:3
    111	RU	M	S12/KDR	Soyuz-12	H00061	Komandir	Vasiliy Grigor'evich Lazarev, MD, Pol VVS	Pol. VVS	VVS	TSPK	AS-00072	1973 Sep 27 1218:16	    1:23:15:32	-
    112	RU	C	S12/BI	Soyuz-12	H00061	Bortinzhener	Oleg Grigor'evich Makarov	-	OKB1	OKB1	AS-00073	1973 Sep 27 1218:16	    1:23:15:32	-
-   113	NASA	M	SL4/CDR	Skylab SL-4	H00062	Commander	Gerald Paul Carr, Lt Col USMC, NASA	LtCol. USMC	USMC	NASA	AS-00074	1973 Nov 16 1401:23	   84:01:15 	SL1EX3,SL4:3
-   114	NASA	C	SL4/SPLT	Skylab SL-4	H00062	Science Pilot	Edward George Gibson, PhD, NASA	-	NASA	NASA	AS-00075	1973 Nov 16 1401:23	   84:01:15 	SL1EX3,SL4:3
-   115	NASA	M	SL4/PLT	Skylab SL-4	H00062	Pilot	William Reid Pogue, Lt Col USAF, NASA	LtCol. USAF	USAF	NASA	AS-00076	1973 Nov 16 1401:23	   84:01:15 	SL1EX3,SL4:3
+   113	NASA	M	SL4/CDR	Skylab SL-4	H00062	Commander	Gerald Paul Carr, Lt Col USMC, NASA	LtCol. USMC	USMC	NASA	AS-00074	1973 Nov 16 1401:23	   84:01:15:32	SL1EX3,SL4:3
+   114	NASA	C	SL4/SPLT	Skylab SL-4	H00062	Science Pilot	Edward George Gibson, PhD, NASA	-	NASA	NASA	AS-00075	1973 Nov 16 1401:23	   84:01:15:32	SL1EX3,SL4:3
+   115	NASA	M	SL4/PLT	Skylab SL-4	H00062	Pilot	William Reid Pogue, Lt Col USAF, NASA	LtCol. USAF	USAF	NASA	AS-00076	1973 Nov 16 1401:23	   84:01:15:32	SL1EX3,SL4:3
    116	RU	M	S13/KDR	Soyuz-13	H00063	Komandir	Pyotr Ilich Klimuk, Mai. VVS	Mai. VVS	VVS	TSPK	AS-00077	1973 Dec 18 1155:00	    7:20:55:35	-
    117	RU	C	S13/BI	Soyuz-13	H00063	Bortinzhener	Valentin Vitalevich Lebedev, OKB-1	-	OKB1	OKB1	AS-00078	1973 Dec 18 1155:00	    7:20:55:35	-
-   118	RU	M	S14/KDR	Soyuz-14	H00064	Komandir	Pavel Romanovich Popovich, Pol. VVS	Pol. VVS	VVS	TSPK	AS-00009	1974 Jul  3 1851:08	   15:17:30?	OPS2EX1,S14:3
-   119	RU	M	S14/BI	Soyuz-14	H00064	Bortinzhener	Yuriy Petrovich Artyukhin, Podpol. VVS	Podpol. VVS	VVS	TSPK	AS-00079	1974 Jul  3 1851:08	   15:17:30?	OPS2EX1,S14:3
+   118	RU	M	S14/KDR	Soyuz-14	H00064	Komandir	Pavel Romanovich Popovich, Pol. VVS	Pol. VVS	VVS	TSPK	AS-00009	1974 Jul  3 1851:08	   15:17:30:28	OPS2EX1,S14:3
+   119	RU	M	S14/BI	Soyuz-14	H00064	Bortinzhener	Yuriy Petrovich Artyukhin, Podpol. VVS	Podpol. VVS	VVS	TSPK	AS-00079	1974 Jul  3 1851:08	   15:17:30:28	OPS2EX1,S14:3
    120	RU	M	S15/KDR	Soyuz-15	H00065	Komandir	Gennadiy Vasilevich Sarafanov, Podpol. VVS	Podpol. VVS	VVS	TSPK	AS-00080	1974 Aug 26 1958:05	    2:00:12:11	-
    121	RU	M	S15/BI	Soyuz-15	H00065	Bortinzhener	Lev Stepanovich Dyomin, Pol-Inzh. VVS	Pol-Inzh. VVS	VVS	TSPK	AS-00081	1974 Aug 26 1958:05	    2:00:12:11	-
    122	RU	M	S16/KDR	Soyuz-16	H00066	Komandir	Anatoli Vasilevich Filipchenko, Pol. VVS	Pol. VVS	VVS	TSPK	AS-00050	1974 Dec  2 0940:00	    5:22:23:35	-
    123	RU	C	S16/BI	Soyuz-16	H00066	Bortinzhener	Nikolai Nikolaevich Rukavishnikov	-	NPOE	NPOE	AS-00059	1974 Dec  2 0940:00	    5:22:23:35	-
-   124	RU	M	S17/KDR	Soyuz-17	H00067	Komandir	Aleksey Aleksandrovich Gubarev, Podpol. VVS	Podpol. VVS	VVS	TSPK	AS-00082	1975 Jan 10 2143:37	   29:13:19 	D4EX1,S17:3
-   125	RU	C	S17/BI	Soyuz-17	H00067	Bortinzhener	Georgiy Mikhailovich Grechko	-	NPOE	NPOE	AS-00083	1975 Jan 10 2143:37	   29:13:19 	D4EX1,S17:3
+   124	RU	M	S17/KDR	Soyuz-17	H00067	Komandir	Aleksey Aleksandrovich Gubarev, Podpol. VVS	Podpol. VVS	VVS	TSPK	AS-00082	1975 Jan 10 2143:37	   29:13:19:45	D4EX1,S17:3
+   125	RU	C	S17/BI	Soyuz-17	H00067	Bortinzhener	Georgiy Mikhailovich Grechko	-	NPOE	NPOE	AS-00083	1975 Jan 10 2143:37	   29:13:19:45	D4EX1,S17:3
    126	RU	M	S18A/KDR	Soyuz	H00068	Komandir	Vasiliy Grigor'evich Lazarev, MD, Pol. VVS	Pol. VVS	VVS	TSPK	AS-00072	1975 Apr  5 1104:54	    0:00:21:27	-
    127	RU	C	S18A/BI	Soyuz	H00068	Bortinzhener	Oleg Grigor'evich Makarov	-	NPOE	NPOE	AS-00073	1975 Apr  5 1104:54	    0:00:21:27	-
-   128	RU	M	S18/KDR	Soyuz-18	H00069	Komandir	Pyotr Ilich Klimuk, Pol. VVS	Pol. VVS	VVS	TSPK	AS-00077	1975 May 24 1458:10	   62:23:20?	D4EX2,S18:3
-   129	RU	C	S18/BI	Soyuz-18	H00069	Bortinzhener	Vitaliy Ivanovich Sevastyanov	-	NPOE	NPOE	AS-00056	1975 May 24 1458:10	   62:23:20?	D4EX2,S18:3
+   128	RU	M	S18/KDR	Soyuz-18	H00069	Komandir	Pyotr Ilich Klimuk, Pol. VVS	Pol. VVS	VVS	TSPK	AS-00077	1975 May 24 1458:10	   62:23:20:08	D4EX2,S18:3
+   129	RU	C	S18/BI	Soyuz-18	H00069	Bortinzhener	Vitaliy Ivanovich Sevastyanov	-	NPOE	NPOE	AS-00056	1975 May 24 1458:10	   62:23:20:08	D4EX2,S18:3
    130	RU	M	S19/KDR	Soyuz-19	H00070	Komandir	Aleksey Arkhipovich Leonov, Pol. VVS	Pol. VVS	VVS	TSPK	AS-00020	1975 Jul 15 1220:00	    5:22:30:51	-
    131	RU	C	S19/BI	Soyuz-19	H00070	Bortinzhener	Valeriy Nikolaevich Kubasov	-	NPOE	NPOE	AS-00049	1975 Jul 15 1220:00	    5:22:30:51	-
    132	NASA	M	ASTP/CDR	ASTP	H00071	Commander	Thomas Patten Stafford, Brig-Gen USAF, NASA	Brig-Gen. USAF	USAF	NASA	AS-00029	1975 Jul 15 1950:01	    9:01:28:23	-
    133	NASA	C	ASTP/CMP	ASTP	H00071	Command Module Pilot	Vance DeVoe Brand, Maj. USMC (Ret.), NASA	Maj. USMC (Ret.)	NASA	NASA	AS-00084	1975 Jul 15 1950:01	    9:01:28:23	-
    134	NASA	C	ASTP/DMP	ASTP	H00071	Docking Module Pilot	Donald Kent Slayton, Maj. USAF (Ret.), NASA	Maj. USAF (Ret.)	NASA	NASA	AS-00085	1975 Jul 15 1950:01	    9:01:28:23	-
-   135	RU	M	S21/KDR	Soyuz-21	H00072	Komandir	Boris Valentinovich Volynov, Pol. VVS	Pol. VVS	VVS	TSPK	AS-00044	1976 Jul  6 1208:45	   49:06:23 	OPS3EX1,S21:3
-   136	RU	M	S21/BI	Soyuz-21	H00072	Bortinzhener	Vitaliy Mikhailovich Zholobov, Podpol. VVS	Podpol. VVS	VVS	TSPK	AS-00086	1976 Jul  6 1208:45	   49:06:23 	OPS3EX1,S21:3
+   135	RU	M	S21/KDR	Soyuz-21	H00072	Komandir	Boris Valentinovich Volynov, Pol. VVS	Pol. VVS	VVS	TSPK	AS-00044	1976 Jul  6 1208:45	   49:06:23:32	OPS3EX1,S21:3
+   136	RU	M	S21/BI	Soyuz-21	H00072	Bortinzhener	Vitaliy Mikhailovich Zholobov, Podpol. VVS	Podpol. VVS	VVS	TSPK	AS-00086	1976 Jul  6 1208:45	   49:06:23:32	OPS3EX1,S21:3
    137	RU	M	S22/KDR	Soyuz-22	H00073	Komandir	Valeriy Fyodorovich Bykovskiy, Pol. VVS	Pol. VVS	VVS	TSPK	AS-00013	1976 Sep 15 0948:30	    7:21:52:17	-
    138	RU	C	S22/BI	Soyuz-22	H00073	Bortinzhener	Vladimir Viktorovich Aksyonov	-	NPOE	NPOE	AS-00087	1976 Sep 15 0948:30	    7:21:52:17	-
    139	RU	M	S23/KDR	Soyuz-23	H00074	Komandir	Vyacheslav Dmitrievich Zudov, Podpol. VVS	Podpol. VVS	VVS	TSPK	AS-00088	1976 Oct 14 1739:18	    2:00:06:35	-
    140	RU	M	S23/BI	Soyuz-23	H00074	Bortinzhener	Valeriy Ilich Rozhdestvenskiy, Podpol. VVS	Podpol. VVS	VVS	TSPK	AS-00089	1976 Oct 14 1739:18	    2:00:06:35	-
-   141	RU	M	S24/KDR	Soyuz-24	H00075	Komandir	Viktor Vasilevich Gorbatko, Pol. VVS	Pol. VVS	VVS	TSPK	AS-00052	1977 Feb  7 1611:50	   17:17:25 	OPS3EX2,S24:3
-   142	RU	M	S24/BI	Soyuz-24	H00075	Bortinzhener	Yuriy Nikolaevich Glazkov, Podpol. VVS	Podpol. VVS	VVS	TSPK	AS-00090	1977 Feb  7 1611:50	   17:17:25 	OPS3EX2,S24:3
+   141	RU	M	S24/KDR	Soyuz-24	H00075	Komandir	Viktor Vasilevich Gorbatko, Pol. VVS	Pol. VVS	VVS	TSPK	AS-00052	1977 Feb  7 1611:50	   17:17:25:58	OPS3EX2,S24:3
+   142	RU	M	S24/BI	Soyuz-24	H00075	Bortinzhener	Yuriy Nikolaevich Glazkov, Podpol. VVS	Podpol. VVS	VVS	TSPK	AS-00090	1977 Feb  7 1611:50	   17:17:25:58	OPS3EX2,S24:3
    143	RU	M	S25/KDR	Soyuz-25	H00076	Komandir	Vladimir Vasilevich Kovalyonok, Podpol. VVS	Podpol. VVS	VVS	TSPK	AS-00091	1977 Oct  9 0240:35	    2:00:44:45	-
    144	RU	C	S25/BI	Soyuz-25	H00076	Bortinzhener	Valeriy Viktorovich Ryumin	-	NPOE	NPOE	AS-00092	1977 Oct  9 0240:35	    2:00:44:45	-
-   145	RU	M	S26/KDR	Soyuz-26	H00077	Komandir	Yuriy Viktorovich Romanenko, Pol. VVS	Pol. VVS	VVS	TSPK	AS-00093	1977 Dec 10 0118:40	   96:10:00 	D5EO1,S27:3
-   146	RU	C	S26/BI	Soyuz-26	H00077	Bortinzhener	Georgiy Mikhailovich Grechko	-	NPOE	NPOE	AS-00083	1977 Dec 10 0118:40	   96:10:00 	D5EO1,S27:3
-   147	RU	M	S27/KDR	Soyuz-27	H00078	Komandir	Vladimir Aleksandrovich Dzhanibekov, Podpol. VVS	Podpol. VVS	VVS	TSPK	AS-00094	1978 Jan 10 1226:00	    5:22:58?	D5EP1,S26:3
-   148	RU	C	S27/BI	Soyuz-27	H00078	Bortinzhener	Oleg Grigor'evich Makarov	-	NPOE	NPOE	AS-00073	1978 Jan 10 1226:00	    5:22:58?	D5EP1,S26:3
+   145	RU	M	S26/KDR	Soyuz-26	H00077	Komandir	Yuriy Viktorovich Romanenko, Pol. VVS	Pol. VVS	VVS	TSPK	AS-00093	1977 Dec 10 0118:40	   96:10:00:07	D5EO1,S27:3
+   146	RU	C	S26/BI	Soyuz-26	H00077	Bortinzhener	Georgiy Mikhailovich Grechko	-	NPOE	NPOE	AS-00083	1977 Dec 10 0118:40	   96:10:00:07	D5EO1,S27:3
+   147	RU	M	S27/KDR	Soyuz-27	H00078	Komandir	Vladimir Aleksandrovich Dzhanibekov, Podpol. VVS	Podpol. VVS	VVS	TSPK	AS-00094	1978 Jan 10 1226:00	    5:22:58:58	D5EP1,S26:3
+   148	RU	C	S27/BI	Soyuz-27	H00078	Bortinzhener	Oleg Grigor'evich Makarov	-	NPOE	NPOE	AS-00073	1978 Jan 10 1226:00	    5:22:58:58	D5EP1,S26:3
    149	RU	M	S28/KDR	Soyuz-28	H00079	Komandir	Aleksey Aleksandrovich Gubarev, Pol. VVS	Pol. VVS	VVS	TSPK	AS-00082	1978 Mar  2 1528:10	    7:22:16:00	D5EP2,S28:3
    150	RU	M	S28/KI	Soyuz-28	H00079	Kosmonavt-issledovatel'	Vladimir Remek, Capt. CSSR AF	Capt. CSSR AF	CSL	TSPK	AS-00095	1978 Mar  2 1528:10	    7:22:16:00	D5EP2,S28:3
-   151	RU	M	S29/KDR	Soyuz-29	H00080	Komandir	Vladimir Vasilevich Kovalyonok, Pol. VVS	Pol. VVS	VVS	TSPK	AS-00091	1978 Jun 15 2016:45	  139:14:47 	D5EO2,S31:3,D5EO2,S31:5
-   152	RU	C	S29/BI	Soyuz-29	H00080	Bortinzhener	Aleksandr Sergeevich Ivanchenkov	-	NPOE	NPOE	AS-00096	1978 Jun 15 2016:45	  139:14:47 	D5EO2,S31:3,D5EO2,S31:5
+   151	RU	M	S29/KDR	Soyuz-29	H00080	Komandir	Vladimir Vasilevich Kovalyonok, Pol. VVS	Pol. VVS	VVS	TSPK	AS-00091	1978 Jun 15 2016:45	  139:14:47:32	D5EO2,S31:3,D5EO2,S31:5
+   152	RU	C	S29/BI	Soyuz-29	H00080	Bortinzhener	Aleksandr Sergeevich Ivanchenkov	-	NPOE	NPOE	AS-00096	1978 Jun 15 2016:45	  139:14:47:32	D5EO2,S31:3,D5EO2,S31:5
    153	RU	M	S30/KDR	Soyuz-30	H00081	Komandir	Pyotr Ilich Klimuk, Pol. VVS	Pol. VVS	VVS	TSPK	AS-00077	1978 Jun 27 1527:21	    7:22:02:59	D5EP3,S30:3
    154	RU	M	S30/KI	Soyuz-30	H00081	Kosmonavt-issledovatel'	Miroslaw Hermaszewski, Col. Polska Let.	Col. Polska Let.	WLOP	TSPK	AS-00097	1978 Jun 27 1527:21	    7:22:02:59	D5EP3,S30:3
    155	RU	M	S31/KDR	Soyuz-31	H00082	Komandir	Valeriy Fyodorovich Bykovskiy, Pol. VVS	Pol. VVS	VVS	TSPK	AS-00013	1978 Aug 26 1451:30	    7:20:49:04	D5EP4,S29:3
    156	RU	M	S31/KI	Soyuz-31	H00082	Kosmonavt-issledovatel'	Sigmund Jahn, Lt-Kol. DDR AF	Lt-Kol LSK	LSK	TSPK	AS-00098	1978 Aug 26 1451:30	    7:20:49:04	D5EP4,S29:3
-   157	RU	M	S32/KDR	Soyuz-32	H00083	Komandir	Vladimir Aleksandrovich Lyakhov, Podpol. VVS	Podpol. VVS	VVS	TSPK	AS-00099	1979 Feb 25 1153:49	  175:00:35 	D5EO3,S34:3,D5EO3,S34:5
-   158	RU	C	S32/BI	Soyuz-32	H00083	Bortinzhener	Valeriy Viktorovich Ryumin	-	NPOE	NPOE	AS-00092	1979 Feb 25 1153:49	  175:00:35 	D5EO3,S34:3,D5EO3,S34:5
+   157	RU	M	S32/KDR	Soyuz-32	H00083	Komandir	Vladimir Aleksandrovich Lyakhov, Podpol. VVS	Podpol. VVS	VVS	TSPK	AS-00099	1979 Feb 25 1153:49	  175:00:35:37	D5EO3,S34:3,D5EO3,S34:5
+   158	RU	C	S32/BI	Soyuz-32	H00083	Bortinzhener	Valeriy Viktorovich Ryumin	-	NPOE	NPOE	AS-00092	1979 Feb 25 1153:49	  175:00:35:37	D5EO3,S34:3,D5EO3,S34:5
    159	RU	C	S33/KDR	Soyuz-33	H00084	Komandir	Nikolai Nikolaevich Rukavishnikov	-	NPOE	NPOE	AS-00059	1979 Apr 10 1734:34	    1:23:01:06	-
    160	RU	M	S33/KI	Soyuz-33	H00084	Kosmonavt-issledovatel'	Georgiy Ivanov, Maj. Bulgar. AF	Maj. Bulg. AF	VVSPG	TSPK	AS-00100	1979 Apr 10 1734:34	    1:23:01:06	-
-   161	RU	M	S35/KDR	Soyuz-35	H00085	Komandir	Leonid Ivanovich Popov, Podpol. VVS	Podpol. VVS	VVS	TSPK	AS-00101	1980 Apr  9 1338:22	  184:20:11 	D5EO4,S36:3,D5EO4,S37:3,D5EO4,S37:5
-   162	RU	C	S35/BI	Soyuz-35	H00085	Bortinzhener	Valeriy Viktorovich Ryumin	-	NPOE	NPOE	AS-00092	1980 Apr  9 1338:22	  184:20:11 	D5EO4,S36:3,D5EO4,S37:3,D5EO4,S37:5
-   163	RU	C	S36/KDR	Soyuz-36	H00086	Komandir	Valeriy Nikolaevich Kubasov	-	NPOE	NPOE	AS-00049	1980 May 26 1820:39	    7:20:45 	D5EP5,S35:3
-   164	RU	M	S36/KI	Soyuz-36	H00086	Kosmonavt-issledovatel'	Farkas Bertalan, Lt Col Magyar AF	LtCol Magyar AF	MAGL	TSPK	AS-00102	1980 May 26 1820:39	    7:20:45 	D5EP5,S35:3
-   165	RU	M	T2/KDR	Soyuz T-2	H00087	Komandir	Yuriy Vasilevich Malyshev, Podpol. VVS	Podpol. VVS	VVS	TSPK	AS-00103	1980 Jun  5 1419:30	    3:22:19 	D5EP6,T2:3
-   166	RU	C	T2/BI	Soyuz T-2	H00087	Bortinzhener	Vladimir Viktorovich Aksyonov	-	NPOE	NPOE	AS-00087	1980 Jun  5 1419:30	    3:22:19 	D5EP6,T2:3
-   167	RU	M	S37/KDR	Soyuz-37	H00088	Komandir	Viktor Vasilevich Gorbatko, Pol. VVS	Pol. VVS	VVS	TSPK	AS-00052	1980 Jul 23 1833:03	    7:20:41 	D5EP7,S36:5
-   168	RU	M	S37/KI	Soyuz-37	H00088	Kosmonavt-issledovatel'	Pham Tuan, Lt Col Viet AF	Lt. Col Viet AF	KQN	TSPK	AS-00104	1980 Jul 23 1833:03	    7:20:41 	D5EP7,S36:5
-   169	RU	M	S38/KDR	Soyuz-38	H00089	Komandir	Yuriy Viktorovich Romanenko, Pol. VVS	Pol. VVS	VVS	TSPK	AS-00093	1980 Sep 18 1911:04	    7:20:43 	D5EP8,S38:3
-   170	RU	M	S38/KI	Soyuz-38	H00089	Kosmonavt-issledovatel'	Arnaldo Tamayo Mendez, Col. Cuban AF	Col. Cuban AF	DAAFAR	TSPK	AS-00105	1980 Sep 18 1911:04	    7:20:43 	D5EP8,S38:3
-   171	RU	M	T3/KDR	Soyuz T-3	H00090	Komandir	Leonid Denisovich Kizim, Podpol. VVS	Podpol. VVS	VVS	TSPK	AS-00106	1980 Nov 27 1418:28	   12:19:07 	D5EO5,T3:3
-   172	RU	C	T3/BI	Soyuz T-3	H00090	Bortinzhener	Oleg Grigor'evich Makarov	-	NPOE	NPOE	AS-00073	1980 Nov 27 1418:28	   12:19:07 	D5EO5,T3:3
-   173	RU	C	T3/KI	Soyuz T-3	H00090	Kosmonavt-issledovatel'	Gennadiy Mikhailovich Strekalov	-	NPOE	NPOE	AS-00107	1980 Nov 27 1418:28	   12:19:07 	D5EO5,T3:3
-   174	RU	M	T4/KDR	Soyuz T-4	H00091	Komandir	Vladimir Vasilevich Kovalyonok, Pol. VVS	Pol. VVS	VVS	TSPK	AS-00091	1981 Mar 12 1900:11	   74:17:37?	D5EO6,T4:3
-   175	RU	C	T4/BI	Soyuz T-4	H00091	Bortinzhener	Viktor Petrovich Savinykh	-	NPOE	NPOE	AS-00108	1981 Mar 12 1900:11	   74:17:37?	D5EO6,T4:3
-   176	RU	M	S39/KDR	Soyuz-39	H00092	Komandir	Vladimir Aleksandrovich Dzhanibekov, Pol. VVS	Pol. VVS	VVS	TSPK	AS-00094	1981 Mar 22 1458:55	    7:20:42 	D5EP9,S39:3
-   177	RU	M	S39/KI	Soyuz-39	H00092	Kosmonavt-issledovatel'	Jugderdemidyn Gurragcha, Capt. MPA	Capt. MPA	MPA	TSPK	AS-00109	1981 Mar 22 1458:55	    7:20:42 	D5EP9,S39:3
+   161	RU	M	S35/KDR	Soyuz-35	H00085	Komandir	Leonid Ivanovich Popov, Podpol. VVS	Podpol. VVS	VVS	TSPK	AS-00101	1980 Apr  9 1338:22	  184:20:11:35	D5EO4,S36:3,D5EO4,S37:3,D5EO4,S37:5
+   162	RU	C	S35/BI	Soyuz-35	H00085	Bortinzhener	Valeriy Viktorovich Ryumin	-	NPOE	NPOE	AS-00092	1980 Apr  9 1338:22	  184:20:11:35	D5EO4,S36:3,D5EO4,S37:3,D5EO4,S37:5
+   163	RU	C	S36/KDR	Soyuz-36	H00086	Komandir	Valeriy Nikolaevich Kubasov	-	NPOE	NPOE	AS-00049	1980 May 26 1820:39	    7:20:45:44	D5EP5,S35:3
+   164	RU	M	S36/KI	Soyuz-36	H00086	Kosmonavt-issledovatel'	Farkas Bertalan, Lt Col Magyar AF	LtCol Magyar AF	MAGL	TSPK	AS-00102	1980 May 26 1820:39	    7:20:45:44	D5EP5,S35:3
+   165	RU	M	T2/KDR	Soyuz T-2	H00087	Komandir	Yuriy Vasilevich Malyshev, Podpol. VVS	Podpol. VVS	VVS	TSPK	AS-00103	1980 Jun  5 1419:30	    3:22:19:30	D5EP6,T2:3
+   166	RU	C	T2/BI	Soyuz T-2	H00087	Bortinzhener	Vladimir Viktorovich Aksyonov	-	NPOE	NPOE	AS-00087	1980 Jun  5 1419:30	    3:22:19:30	D5EP6,T2:3
+   167	RU	M	S37/KDR	Soyuz-37	H00088	Komandir	Viktor Vasilevich Gorbatko, Pol. VVS	Pol. VVS	VVS	TSPK	AS-00052	1980 Jul 23 1833:03	    7:20:41:59	D5EP7,S36:5
+   168	RU	M	S37/KI	Soyuz-37	H00088	Kosmonavt-issledovatel'	Pham Tuan, Lt Col Viet AF	Lt. Col Viet AF	KQN	TSPK	AS-00104	1980 Jul 23 1833:03	    7:20:41:59	D5EP7,S36:5
+   169	RU	M	S38/KDR	Soyuz-38	H00089	Komandir	Yuriy Viktorovich Romanenko, Pol. VVS	Pol. VVS	VVS	TSPK	AS-00093	1980 Sep 18 1911:04	    7:20:43:23	D5EP8,S38:3
+   170	RU	M	S38/KI	Soyuz-38	H00089	Kosmonavt-issledovatel'	Arnaldo Tamayo Mendez, Col. Cuban AF	Col. Cuban AF	DAAFAR	TSPK	AS-00105	1980 Sep 18 1911:04	    7:20:43:23	D5EP8,S38:3
+   171	RU	M	T3/KDR	Soyuz T-3	H00090	Komandir	Leonid Denisovich Kizim, Podpol. VVS	Podpol. VVS	VVS	TSPK	AS-00106	1980 Nov 27 1418:28	   12:19:07:42	D5EO5,T3:3
+   172	RU	C	T3/BI	Soyuz T-3	H00090	Bortinzhener	Oleg Grigor'evich Makarov	-	NPOE	NPOE	AS-00073	1980 Nov 27 1418:28	   12:19:07:42	D5EO5,T3:3
+   173	RU	C	T3/KI	Soyuz T-3	H00090	Kosmonavt-issledovatel'	Gennadiy Mikhailovich Strekalov	-	NPOE	NPOE	AS-00107	1980 Nov 27 1418:28	   12:19:07:42	D5EO5,T3:3
+   174	RU	M	T4/KDR	Soyuz T-4	H00091	Komandir	Vladimir Vasilevich Kovalyonok, Pol. VVS	Pol. VVS	VVS	TSPK	AS-00091	1981 Mar 12 1900:11	   74:17:37:23	D5EO6,T4:3
+   175	RU	C	T4/BI	Soyuz T-4	H00091	Bortinzhener	Viktor Petrovich Savinykh	-	NPOE	NPOE	AS-00108	1981 Mar 12 1900:11	   74:17:37:23	D5EO6,T4:3
+   176	RU	M	S39/KDR	Soyuz-39	H00092	Komandir	Vladimir Aleksandrovich Dzhanibekov, Pol. VVS	Pol. VVS	VVS	TSPK	AS-00094	1981 Mar 22 1458:55	    7:20:42:03	D5EP9,S39:3
+   177	RU	M	S39/KI	Soyuz-39	H00092	Kosmonavt-issledovatel'	Jugderdemidyn Gurragcha, Capt. MPA	Capt. MPA	MPA	TSPK	AS-00109	1981 Mar 22 1458:55	    7:20:42:03	D5EP9,S39:3
    178	NASA	C	STS1/CDR	STS-1	H00093	Commander	John Young, Capt USN (Ret.), NASA	Capt. USN (Ret.)	NASA	NASA	AS-00021	1981 Apr 12 1200:04	    2:06:20:47	-
    179	NASA	M	STS1/PLT	STS-1	H00093	Pilot	Robert Crippen, Capt. USN, NASA	Capt. USN	USN	NASA	AS-00110	1981 Apr 12 1200:04	    2:06:20:47	-
-   180	RU	M	S40/KDR	Soyuz-40	H00094	Komandir	Leonid Ivanovich Popov, Pol. VVS	Pol. VVS	VVS	TSPK	AS-00101	1981 May 14 1716:38	    7:20:41 	D5EP10,S40:3
-   181	RU	M	S40/KI	Soyuz-40	H00094	Kosmonavt-issledovatel'	Dumitru Prunariu, Sen. Lt. Romanian AF	Sen.Lt. RomAF	ROAF	TSPK	AS-00111	1981 May 14 1716:38	    7:20:41 	D5EP10,S40:3
+   180	RU	M	S40/KDR	Soyuz-40	H00094	Komandir	Leonid Ivanovich Popov, Pol. VVS	Pol. VVS	VVS	TSPK	AS-00101	1981 May 14 1716:38	    7:20:41:52	D5EP10,S40:3
+   181	RU	M	S40/KI	Soyuz-40	H00094	Kosmonavt-issledovatel'	Dumitru Prunariu, Sen. Lt. Romanian AF	Sen.Lt. RomAF	ROAF	TSPK	AS-00111	1981 May 14 1716:38	    7:20:41:52	D5EP10,S40:3
    182	NASA	M	STS2/CDR	STS-2	H00095	Commander	Joseph H. Engle, Col. USAF, NASA	Col. USAF	USAF	NASA	AS-00024	1981 Nov 12 1510:00	    2:06:13:13	-
    183	NASA	M	STS2/PLT	STS-2	H00095	Pilot	Richard H. Truly, Capt. USN, NASA	Capt. USN	USN	NASA	AS-00112	1981 Nov 12 1510:00	    2:06:13:13	-
    184	NASA	M	STS3/CDR	STS-3	H00096	Commander	Jack R. Lousma, Col. USMC, NASA	Col. USMC	USMC	NASA	AS-00071	1982 Mar 22 1600:00	    8:00:04:45	-
    185	NASA	M	STS3/PLT	STS-3	H00096	Pilot	C. Gordon Fullerton, Col. USAF, NASA	Col. USAF	USAF	NASA	AS-00113	1982 Mar 22 1600:00	    8:00:04:45	-
-   186	RU	M	T5/KDR	Soyuz T-5	H00097	Komandir	Anatoliy Nikolaevich Berezovoy, Podpol. VVS	Podpol. VVS	VVS	TSPK	AS-00114	1982 May 13 0958:05	  211:09:04 	D6EO1,T7:3,D6EO1,T7:5
-   187	RU	C	T5/BI	Soyuz T-5	H00097	Bortinzhener	Valentin Vitalevich Lebedev	-	NPOE	NPOE	AS-00078	1982 May 13 0958:05	  211:09:04 	D6EO1,T7:3,D6EO1,T7:5
+   186	RU	M	T5/KDR	Soyuz T-5	H00097	Komandir	Anatoliy Nikolaevich Berezovoy, Podpol. VVS	Podpol. VVS	VVS	TSPK	AS-00114	1982 May 13 0958:05	  211:09:04:31	D6EO1,T7:3,D6EO1,T7:5
+   187	RU	C	T5/BI	Soyuz T-5	H00097	Bortinzhener	Valentin Vitalevich Lebedev	-	NPOE	NPOE	AS-00078	1982 May 13 0958:05	  211:09:04:31	D6EO1,T7:3,D6EO1,T7:5
    188	RU	M	T6/KDR	Soyuz T-6	H00098	Komandir	Vladimir Aleksandrovich Dzhanibekov, Pol. VVS	Pol. VVS	VVS	TSPK	AS-00094	1982 Jun 24 1629:48	    7:21:50:52	D6EP1,T6:3
    189	RU	C	T6/BI	Soyuz T-6	H00098	Bortinzhener	Aleksandr Sergeevich Ivanchenkov	-	NPOE	NPOE	AS-00096	1982 Jun 24 1629:48	    7:21:50:52	D6EP1,T6:3
    190	RU	M	T6/KI	Soyuz T-6	H00098	Kosmonavt-issledovatel'	Jean-Loup Chretien, Col. AAF, CNES	Col AAF	AAF	CNES	AS-00115	1982 Jun 24 1629:48	    7:21:50:52	D6EP1,T6:3
    191	NASA	M	STS4/CDR	STS-4	H00099	Commander	Thomas K. Mattingly, Capt. USN, NASA	Capt. USN	USN	NASA	AS-00064	1982 Jun 27 1500:00	    7:01:09:40	-
    192	NASA	M	STS4/PLT	STS-4	H00099	Pilot	Henry W. Hartsfield, Jr, NASA	-	NASA	NASA	AS-00116	1982 Jun 27 1500:00	    7:01:09:40	-
-   193	RU	M	T7/KDR	Soyuz T-7	H00100	Komandir	Leonid Ivanovich Popov, Pol. VVS	Pol. VVS	VVS	TSPK	AS-00101	1982 Aug 19 1711:52	    7:21:52 	D6EP2,T5:3
-   194	RU	C	T7/BI	Soyuz T-7	H00100	Bortinzhener	Aleksandr Aleksandrovich Serebrov	-	NPOE	NPOE	AS-00117	1982 Aug 19 1711:52	    7:21:52 	D6EP2,T5:3
-   195	RU	C	T7/KI	Soyuz T-7	H00100	Kosmonavt-issledovatel'	Svetlana Yevgenevna Savitskaya	-	NPOE	NPOE	AS-00118	1982 Aug 19 1711:52	    7:21:52 	D6EP2,T5:3
+   193	RU	M	T7/KDR	Soyuz T-7	H00100	Komandir	Leonid Ivanovich Popov, Pol. VVS	Pol. VVS	VVS	TSPK	AS-00101	1982 Aug 19 1711:52	    7:21:52:24	D6EP2,T5:3
+   194	RU	C	T7/BI	Soyuz T-7	H00100	Bortinzhener	Aleksandr Aleksandrovich Serebrov	-	NPOE	NPOE	AS-00117	1982 Aug 19 1711:52	    7:21:52:24	D6EP2,T5:3
+   195	RU	C	T7/KI	Soyuz T-7	H00100	Kosmonavt-issledovatel'	Svetlana Yevgenevna Savitskaya	-	NPOE	NPOE	AS-00118	1982 Aug 19 1711:52	    7:21:52:24	D6EP2,T5:3
    196	NASA	C	STS5/CDR	STS-5	H00101	Commander	Vance D. Brand, NASA	-	NASA	NASA	AS-00084	1982 Nov 11 1219:00	    5:02:14:26	-
    197	NASA	M	STS5/PLT	STS-5	H00101	Pilot	Robert F. Overmyer, Col. USMC, NASA	Col. USMC	USMC	NASA	AS-00119	1982 Nov 11 1219:00	    5:02:14:26	-
    198	NASA	C	STS5/MS1	STS-5	H00101	Mission Specialist 1	Joseph P. Allen, Ph.D., NASA	-	NASA	NASA	AS-00120	1982 Nov 11 1219:00	    5:02:14:26	-
@@ -214,8 +214,8 @@
    209	NASA	M	STS7/MS1	STS-7	H00104	Mission Specialist 1	John M. Fabian, Col. USAF, NASA	Col. USAF	USAF	NASA	AS-00127	1983 Jun 18 1133:00	    6:02:23:59	-
    210	NASA	C	STS7/MS2	STS-7	H00104	Mission Specialist 2	Sally K. Ride, Ph.D., NASA	-	NASA	NASA	AS-00128	1983 Jun 18 1133:00	    6:02:23:59	-
    211	NASA	C	STS7/MS3	STS-7	H00104	Mission Specialist 3	Norman E. Thagard, MD, NASA	-	NASA	NASA	AS-00129	1983 Jun 18 1133:00	    6:02:23:59	-
-   212	RU	M	T9/KDR	Soyuz T-9	H00105	Komandir	Vladimir Aleksandrovich Lyakhov, Pol. VVS	Pol. VVS	VVS	TSPK	AS-00099	1983 Jun 27 0912:18	  149:10:46 	D6EO2,T9:3,D6EO2,T9:5
-   213	RU	C	T9/BI	Soyuz T-9	H00105	Bortinzhener	Aleksandr Pavlovich Aleksandrov	-	NPOE	NPOE	AS-00130	1983 Jun 27 0912:18	  149:10:46 	D6EO2,T9:3,D6EO2,T9:5
+   212	RU	M	T9/KDR	Soyuz T-9	H00105	Komandir	Vladimir Aleksandrovich Lyakhov, Pol. VVS	Pol. VVS	VVS	TSPK	AS-00099	1983 Jun 27 0912:18	  149:10:46:01	D6EO2,T9:3,D6EO2,T9:5
+   213	RU	C	T9/BI	Soyuz T-9	H00105	Bortinzhener	Aleksandr Pavlovich Aleksandrov	-	NPOE	NPOE	AS-00130	1983 Jun 27 0912:18	  149:10:46:01	D6EO2,T9:3,D6EO2,T9:5
    214	NASA	M	STS8/CDR	STS-8	H00106	Commander	Richard H. Truly, Capt. USN, NASA	Capt. USN	USN	NASA	AS-00112	1983 Aug 30 0632:00	    6:01:08:43	-
    215	NASA	M	STS8/PLT	STS-8	H00106	Pilot	Daniel C. Brandenstein, Cdr. USN, NASA	Cdr. USN	USN	NASA	AS-00131	1983 Aug 30 0632:00	    6:01:08:43	-
    216	NASA	M	STS8/MS1	STS-8	H00106	Mission Specialist 1	Guion S. Bluford, Lt.Col. USAF, NASA	Lt.Col USAF	USAF	NASA	AS-00132	1983 Aug 30 0632:00	    6:01:08:43	-
@@ -232,20 +232,20 @@
    227	NASA	C	STS41B/MS1	STS-41B	H00108	Mission Specialist 1	Ronald E. McNair, Ph.D., NASA	-	NASA	NASA	AS-00140	1984 Feb  3 1300:00	    7:23:15:55	-
    228	NASA	M	STS41B/MS2	STS-41B	H00108	Mission Specialist 2	Robert L. Stewart, Lt Col USAF	LtCol. USAF	USAF	NASA	AS-00141	1984 Feb  3 1300:00	    7:23:15:55	-
    229	NASA	M	STS41B/MS3	STS-41B	H00108	Mission Specialist 3	Bruce McCandless, II, Capt. USN	Capt USN	USN	NASA	AS-00142	1984 Feb  3 1300:00	    7:23:15:55	-
-   230	RU	M	T10/KDR	Soyuz T-10	H00109	Komandir	Leonid Denisovich Kizim, Podpol. VVS	Pol. VVS	VVS	TSPK	AS-00106	1984 Feb  8 1207:26	  236:22:49?	D6EO3,T11:3,D6EO3,T11:5
-   231	RU	C	T10/BI	Soyuz T-10	H00109	Bortinzhener	Vladimir Alekseevich Solov'yov	-	NPOE	NPOE	AS-00143	1984 Feb  8 1207:26	  236:22:49?	D6EO3,T11:3,D6EO3,T11:5
-   232	RU	C	T10/KI	Soyuz T-10	H00109	Kosmonavt-issledovatel'	Oleg Yur'evich At'kov, MD	-	IMBP	IMBP	AS-00144	1984 Feb  8 1207:26	  236:22:49?	D6EO3,T11:3,D6EO3,T11:5
-   233	RU	M	T11/KDR	Soyuz T-11	H00110	Komandir	Yuriy Vasilevich Malyshev, Pol. VVS	Pol. VVS	VVS	TSPK	AS-00103	1984 Apr  3 1308:42	    7:21:40 	D6EP3,T10:3
-   234	RU	C	T11/BI	Soyuz T-11	H00110	Bortinzhener	Gennadiy Mikhailovich Strekalov	-	NPOE	NPOE	AS-00107	1984 Apr  3 1308:42	    7:21:40 	D6EP3,T10:3
-   235	RU	M	T11/KI	Soyuz T-11	H00110	Kosmonavt-issledovatel'	Rakesh Sharma, Sqn Ldr Indian AF	Sqn Ldr InAF	INAF	TSPK	AS-00145	1984 Apr  3 1308:42	    7:21:40 	D6EP3,T10:3
+   230	RU	M	T10/KDR	Soyuz T-10	H00109	Komandir	Leonid Denisovich Kizim, Pol. VVS	Pol. VVS	VVS	TSPK	AS-00106	1984 Feb  8 1207:26	  236:22:49:04	D6EO3,T11:3,D6EO3,T11:5
+   231	RU	C	T10/BI	Soyuz T-10	H00109	Bortinzhener	Vladimir Alekseevich Solov'yov	-	NPOE	NPOE	AS-00143	1984 Feb  8 1207:26	  236:22:49:04	D6EO3,T11:3,D6EO3,T11:5
+   232	RU	C	T10/KI	Soyuz T-10	H00109	Kosmonavt-issledovatel'	Oleg Yur'evich At'kov, MD	-	IMBP	IMBP	AS-00144	1984 Feb  8 1207:26	  236:22:49:04	D6EO3,T11:3,D6EO3,T11:5
+   233	RU	M	T11/KDR	Soyuz T-11	H00110	Komandir	Yuriy Vasilevich Malyshev, Pol. VVS	Pol. VVS	VVS	TSPK	AS-00103	1984 Apr  3 1308:42	    7:21:40:06	D6EP3,T10:3
+   234	RU	C	T11/BI	Soyuz T-11	H00110	Bortinzhener	Gennadiy Mikhailovich Strekalov	-	NPOE	NPOE	AS-00107	1984 Apr  3 1308:42	    7:21:40:06	D6EP3,T10:3
+   235	RU	M	T11/KI	Soyuz T-11	H00110	Kosmonavt-issledovatel'	Rakesh Sharma, Sqn Ldr Indian AF	Sqn Ldr InAF	INAF	TSPK	AS-00145	1984 Apr  3 1308:42	    7:21:40:06	D6EP3,T10:3
    236	NASA	M	STS41C/CDR	STS-41C	H00111	Commander	Robert L. Crippen, Capt. USN	Capt USN	USN	NASA	AS-00110	1984 Apr  6 1358:00	    6:23:40:07	-
    237	NASA	C	STS41C/PLT	STS-41C	H00111	Pilot	F. Richard Scobee, LtCol USAF (Ret), NASA	LtCol. USAF (Ret.)	NASA	NASA	AS-00146	1984 Apr  6 1358:00	    6:23:40:07	-
    238	NASA	C	STS41C/MS1	STS-41C	H00111	Mission Specialist 1	Terry J. Hart, NASA	-	NASA	NASA	AS-00147	1984 Apr  6 1358:00	    6:23:40:07	-
    239	NASA	C	STS41C/MS2	STS-41C	H00111	Mission Specialist 2	James D. van Hoften, Ph.D., NASA	-	NASA	NASA	AS-00148	1984 Apr  6 1358:00	    6:23:40:07	-
    240	NASA	C	STS41C/MS3	STS-41C	H00111	Mission Specialist 3	George D. Nelson, Ph.D., NASA	-	NASA	NASA	AS-00149	1984 Apr  6 1358:00	    6:23:40:07	-
-   241	RU	M	T12/KDR	Soyuz T-12	H00112	Komandir	Vladimir Aleksandrovich Dzhanibekov, Pol. VVS	Pol. VVS	VVS	TSPK	AS-00094	1984 Jul 17 1740:54	   11:19:14 	D6EP4,T12:3
-   242	RU	C	T12/BI	Soyuz T-12	H00112	Bortinzhener	Svetlana Yevgenevna Savitskaya	-	NPOE	NPOE	AS-00118	1984 Jul 17 1740:54	   11:19:14 	D6EP4,T12:3
-   243	RU	C	T12/KI	Soyuz T-12	H00112	Kosmonavt-issledovatel'	Igor Petrovich Volk	-	LII	LII	AS-00150	1984 Jul 17 1740:54	   11:19:14 	D6EP4,T12:3
+   241	RU	M	T12/KDR	Soyuz T-12	H00112	Komandir	Vladimir Aleksandrovich Dzhanibekov, Pol. VVS	Pol. VVS	VVS	TSPK	AS-00094	1984 Jul 17 1740:54	   11:19:14:36	D6EP4,T12:3
+   242	RU	C	T12/BI	Soyuz T-12	H00112	Bortinzhener	Svetlana Yevgenevna Savitskaya	-	NPOE	NPOE	AS-00118	1984 Jul 17 1740:54	   11:19:14:36	D6EP4,T12:3
+   243	RU	C	T12/KI	Soyuz T-12	H00112	Kosmonavt-issledovatel'	Igor Petrovich Volk	-	LII	LII	AS-00150	1984 Jul 17 1740:54	   11:19:14:36	D6EP4,T12:3
    244	NASA	C	STS41D/CDR	STS-41D	H00113	Commander	Henry W. Hartsfield, Jr., Col USAF (Ret), NASA	Col. USAF (Ret.)	NASA	NASA	AS-00116	1984 Aug 30 1241:50	    6:00:56:04	-
    245	NASA	M	STS41D/PLT	STS-41D	H00113	Pilot	Michael L. Coats, Cdr USN, NASA	Cdr. USN	USN	NASA	AS-00151	1984 Aug 30 1241:50	    6:00:56:04	-
    246	NASA	M	STS41D/MS1	STS-41D	H00113	Mission Specialist 1	R. Michael Mullane, Lt Col USAF, NASA	LtCol. USAF	USAF	NASA	AS-00152	1984 Aug 30 1241:50	    6:00:56:04	-
@@ -283,8 +283,8 @@
    278	NASA	C	STS51B/MS3	STS-51B	H00118	Mission Specialist 3	William E. Thornton, MD, NASA	-	NASA	NASA	AS-00134	1985 Apr 29 1602:18	    7:00:08:46	-
    279	NASA	C	STS51B/PS1	STS-51B	H00118	Payload Specialist 1	Taylor G. Wang, Ph.D, JPL	-	JPL	NASA	AS-00174	1985 Apr 29 1602:18	    7:00:08:46	-
    280	NASA	PG	STS51B/PS2	STS-51B	H00118	Payload Specialist 2	Lodewijk van den Berg, Ph.D, EG&G Corp.	-	EGG	NASA	AS-00175	1985 Apr 29 1602:18	    7:00:08:46	-
-   281	RU	M	T13/KDR	Soyuz T-13	H00119	Komandir	Vladimir Aleksandrovich Dzhanibekov, Pol. VVS	Pol. VVS	VVS	TSPK	AS-00094	1985 Jun  6 0639:52	  112:03:12 	D6EO4,T13:3
-   282	RU	C	T13/BI	Soyuz T-13	H00119	Bortinzhener	Viktor Petrovich Savinykh	-	NPOE	NPOE	AS-00108	1985 Jun  6 0639:52	  168:03:51?	D6EO4,T14:3
+   281	RU	M	T13/KDR	Soyuz T-13	H00119	Komandir	Vladimir Aleksandrovich Dzhanibekov, Pol. VVS	Pol. VVS	VVS	TSPK	AS-00094	1985 Jun  6 0639:52	  112:03:12:06	D6EO4,T13:3
+   282	RU	C	T13/BI	Soyuz T-13	H00119	Bortinzhener	Viktor Petrovich Savinykh	-	NPOE	NPOE	AS-00108	1985 Jun  6 0639:52	  168:03:51:08	D6EO4,T14:3
    283	NASA	M	STS51G/CDR	STS-51G	H00120	Commander	Daniel C. Brandenstein, Capt. USN, NASA	Capt. USN	USN	NASA	AS-00131	1985 Jun 17 1133:00	    7:01:38:52	-
    284	NASA	M	STS51G/PLT	STS-51G	H00120	Pilot	John O. Creighton, Cdr. USN, NASA	Cdr. USN	USN	NASA	AS-00176	1985 Jun 17 1133:00	    7:01:38:52	-
    285	NASA	M	STS51G/MS1	STS-51G	H00120	Mission Specialist 1	John M. Fabian, Col. USAF, NASA	Col. USAF	USAF	NASA	AS-00127	1985 Jun 17 1133:00	    7:01:38:52	-
@@ -304,9 +304,9 @@
    299	NASA	C	STS51I/MS1	STS-51I	H00122	Mission Specialist 1	James D. van Hoften, Ph.D., NASA	-	NASA	NASA	AS-00148	1985 Aug 27 1058:01	    7:02:17:42	-
    300	NASA	C	STS51I/MS2	STS-51I	H00122	Mission Specialist 2	John M. Lounge, NASA	-	NASA	NASA	AS-00187	1985 Aug 27 1058:01	    7:02:17:42	-
    301	NASA	C	STS51I/MS3	STS-51I	H00122	Mission Specialist 3	William F. Fisher, MD, NASA	-	NASA	NASA	AS-00188	1985 Aug 27 1058:01	    7:02:17:42	-
-   302	RU	M	T14/KDR	Soyuz T-14	H00123	Komandir	Vladimir Vladimirovich Vasyutin, Podpol. VVS	Podpol. VVS	VVS	TSPK	AS-00189	1985 Sep 17 1238:52	   64:21:52?	D6EO4,T14:3
-   303	RU	C	T14/BI	Soyuz T-14	H00123	Bortinzhener	Georgiy Mikhailovich Grechko	-	NPOE	NPOE	AS-00083	1985 Sep 17 1238:52	    8:21:13 	D6EO4,T13:3
-   304	RU	M	T14/KI	Soyuz T-14	H00123	Kosmonavt-issledovatel'	Aleksandr Aleksandrovich Volkov, Podpol. VVS	Podpol. VVS	VVS	TSPK	AS-00190	1985 Sep 17 1238:52	   64:21:52?	D6EO4,T14:3
+   302	RU	M	T14/KDR	Soyuz T-14	H00123	Komandir	Vladimir Vladimirovich Vasyutin, Podpol. VVS	Podpol. VVS	VVS	TSPK	AS-00189	1985 Sep 17 1238:52	   64:21:52:08	D6EO4,T14:3
+   303	RU	C	T14/BI	Soyuz T-14	H00123	Bortinzhener	Georgiy Mikhailovich Grechko	-	NPOE	NPOE	AS-00083	1985 Sep 17 1238:52	    8:21:13:06	D6EO4,T13:3
+   304	RU	M	T14/KI	Soyuz T-14	H00123	Kosmonavt-issledovatel'	Aleksandr Aleksandrovich Volkov, Podpol. VVS	Podpol. VVS	VVS	TSPK	AS-00190	1985 Sep 17 1238:52	   64:21:52:08	D6EO4,T14:3
    305	NASA	M	STS51J/CDR	STS-51J	H00124	Commander	Karol Bobko, Col USAF, NASA	Col USAF	USAF	NASA	AS-00122	1985 Oct  3 1515:30	    4:01:44:38	-
    306	NASA	M	STS51J/PLT	STS-51J	H00124	Pilot	Ronald J. Grabe, Lt Col USAF, NASA	Lt.Col USAF	USAF	NASA	AS-00191	1985 Oct  3 1515:30	    4:01:44:38	-
    307	NASA	M	STS51J/MS1	STS-51J	H00124	Mission Specialist 1	David C. Hilmers, Maj. USMC, NASA	Maj. USMC	USMC	NASA	AS-00192	1985 Oct  3 1515:30	    4:01:44:38	-
@@ -395,8 +395,8 @@
    390	NASA	C	STS32R/MS1	STS-32	H00143	Mission Specialist 1	Bonnie J. Dunbar, Ph.D, NASA	-	NASA	NASA	AS-00194	1990 Jan  9 1235:00	   10:21:00:36	-
    391	NASA	C	STS32R/MS2	STS-32	H00143	Mission Specialist 2	Marsha S. Ivins, NASA	-	NASA	NASA	AS-00231	1990 Jan  9 1235:00	   10:21:00:36	-
    392	NASA	C	STS32R/MS3	STS-32	H00143	Mission Specialist 3	G. David Low, NASA	-	NASA	NASA	AS-00232	1990 Jan  9 1235:00	   10:21:00:36	-
-   393	RU	M	TM9/KDR	Soyuz TM-9	H00144	Komandir	Anatoliy Yakovlevich Solov'yov, Pol. VVS	Pol. VVS	VVS	TSPK	AS-00212	1990 Feb 11 0616:00	  179:01:17 	D7EO6,TM9:3,D7EO6,TM9:5,D7EO6,TM9:7,D7EO6,TM9:9
-   394	RU	C	TM9/BI	Soyuz TM-9	H00144	Bortinzhener	Aleksandr Nikolaevich Balandin	-	NPOE	NPOE	AS-00233	1990 Feb 11 0616:00	  179:01:17 	D7EO6,TM9:3,D7EO6,TM9:5,D7EO6,TM9:7,D7EO6,TM9:9
+   393	RU	M	TM9/KDR	Soyuz TM-9	H00144	Komandir	Anatoliy Yakovlevich Solov'yov, Pol. VVS	Pol. VVS	VVS	TSPK	AS-00212	1990 Feb 11 0616:00	  179:01:17:57	D7EO6,TM9:3,D7EO6,TM9:5,D7EO6,TM9:7,D7EO6,TM9:9
+   394	RU	C	TM9/BI	Soyuz TM-9	H00144	Bortinzhener	Aleksandr Nikolaevich Balandin	-	NPOE	NPOE	AS-00233	1990 Feb 11 0616:00	  179:01:17:57	D7EO6,TM9:3,D7EO6,TM9:5,D7EO6,TM9:7,D7EO6,TM9:9
    395	NASA	M	STS36/CDR	STS-36	H00145	Commander	John O. Creighton, Capt USN, NASA	Capt USN	USN	NASA	AS-00176	1990 Feb 28 0750:22	    4:10:18:22	-
    396	NASA	M	STS36/PLT	STS-36	H00145	Pilot	John H. Casper, Col USAF, NASA	Col. USAF	USAF	NASA	AS-00234	1990 Feb 28 0750:22	    4:10:18:22	-
    397	NASA	M	STS36/MS1	STS-36	H00145	Mission Specialist 1	R. Michael Mullane, Col. USAF, NASA	Col. USAF	USAF	NASA	AS-00152	1990 Feb 28 0750:22	    4:10:18:22	-
@@ -466,7 +466,7 @@
    461	RU	C	TM13/KI	Soyuz TM-13	H00158	Kosmonavt-issledovatel'	Franz Viehbock, PhD, Osterreich    BMWF	-	BMWFO	TSPK	AS-00264	1991 Oct  2 0559:38	    7:22:12:40	D7EP7,TM12:5
    462	NASA	M	STS44/CDR	STS-44	H00159	Commander	Frederick D. Gregory, Col. USAF, NASA	Col. USAF	USAF	NASA	AS-00172	1991 Nov 24 2344:00	    6:22:50:42	-
    463	NASA	M	STS44/PLT	STS-44	H00159	Pilot	Terence T. Henricks, Col. USAF, NASA	Col. USAF	USAF	NASA	AS-00265	1991 Nov 24 2344:00	    6:22:50:42	-
-   464	NASA	M	STS44/MS1	STS-44	H00159	Mission Specialist 1	James S. Voss, Lt. Col. USA, NASA	Col. USA	USA	NASA	AS-00266	1991 Nov 24 2344:00	    6:22:50:42	-
+   464	NASA	M	STS44/MS1	STS-44	H00159	Mission Specialist 1	James S. Voss, Lt. Col. USA, NASA	Lt Col. USA	USA	NASA	AS-00266	1991 Nov 24 2344:00	    6:22:50:42	-
    465	NASA	C	STS44/MS2	STS-44	H00159	Mission Specialist 2	F. Story Musgrave, Ph.D., MD, NASA	-	NASA	NASA	AS-00123	1991 Nov 24 2344:00	    6:22:50:42	-
    466	NASA	M	STS44/MS3	STS-44	H00159	Mission Specialist 3	Mario Runco, Jr, Lt Cdr USN, NASA	LtCdr USN	USN	NASA	AS-00267	1991 Nov 24 2344:00	    6:22:50:42	-
    467	NASA	M	STS44/PS1	STS-44	H00159	Payload Specialist 1	Thomas J Hennen, CWO-3 USA	CWO-3 USA	USAIC	USAIC	AS-00268	1991 Nov 24 2344:00	    6:22:50:42	-
@@ -535,7 +535,7 @@
    530	NASA	M	STS54/MS2	STS-54	H00170	Mission Specialist 2	Mario Runco, Jr, Lt Cdr USN, NASA	LtCdr USN	USN	NASA	AS-00267	1993 Jan 13 1359:30	    5:23:38:17	-
    531	NASA	C	STS54/MS3	STS-54	H00170	Mission Specialist 3	Susan J. Helms, Capt USAF, NASA	Capt USAF	USAF	NASA	AS-00292	1993 Jan 13 1359:30	    5:23:38:17	-
    532	RU	M	TM16/KDR	Soyuz TM-16	H00171	Komandir	Gennadiy Mikhailovich Manakov, Pol. VVS	Pol. VVS	VVSR	TSPK	AS-00236	1993 Jan 24 0558:05	  179:00:43:45	D7EO13,TM16:3
-   533	RU	C	TM16/BI	Soyuz TM-16	H00171	Bortinzhener	Aleksandr Polishchuk	-	NPOE	NPOE	AS-00293	1993 Jan 24 0558:05	  179:00:43:45	D7EO13,TM16:3
+   533	RU	C	TM16/BI	Soyuz TM-16	H00171	Bortinzhener	Aleksandr Poleshchuk	-	NPOE	NPOE	AS-00293	1993 Jan 24 0558:05	  179:00:43:45	D7EO13,TM16:3
    534	NASA	M	STS56/CDR	STS-56	H00172	Commander	Kenneth D. Cameron, Col. USMC, NASA	Col. USMC	USMC	NASA	AS-00247	1993 Apr  8 0529:00	    9:06:08:19	-
    535	NASA	C	STS56/PLT	STS-56	H00172	Pilot	Stephen S. Oswald, NASA	-	NASA	NASA	AS-00269	1993 Apr  8 0529:00	    9:06:08:19	-
    536	NASA	C	STS56/MS1	STS-56	H00172	Payload Commander	Michael Foale, PhD, NASA	-	NASA	NASA	AS-00275	1993 Apr  8 0529:00	    9:06:08:19	-
@@ -578,7 +578,7 @@
    573	NASA	M	STS61/MS5	STS-61	H00178	Mission Specialist 5 (EV4)	Thomas D. Akers, Lt Col USAF, NASA	LtCol. USAF	USAF	NASA	AS-00239	1993 Dec  2 0927:00	   10:19:58:34	-
    574	RU	M	TM18/KDR	Soyuz TM-18	H00179	Komandir	Viktor Mikhailovich Afanas'ev, Pol. VVS	Pol. VVS	VVSR	TSPK	AS-00245	1994 Jan  8 1005:34	  182:00:27:01	D7EO15,TM18:3,D7EO15,TM18:5
    575	RU	C	TM18/BI	Soyuz TM-18	H00179	Bortinzhener	Yuriy Vladimirovich Usachyov	-	NPOE	NPOE	AS-00312	1994 Jan  8 1005:34	  182:00:27:01	D7EO15,TM18:3,D7EO15,TM18:5
-   576	RU	C	TM18/VK	Soyuz TM-18	H00179	Vrach-kosmonavt	Valeriy Vladimirovich Polyakov, MD	-	IMBP	IMBP	AS-00214	1994 Jan  8 1005:34	  437:17:58:31	D7EO15,TM18:3,D7EO15,D7EO16,D7EO17,TM19:3,D7EO17,TM20:3,D7EO17,TM20:5
+   576	RU	C	TM18/VK	Soyuz TM-18	H00179	Vrach-kosmonavt	Valeriy Vladimirovich Polyakov, MD	-	IMBP	IMBP	AS-00214	1994 Jan  8 1005:34	  437:17:58:31	D7EO15,TM18:3,D7EO15,D7EO16,D7EO17,TM20:3,D7EO17,TM20:5
    577	NASA	M	STS60/CDR	STS-60	H00180	Commander	Charles F. Bolden, Col. USMC, NASA	Col. USMC	USMC	NASA	AS-00203	1994 Feb  3 1210:00	    8:07:09:22	-
    578	NASA	M	STS60/PLT	STS-60	H00180	Pilot	Kenneth S. Reightler, Capt. USN, NASA	Capt. USN	USN	NASA	AS-00262	1994 Feb  3 1210:00	    8:07:09:22	-
    579	NASA	C	STS60/MS1	STS-60	H00180	Mission Specialist 1	N. Jan Davis, Ph.D., NASA	-	NASA	NASA	AS-00287	1994 Feb  3 1210:00	    8:07:09:22	-
@@ -619,7 +619,7 @@
    614	NASA	C	STS68/MS4	STS-68	H00186	Payload Commander/MS4	Thomas D. Jones, Ph.D., NASA	-	NASA	NASA	AS-00314	1994 Sep 30 1116:00	   11:05:46:09	-
    615	RU	M	TM20/KDR	Soyuz TM-20	H00187	Komandir	Aleksandr Stepanovich Viktorenko, Pol VVS RF	Pol. VVS	VVSR	TSPK	AS-00208	1994 Oct  3 2242:30	  169:05:21:35	D7EO17,TM20:3,D7EO17,TM20:5
    616	RU	C	TM20/BI	Soyuz TM-20	H00187	Bortinzhener	Elena Kondakova, RKA	-	RKKE	RKKE	AS-00324	1994 Oct  3 2242:30	  169:05:21:35	D7EO17,TM20:3,D7EO17,TM20:5
-   617	RU	C	TM20/KI	Soyuz TM-20	H00187	Kosmonavt-issledovatel'	Ulf Merbold, ESA	-	ESA	ESA	AS-00137	1994 Oct  3 2242:30	   31:12:35:56	D7EP11,TM19:5
+   617	RU	C	TM20/KI	Soyuz TM-20	H00187	Kosmonavt-issledovatel'	Ulf Merbold, ESA	-	ESA	ESA	AS-00137	1994 Oct  3 2242:30	   31:12:35:56	D7EP11,TM19:3,D7EP11,TM19:5
    618	NASA	M	STS66/CDR	STS-66	H00188	Commander	Donald R. McMonagle, Lt.Col USAF, NASA	LtCol. USAF	USAF	NASA	AS-00252	1994 Nov  3 1659:43	   10:22:34:02	-
    619	NASA	M	STS66/PLT	STS-66	H00188	Pilot	Curtis L. Brown, LtCol USAF, NASA	LtCol. USAF	USAF	NASA	AS-00286	1994 Nov  3 1659:43	   10:22:34:02	-
    620	NASA	C	STS66/MS1	STS-66	H00188	Payload Commander/MS1	Ellen Ochoa, PhD., NASA	-	NASA	NASA	AS-00295	1994 Nov  3 1659:43	   10:22:34:02	-
@@ -647,7 +647,7 @@
    642	NASA	C	STS71/MS1	STS-71	H00192	Payload Commander/MS1	Ellen Baker, MD, NASA	-	NASA	NASA	AS-00227	1995 Jun 27 1932:18	    9:19:22:18	-
    643	NASA	C	STS71/MS2	STS-71	H00192	Mission Specialist 2	Gregory Harbaugh, NASA	-	NASA	NASA	AS-00251	1995 Jun 27 1932:18	    9:19:22:18	-
    644	NASA	C	STS71/MS3	STS-71	H00192	Mission Specialist 3	Bonnie J. Dunbar, PhD, NASA	-	NASA	NASA	AS-00194	1995 Jun 27 1932:18	    9:19:22:18	-
-   645	NASA	M	STS71/MS4	STS-71	H00192	Mission Specialist 4	Anatoliy Solovyov, Pol. VVS	Pol. VVS	VVSR	TSPK	AS-00212	1995 Jun 27 1932:18	   75:11:20:22	D7EO19/KDR,TM21:3/KDR,D7EO19/KDR,TM21:5/KDR
+   645	NASA	M	STS71/MS4	STS-71	H00192	Mission Specialist 4	Anatoliy Solov'yov, Pol. VVS	Pol. VVS	VVSR	TSPK	AS-00212	1995 Jun 27 1932:18	   75:11:20:22	D7EO19/KDR,TM21:3/KDR,D7EO19/KDR,TM21:5/KDR
    646	NASA	C	STS71/MS5	STS-71	H00192	Mission Specialist 5	Nikolai Budarin, NPOE	-	NPOE	NPOE	AS-00333	1995 Jun 27 1932:18	   75:11:20:22	D7EO19/BI,TM21:3/BI,D7EO19/BI,TM21:5/BI
    647	NASA	M	STS70/CDR	STS-70	H00193	Commander	Terence T. Henricks, Col USAF, NASA	Col. USAF	USAF	NASA	AS-00265	1995 Jul 13 1341:55	    8:22:20:07	-
    648	NASA	C	STS70/PLT	STS-70	H00193	Pilot	Kevin Kregel, Col USAF (ret.), NASA	Col. USAF (ret.)	NASA	NASA	AS-00334	1995 Jul 13 1341:55	    8:22:20:07	-
@@ -725,7 +725,7 @@
    720	NASA	M	STS81/CDR	STS-81	H00207	Commander	Michael A. Baker, Capt USN	Capt. USN	USN	NASA	AS-00261	1997 Jan 12 0927:23	   10:04:55:21	-
    721	NASA	M	STS81/PLT	STS-81	H00207	Pilot	Brent W. Jett, Jr., Cdr USN	Cdr. USN	USN	NASA	AS-00345	1997 Jan 12 0927:23	   10:04:55:21	-
    722	NASA	C	STS81/MS1	STS-81	H00207	Mission Specialist 1	Peter J.K. Wisoff, PhD, NASA	-	NASA	NASA	AS-00301	1997 Jan 12 0927:23	   10:04:55:21	-
-   723	NASA	C	STS81/MS2	STS-81	H00207	Mission Specialist 2	John M. Grunsfield, PhD, NASA	-	NASA	NASA	AS-00330	1997 Jan 12 0927:23	   10:04:55:21	-
+   723	NASA	C	STS81/MS2	STS-81	H00207	Mission Specialist 2	John M. Grunsfeld, PhD, NASA	-	NASA	NASA	AS-00330	1997 Jan 12 0927:23	   10:04:55:21	-
    724	NASA	C	STS81/MS3	STS-81	H00207	Mission Specialist 3	Marsha S. Ivins, NASA	-	NASA	NASA	AS-00231	1997 Jan 12 0927:23	   10:04:55:21	-
    725	NASA	M	STS81/MS4	STS-81	H00207	Mission Specialist 4	Jerry M. Linenger, Capt, USN Med Corps., MD., NASA	Capt. USN Med.	USN	NASA	AS-00321	1997 Jan 12 0927:23	  132:04:00:21	D7EO22/BI2,TM24:3/BI2,D7EO22/BI2,D7EO23/BI2,STS84:3/MS5
    726	RU	M	TM25/KDR	Soyuz TM-25	H00208	Komandir	Vasiliy Tsibliev, Pol VVS	Pol. VVS	VVSR	TSPK	AS-00303	1997 Feb 10 1409:30	  184:22:07:40	D7EO23,TM25:3
@@ -818,7 +818,7 @@
    813	NASA	M	STS88/MS1	STS-88	H00223	Mission Specialist 1	Jerry Ross, Col. USAF, NASA	Col. USAF	USAF	NASA	AS-00199	1998 Dec  4 0835:34	   11:19:17:55	-
    814	NASA	M	STS88/MS2	STS-88	H00223	Mission Specialist 2	Nancy Currie, Maj USA, NASA	Maj. USA	USA	NASA	AS-00300	1998 Dec  4 0835:34	   11:19:17:55	-
    815	NASA	C	STS88/MS3	STS-88	H00223	Mission Specialist 3	James Newman, Ph.D.	-	NASA	NASA	AS-00305	1998 Dec  4 0835:34	   11:19:17:55	-
-   816	NASA	C	STS88/MS4	STS-88	H00223	Mission Specialist 4	Sergei Krikalev, RKA	-	RKKE	RKKE	AS-00216	1998 Dec  4 0835:34	   11:19:17:55	-
+   816	NASA	C	STS88/MS4	STS-88	H00223	Mission Specialist 4	Sergei Krikalyov, RKA	-	RKKE	RKKE	AS-00216	1998 Dec  4 0835:34	   11:19:17:55	-
    817	RU	M	TM29/KDR	Soyuz TM-29	H00224	Komandir	Viktor Afanas'ev, Pol. VVS	Pol. VVS	VVSR	TSPK	AS-00245	1999 Feb 20 0418:01	  188:20:16:19	D7EO27,TM29:3
    818	RU	M	TM29/KI1	Soyuz TM-29	H00224	Kosmonavt-issledovatel'-1	Jean-Pierre Haignere, Brig-Gen. AAF	Brig-Gen AAF	AAF	CNES	AS-00304	1999 Feb 20 0418:01	  188:20:16:19	D7EP17,TM29:3
    819	RU	M	TM29/KI2	Soyuz TM-29	H00224	Kosmonavt-issledovatel'-2	Ivan Bella, Lt-Col. Slovak AF	Lt-Col Slovak AF	SLAF	TSPK	AS-00392	1999 Feb 20 0418:01	    7:21:56:29	D7EP18,TM28:7
@@ -887,7 +887,7 @@
    882	NASA	M	STS102/PLT	STS-102	H00236	Pilot	James M. Kelly, LtCol USAF, NASA	Lt.Col USAF	USAF	NASA	AS-00406	2001 Mar  8 1142:09	   12:19:49:33	-
    883	NASA	C	STS102/MS1	STS-102	H00236	Mission Specialist 1	Andrew S.W. Thomas, PhD, NASA	-	NASA	NASA	AS-00353	2001 Mar  8 1142:09	   12:19:49:33	-
    884	NASA	C	STS102/MS2	STS-102	H00236	Mission Specialist 2	Paul W. Richards, NASA	-	NASA	NASA	AS-00407	2001 Mar  8 1142:09	   12:19:49:33	-
-   885	NASA	C	STS102/MS3	STS-102	H00236	Mission Specialist 3	James S. Voss, Col USAF Ret., NASA	Col. USAF (ret.)	NASA	NASA	AS-00266	2001 Mar  8 1142:09	  167:06:40:50	EX2/FE1,TM31:5/BI1,EX2/FE1,STS105:3/MS4
+   885	NASA	C	STS102/MS3	STS-102	H00236	Mission Specialist 3	James S. Voss, Col USA Ret., NASA	Col. USA (ret.)	NASA	NASA	AS-00266	2001 Mar  8 1142:09	  167:06:40:50	EX2/FE1,TM31:5/BI1,EX2/FE1,STS105:3/MS4
    886	NASA	M	STS102/MS4	STS-102	H00236	Mission Specialist 4	Susan J. Helms, Col USAF, NASA	Col. USAF	USAF	NASA	AS-00292	2001 Mar  8 1142:09	  167:06:40:50	EX2/FE2,TM31:5/BI2,EX2/FE2,STS105:3/MS5
    887	NASA	C	STS102/MS5	STS-102	H00236	Mission Specialist 5	Yuriy Usachyov, Rosaviakosmos	-	RKKE	RKKE	AS-00312	2001 Mar  8 1142:09	  167:06:40:50	EX2/CDR,TM31:5/KDR,EX2/CDR,STS105:3/MS3
    888	NASA	M	STS100/CDR	STS-100	H00237	Commander	Kent V. Rominger, Capt USN, NASA	Capt. USN	USN	NASA	AS-00339	2001 Apr 19 1840:42	   11:21:30:01	-
@@ -943,9 +943,9 @@
    938	NASA	M	STS111/PLT	STS-111	H00246	Pilot	Paul Lockhart, LtCol USAF, NASA	Lt.Col USAF	USAF	NASA	AS-00424	2002 Jun  5 2122:49	   13:20:34:54	-
    939	NASA	M	STS111/MS1	STS-111	H00246	Mission Specialist	Philippe Perrin, Lt-Col AAF, CNES	Lt.Col AAF	AAF	CNES	AS-00425	2002 Jun  5 2122:49	   13:20:34:54	-
    940	NASA	C	STS111/MS2	STS-111	H00246	Mission Specialist	Franklin Chang-Diaz, PhD,NASA	-	NASA	NASA	AS-00204	2002 Jun  5 2122:49	   13:20:34:54	-
-   941	NASA	C	STS111/MS3	STS-111	H00246	Mission Specialist	Peggy Whitson, MD, NASA	-	NASA	NASA	AS-00426	2002 Jun  5 2122:49	  184:22:14:24	EX5/FE1,STS113:3/MS4
+   941	NASA	C	STS111/MS3	STS-111	H00246	Mission Specialist	Peggy Whitson, PhD, NASA	-	NASA	NASA	AS-00426	2002 Jun  5 2122:49	  184:22:14:24	EX5/FE1,STS113:3/MS4
    942	NASA	M	STS111/MS4	STS-111	H00246	Mission Specialist	Valeriy Korzun, Pol VVS.	Pol. VVS	VVSR	TSPK	AS-00358	2002 Jun  5 2122:49	  184:22:14:24	EX5/CDR,STS113:3/MS3
-   943	NASA	C	STS111/MS5	STS-111	H00246	Mission Specialist	Sergei Treshchev, Rosaviakosmos	-	RKKE	RKKE	AS-00427	2002 Jun  5 2122:49	  184:22:14:24	EX5/FE2,STS113:3/MS5
+   943	NASA	C	STS111/MS5	STS-111	H00246	Mission Specialist	Sergei Treshchyov, Rosaviakosmos	-	RKKE	RKKE	AS-00427	2002 Jun  5 2122:49	  184:22:14:24	EX5/FE2,STS113:3/MS5
    944	NASA	C	STS112/CDR	STS-112	H00247	Commander	Jeffrey S. Ashby, Capt USN (Ret.), NASA	Capt. USN (ret.)	NASA	NASA	AS-00396	2002 Oct  7 1945:51	   10:19:57:49	-
    945	NASA	M	STS112/PLT	STS-112	H00247	Pilot	Pamela A. Melroy, Col USAF, NASA	Col. USAF	USAF	NASA	AS-00404	2002 Oct  7 1945:51	   10:19:57:49	-
    946	NASA	C	STS112/MS1	STS-112	H00247	Mission Specialist 1	David A. Wolf, MD, NASA	-	NASA	NASA	AS-00310	2002 Oct  7 1945:51	   10:19:57:49	-
@@ -971,7 +971,7 @@
    966	NASA	M	STS107/PS1	STS-107	H00250	Payload Specialist 1	Ilan Ramon, Col. IAF	Col. IAF	IAF	ISA	AS-00437	2003 Jan 16 1539:00	   15:22:22:10	-
    967	RU	M	TMA2/KDR	Soyuz TMA-2	H00251	Komandir	Yuriy Malenchenko, Pol. VVS	Pol. VVS	VVSR	TSPK	AS-00315	2003 Apr 26 0353:52	  184:22:46:28	EX7/CDR,TMA2:3/KDR
    968	RU	C	TMA2/BI	Soyuz TMA-2	H00251	Bortinzhener	Edward Lu, PhD., NASA	-	NASA	NASA	AS-00366	2003 Apr 26 0353:52	  184:22:46:28	EX7/FE1,TMA2:3/BI2
-   969	RU	M	SZ5/H	Shenzhou-5	H00252	Hangtianyuan	Yang Liwei, LtCol PLAAF	LtCol. PLAAF	HYD/PLAAF	HYD	AS-00438	2003 Oct 15 0100:03	    0:21:22 	-
+   969	CN	M	SZ5/H	Shenzhou-5	H00252	Hangtianyuan	Yang Liwei, LtCol PLAAF	LtCol. PLAAF	HYD/PLAAF	HYD	AS-00438	2003 Oct 15 0100:03	    0:21:22 	-
    970	RU	C	TMA3/KDR	Soyuz TMA-3	H00253	Komandir	Aleksandr Kaleri, Rosaviakosmos	-	RKKE	RKKE	AS-00272	2003 Oct 18 0538:03	  194:18:33:12	EX8/FE1,TMA3:3/KDR
    971	RU	C	TMA3/BI1	Soyuz TMA-3	H00253	Bortinzhener-1	Pedro Duque, ESA	-	ESA	ESA	AS-00390	2003 Oct 18 0538:03	    9:21:02:17	ISSEP5/BI1,TMA2:3/BI1
    972	RU	C	TMA3/BI2	Soyuz TMA-3	H00253	Bortinzhener-2	Michael Foale, PhD., NASA	-	NASA	NASA	AS-00275	2003 Oct 18 0538:03	  194:18:33:12	EX8/CDR,TMA3:3/BI2
@@ -984,7 +984,7 @@
    979	RU	M	TMA5/KDR	Soyuz TMA-5	H00258	Komandir	Salizan Sharipov, Pol VVS	Pol. VVS	VVSR	TSPK	AS-00379	2004 Oct 14 0306:26	  192:19:02:01	EX10/FE1,TMA5:3/KDR,EX10/CDR,TMA5:5/KDR
    980	RU	C	TMA5/BI1	Soyuz TMA-5	H00258	Bortinzhener-1	Leroy Chiao, NASA	-	NASA	NASA	AS-00318	2004 Oct 14 0306:26	  192:19:02:01	EX10/CDR,TMA5:3/BI1,EX10/CDR,TMA5:5/BI1
    981	RU	M	TMA5/BI2	Soyuz TMA-5	H00258	Bortinzhener-2	Yuriy Shargin, Podpol VKS	Podpol. VKS	VKS	VKS	AS-00443	2004 Oct 14 0306:26	    9:21:28:43	ISSEP7/BI2,TMA4:3/BI2
-   982	RU	C	TMA6/KDR	Soyuz TMA-6	H00259	Komandir	Sergey Krikalev, Rosaviakosmos	-	RKKE	RKKE	AS-00216	2005 Apr 15 0046:25	  179:00:23:23	EX11/CDR,TMA6:3/KDR,EX11/CDR,TMA6:5/KDR
+   982	RU	C	TMA6/KDR	Soyuz TMA-6	H00259	Komandir	Sergey Krikalyov, Rosaviakosmos	-	RKKE	RKKE	AS-00216	2005 Apr 15 0046:25	  179:00:23:23	EX11/CDR,TMA6:3/KDR,EX11/CDR,TMA6:5/KDR
    983	RU	C	TMA6/BI1	Soyuz TMA-6	H00259	Bortinzhener-1	John L. Phillips, NASA	-	NASA	NASA	AS-00408	2005 Apr 15 0046:25	  179:00:23:23	EX11/FE1,TMA6:3/BI1,EX11/FE1,TMA6:5/BI1
    984	RU	M	TMA6/BI2	Soyuz TMA-6	H00259	Bortinzhener-2	Roberto Vittori, ESA, LtCol IAF	LtCol IAF	AMI	ESA	AS-00422	2005 Apr 15 0046:25	    9:21:22:02	ISSEP8/BI2,TMA5:5/BI2
    985	NASA	M	STS114/CDR	STS-114	H00260	Commander	Eileen M. Collins, Col USAF, NASA	Col. USAF	USAF	NASA	AS-00328	2005 Jul 26 1439:00	   13:21:32:23	-
@@ -1026,7 +1026,7 @@
   1021	NASA	C	STS116/MS4	STS-116	H00267	Mission Specialist	Joan Higginbotham, NASA	-	NASA	NASA	AS-00459	2006 Dec 10 0147:35	   12:20:44:24	-
   1022	NASA	M	STS116/MS5	STS-116	H00267	Mission Specialist	Sunita Williams, Cdr USN, NASA	Cdr. USN	USN	NASA	AS-00460	2006 Dec 10 0147:35	  194:18:02:03	EX14/FE2,TMA9:5/BI2,EX14/FE2,EX15/FE2,STS117:3/MS5
   1023	RU	M	TMA10/KDR	Soyuz TMA-10	H00268	Komandir	Oleg Kotov, Podpol VVS, MD	Podpol. VVS	VVSR	TSPK	AS-00461	2007 Apr  7 1731:14	  196:17:04:35	EX15/FE1,TMA10:3/KDR,EX15/FE1,TMA10:5/KDR
-  1024	RU	C	TMA10/BI	Soyuz TMA-10	H00268	Bortinzhener	Fyodor Yurchikin, Rosaviakosmos	-	RKKE	RKKE	AS-00430	2007 Apr  7 1731:14	  196:17:04:35	EX15/CDR,TMA10:3/BI,EX15/CDR,TMA10:5/BI
+  1024	RU	C	TMA10/BI	Soyuz TMA-10	H00268	Bortinzhener	Fyodor Yurchikhin, Rosaviakosmos	-	RKKE	RKKE	AS-00430	2007 Apr  7 1731:14	  196:17:04:35	EX15/CDR,TMA10:3/BI,EX15/CDR,TMA10:5/BI
   1025	RU	PT	TMA10/UP	Soyuz TMA-10	H00268	Uchastnik Kos. Poleta	Charles Simonyi	-	-	SPAD	AS-00462	2007 Apr  7 1731:14	   13:18:59:50	ISSEP12/UP,TMA9:7/UP
   1026	NASA	M	STS117/CDR	STS-117	H00269	Commander	Frederick W. Sturckow, Col USMC, NASA	Col. USMC	USMC	NASA	AS-00391	2007 Jun  8 2338:04	   13:20:11:34	-
   1027	NASA	M	STS117/PLT	STS-117	H00269	Pilot	Lee Archambault, Col USAF, NASA	Col. USAF	USAF	NASA	AS-00463	2007 Jun  8 2338:04	   13:20:11:34	-
@@ -1076,7 +1076,7 @@
   1071	NASA	C	STS124/MS3	STS-124	H00276	Mission Specialist 3	Michael E Fossum, Col USAF (ret), NASA	Col. USAF (ret.)	NASA	NASA	AS-00450	2008 May 31 2102:12	   13:18:13:06	-
   1072	NASA	C	STS124/MS4	STS-124	H00276	Mission Specialist 4	Akihiko Hoshide, JAXA	-	JAXA	JAXA	AS-00487	2008 May 31 2102:12	   13:18:13:06	-
   1073	NASA	C	STS124/MS5	STS-124	H00276	Mission Specialist 5	Gregory E. Chamitoff, Ph.D, NASA	-	NASA	NASA	AS-00488	2008 May 31 2102:12	  183:00:22:55	EX17/FE2,EX18/FE2,STS126:3/MS5
-  1074	CN	M	SZ7/ZZ	Shehzhou-7	H00277	Zhilingzhang	Zhai Zhigang, LtCol PLAAF	LtCol. PLAAF	HYD/PLAAF	HYD	AS-00489	2008 Sep 25 1310:05	    2:20:27:35	-
+  1074	CN	M	SZ7/ZZ	Shenzhou-7	H00277	Zhilingzhang	Zhai Zhigang, LtCol PLAAF	LtCol. PLAAF	HYD/PLAAF	HYD	AS-00489	2008 Sep 25 1310:05	    2:20:27:35	-
   1075	CN	M	SZ7/GCH	Shenzhou-7	H00277	Guidaocang Hangtianyuan	Liu Boming, LtCol PLAAF	LtCol. PLAAF	HYD/PLAAF	HYD	AS-00490	2008 Sep 25 1310:05	    2:20:27:35	-
   1076	CN	M	SZ7/FZH	Shenzhou-7	H00277	Fanhuicang Zhishou Hang.	Jing Haipeng, LtCol. PLAAF	LtCol. PLAAF	HYD/PLAAF	HYD	AS-00491	2008 Sep 25 1310:05	    2:20:27:35	-
   1077	RU	M	TMA13/KDR	Soyuz TMA-13	H00278	Komandir	Yuriy Lonchakov, Pol. VVS	Pol. VVS	VVSR	TSPK	AS-00409	2008 Oct 12 0701:33	  178:00:13:37	EX18/FE1,TMA13:3/KDR
@@ -1095,7 +1095,7 @@
   1090	NASA	C	STS119/MS2	STS-119	H00280	Mission Specialist 2	Steven R. Swanson, PhD., NASA	-	NASA	NASA	AS-00464	2009 Mar 15 2343:44	   12:19:29:42	-
   1091	NASA	C	STS119/MS3	STS-119	H00280	Mission Specialist 3	Richard R. 'Ricky' Arnold II, NASA	-	NASA	NASA	AS-00498	2009 Mar 15 2343:44	   12:19:29:42	-
   1092	NASA	C	STS119/MS4	STS-119	H00280	Mission Specialist 4	John L. Phillips, Ph.D., NASA	-	NASA	NASA	AS-00408	2009 Mar 15 2343:44	   12:19:29:42	-
-  1093	NASA	C	STS119/MS5	STS-119	H00280	Mission Specialist 5	Koichi Wakata, PhD, JAXA	-	JAXA	JAXA	AS-00347	2009 Mar 15 2343:44	  137:15:04:26	EX18/FE2,EX19/FE2,EX20/FE5,STS127:3/MS5
+  1093	NASA	C	STS119/MS5	STS-119	H00280	Mission Specialist 5	Koichi Wakata, PhD, JAXA	-	JAXA	JAXA	AS-00347	2009 Mar 15 2343:44	  137:15:04:26	EX18/FE2,EX19/FE2,EX20/FE5,TMA14:3/BI2,EX20/FE5,STS127:3/MS5
   1094	RU	M	TMA14/KDR	Soyuz TMA-14	H00281	Komandir	Gennadiy Padalka, Pol VVS	Pol. VVS	VVSR	TSPK	AS-00388	2009 Mar 26 1149:18	  198:16:42:25	EX19/CDR,EX20/CDR,TMA14:3/KDR,EX20/CDR,TMA14:5/KDR
   1095	RU	C	TMA14/BI	Soyuz TMA-14	H00281	Bortinzhener	Michael Barratt, MD, NASA	-	NASA	NASA	AS-00499	2009 Mar 26 1149:18	  198:16:42:25	EX19/FE1,EX20/FE1,TMA14:3/BI,EX20/FE1,TMA14:5/BI
   1096	RU	PT	TMA14/UP	Soyuz TMA-14	H00281	Uchastnik Kos. Poleta	Charles Simonyi	-	-	SPAD	AS-00462	2009 Mar 26 1149:18	   12:19:25:52	ISSEP16/UP,TMA13:3/UP
@@ -1212,7 +1212,7 @@
   1207	RU	C	TMA08M/KDR	Soyuz TMA-08M	H00308	Komandir	Pavel Vinogradov,   Roskosmos	-	TSPKR	TSPKR	AS-00367	2013 Mar 28 2043:20	  166:06:15:08	EX35/FE4,EX36/CDR,TMA08M:3/KDR
   1208	RU	C	TMA08M/BI1	Soyuz TMA-08M	H00308	Bortinzhener-1	Aleksandr Misurkin, Podpol VVS (ret), Roskosmos	Podpol. VVS (ret.)	TSPKR	TSPKR	AS-00537	2013 Mar 28 2043:20	  166:06:15:08	EX35/FE5,EX36/FE1,TMA08M:3/BI1
   1209	RU	M	TMA08M/BI2	Soyuz TMA-08M	H00308	Bortinzhener-2	Christopher Cassidy, Cdr USN, NASA	Cdr USN	USN	NASA	AS-00506	2013 Mar 28 2043:20	  166:06:15:08	EX35/FE3,EX36/FE2,TMA08M:3/BI2
-  1210	RU	C	TMA09M/KDR	Soyuz TMA-09M	H00309	Komandir	Fyodor Yurchikin,   Roskosmos	-	TSPKR	TSPKR	AS-00430	2013 May 28 2031:24	  166:06:17:36	EX36/FE4,EX37/CDR,TMA09M:3/KDR,EX37/CDR,TMA09M:5/KDR
+  1210	RU	C	TMA09M/KDR	Soyuz TMA-09M	H00309	Komandir	Fyodor Yurchikhin,   Roskosmos	-	TSPKR	TSPKR	AS-00430	2013 May 28 2031:24	  166:06:17:36	EX36/FE4,EX37/CDR,TMA09M:3/KDR,EX37/CDR,TMA09M:5/KDR
   1211	RU	C	TMA09M/BI1	Soyuz TMA-09M	H00309	Bortinzhener-1	Karen Nyberg, PhD, NASA	-	NASA	NASA	AS-00485	2013 May 28 2031:24	  166:06:17:36	EX36/FE3,EX37/FE1,TMA09M:3/BI1,EX37/FE1,TMA09M:5/BI1
   1212	RU	M	TMA09M/BI2	Soyuz TMA-09M	H00309	Bortinzhener-2	Luca Parmitano, Maj. ItAF, ESA	Maj. ItAF.	AMI	ESA	AS-00538	2013 May 28 2031:24	  166:06:17:36	EX36/FE5,EX37/FE2,TMA09M:3/BI2,EX37/FE1,TMA09M:5/BI2
   1213	CN	M	SZ10/ZZ	Shenzhou-10	H00310	Zhilingzhang	Nie Haisheng, MajGen. PLASSF	Maj.Gen. PLAAF	HYD/PLAAF	HYD	AS-00448	2013 Jun 11 0938:03	   14:14:28 	TG1EX2,SZ10:3,TG1EX2,SZ10:5
@@ -1262,7 +1262,7 @@
   1257	RU	C	MS03/KDR	Soyuz MS-03	H00325	Komandir	Oleg Novitskiy, Pol. VVS (ret), Roskosmos	Pol. VVS (ret.)	TSPKR	TSPKR	AS-00535	2016 Nov 17 2020:13	  196:17:50:17	EX50/FE4,EX51/FE1,MS03:3/KDR
   1258	RU	C	MS03/BI1	Soyuz MS-03	H00325	Bortinzhener-1	Thomas Pesquet, ESA	-	ESA	ESA	AS-00558	2016 Nov 17 2020:13	  196:17:50:17	EX50/FE5,EX51/FE2,MS03:3/BI1
   1259	RU	C	MS03/BI2	Soyuz MS-03	H00325	Bortinzhener-2	Peggy Whitson, PhD, NASA	-	NASA	NASA	AS-00426	2016 Nov 17 2020:13	  289:05:01:28	EX50/FE3,EX51/CDR,EX52/FE2,MS04:3/BI2
-  1260	RU	C	MS04/KDR	Soyuz MS-04	H00326	Komandir	Fyodor Yurchikin,   Roskosmos	-	TSPKR	TSPKR	AS-00430	2017 Apr 20 0713:43	  135:18:07:58	EX51/FE3,EX52/CDR,MS04:3/KDR
+  1260	RU	C	MS04/KDR	Soyuz MS-04	H00326	Komandir	Fyodor Yurchikhin,   Roskosmos	-	TSPKR	TSPKR	AS-00430	2017 Apr 20 0713:43	  135:18:07:58	EX51/FE3,EX52/CDR,MS04:3/KDR
   1261	RU	M	MS04/BI	Soyuz MS-04	H00326	Bortinzhener	Jack Fischer, Col USAF, NASA	Col. USAF	USAF	NASA	AS-00559	2017 Apr 20 0713:43	  135:18:07:58	EX51/FE4,EX52/FE1,MS04:3/BI1
   1262	RU	C	MS05/KDR	Soyuz MS-05	H00327	Komandir	Sergey Ryazanskiy, Roskosmos	-	TSPKR	TSPKR	AS-00541	2017 Jul 28 1541:12	  138:16:56:37	EX52/FE4,EX53/FE1,MS05:3/KDR
   1263	RU	C	MS05/BI1	Soyuz MS-05	H00327	Bortinzhener-1	Randy Bresnik, Col USMC (ret), NASA	Col. USMC (ret.)	NASA	NASA	AS-00516	2017 Jul 28 1541:12	  138:16:56:37	EX52/FE3,EX53/CDR,MS05:3/BI1
@@ -1301,15 +1301,15 @@
   1296	RU	C	MS16/KDR	Soyuz MS-16	H00339	Komandir	Anatoliy A. Ivanishin, Pol VVS (Ret.)	Pol. VVS (Ret.)	TSPKR	TSPKR	AS-00531	2020 Apr  9 0805:06	  195:18:49:06	EX62/FE1,EX63/FE1,MS16:3/KDR
   1297	RU	C	MS16/BI1	Soyuz MS-16	H00339	Bortinzhener-1	Ivan V. Vagner,   Roskosmos	-	TSPKR	TSPKR	AS-00576	2020 Apr  9 0805:06	  195:18:49:06	EX62/FE2,EX63/FE2,MS16:3/BI1
   1298	RU	M	MS16/BI2	Soyuz MS-16	H00339	Bortinzhener-2	Christopher J. Cassidy, Capt USN, NASA	Capt. USN	USN	NASA	AS-00506	2020 Apr  9 0805:06	  195:18:49:06	EX62/FE5,EX63/CDR,MS16:3/BI2
-  1299	SPX	C	DM2/CDR	Dragon DM-2	H00340	Spacecraft commander	Douglas Hurley, Col USMC Ret, NASA	Col. USMC (ret.)	NASA	NASA	AS-00505	2020 May 30 1922:45	   63:23:25 	EX63/FE10,DM2:3/CDR
-  1300	SPX	M	DM2/JOC	Dragon DM-2	H00340	Joint Ops. commander	Robert Behnken, PhD, Col USAF, NASA	Col. USAF	USAF	NASA	AS-00478	2020 May 30 1922:45	   63:23:25 	EX63/FE11,DM2:3/JOC
+  1299	SPX	C	DM2/CDR	Dragon DM-2	H00340	Spacecraft commander	Douglas Hurley, Col USMC Ret, NASA	Col. USMC (ret.)	NASA	NASA	AS-00505	2020 May 30 1922:45	   63:23:25:03	EX63/FE10,DM2:3/CDR
+  1300	SPX	M	DM2/JOC	Dragon DM-2	H00340	Joint Ops. commander	Robert Behnken, PhD, Col USAF, NASA	Col. USAF	USAF	NASA	AS-00478	2020 May 30 1922:45	   63:23:25:03	EX63/FE11,DM2:3/JOC
   1301	RU	C	MS17/KDR	Soyuz MS-17	H00341	Komandir	Sergei N. Ryzhikov,  Podpol. VVS (ret), Roskosmos	Podpol. VVS (ret.)	TSPKR	TSPKR	AS-00557	2020 Oct 14 0545:04	  184:23:10:08	EX63/FE4,EX64/CDR,MS17:3/KDR,EX64/CDR,MS17:5/KDR
   1302	RU	C	MS17/BI1	Soyuz MS-17	H00341	Bortinzhener-1	Sergei V. Kud'-Sverchkov, Roskosmos	-	TSPKR	TSPKR	AS-00577	2020 Oct 14 0545:04	  184:23:10:08	EX63/FE5,EX64/FE5,MS17:3/BI1,EX64/FE5,MS17:5/BI1
   1303	RU	C	MS17/BI2	Soyuz MS-17	H00341	Bortinzhener-2	Kathleen Rubins, PhD, NASA	-	NASA	NASA	AS-00555	2020 Oct 14 0545:04	  184:23:10:08	EX63/FE6,EX64/FE6,MS17:3/BI2,EX64/FE6,MS17:5/BI2
-  1304	SPX	M	SPXC1/CDR	Dragon Crew-1	H00342	Spacecraft commander	Michael S. Hopkins, Col USAF, NASA	Col. USAF	USAF	NASA	AS-00542	2020 Nov 16 0027:17	  167:06:29 	EX64/FE10,SPXC1:3/CDR,EX64/FE10,EX65.1/FE10,SPXC1:5/CDR
-  1305	SPX	M	SPXC1/PLT	Dragon Crew-1	H00342	Pilot	Victor J. Glover, NASA, Cdr USN	Cdr. USN	USN	NASA	AS-00578	2020 Nov 16 0027:17	  167:06:29 	EX64/FE11,SPXC1:3/PLT,EX64/FE11,EX65.1/FE11,SPXC1:5/PLT
-  1306	SPX	C	SPXC1/MS1	Dragon Crew-1	H00342	Mission Specialist 1	Soichi Noguchi, JAXA	-	JAXA	JAXA	AS-00444	2020 Nov 16 0027:17	  167:06:29 	EX64/FE12,SPXC1:3/MS1,EX64/FE12,EX65.1/FE12,SPXC1:5/MS1
-  1307	SPX	C	SPXC1/MS2	Dragon Crew-1	H00342	Mission Specialist 2	Shannon Walker, PhD, NASA	-	NASA	NASA	AS-00524	2020 Nov 16 0027:17	  167:06:29 	EX64/FE13,SPXC1:3/MS2,EX64/FE13,EX65.1/CDR,SPXC1:5/MS2
+  1304	SPX	M	SPXC1/CDR	Dragon Crew-1	H00342	Spacecraft commander	Michael S. Hopkins, Col USAF, NASA	Col. USAF	USAF	NASA	AS-00542	2020 Nov 16 0027:17	  167:06:29:26	EX64/FE10,SPXC1:3/CDR,EX64/FE10,EX65.1/FE10,SPXC1:5/CDR
+  1305	SPX	M	SPXC1/PLT	Dragon Crew-1	H00342	Pilot	Victor J. Glover, NASA, Cdr USN	Cdr. USN	USN	NASA	AS-00578	2020 Nov 16 0027:17	  167:06:29:26	EX64/FE11,SPXC1:3/PLT,EX64/FE11,EX65.1/FE11,SPXC1:5/PLT
+  1306	SPX	C	SPXC1/MS1	Dragon Crew-1	H00342	Mission Specialist 1	Soichi Noguchi, JAXA	-	JAXA	JAXA	AS-00444	2020 Nov 16 0027:17	  167:06:29:26	EX64/FE12,SPXC1:3/MS1,EX64/FE12,EX65.1/FE12,SPXC1:5/MS1
+  1307	SPX	C	SPXC1/MS2	Dragon Crew-1	H00342	Mission Specialist 2	Shannon Walker, PhD, NASA	-	NASA	NASA	AS-00524	2020 Nov 16 0027:17	  167:06:29:26	EX64/FE13,SPXC1:3/MS2,EX64/FE13,EX65.1/CDR,SPXC1:5/MS2
   1308	RU	C	MS18/KDR	Soyuz MS-18	H00343	Komandir	Oleg Novitskiy, Pol. VVS (ret), Roskosmos	Pol. VVS (ret.)	TSPKR	TSPKR	AS-00535	2021 Apr  9 0742:41	  190:20:53:03	EX64/FE7,EX65.1/FE4,EX65.2/FE4,MS18:3/KDR,EX65.2/FE4,EX65.3/FE4,MS18:5/KDR
   1309	RU	C	MS18/BI1	Soyuz MS-18	H00343	Bortinzhener-1	Pyotr Dubrov, Roskosmos	-	TSPKR	TSPKR	AS-00579	2021 Apr  9 0742:41	  355:03:45:55	EX64/FE8,EX65.1/FE5,EX65.2/FE5,MS18:3/BI1,EX65.2/FE5,EX65.3/FE5,EX66/FE5,EX66.2/FE5,MS19:3/FE1
   1310	RU	C	MS18/BI2	Soyuz MS-18	H00343	Bortinzhener-2	Mark T. Vande Hei, Col USA (ret.), NASA	Col. USA (ret.)	NASA	NASA	AS-00560	2021 Apr  9 0742:41	  355:03:45:55	EX64/FE9,EX65.1/FE6,EX65.2/FE6,MS18:3/BI2,EX65.2/FE6,EX65.3/FE6,EX66/FE6,EX66.2/FE6,MS19:3/FE2
@@ -1319,23 +1319,23 @@
   1314	SPX	C	SPXC2/MS2	Dragon Crew-2	H00344	Mission Specialist 2	Thomas Pesquet, ESA	-	ESA	ESA	AS-00558	2021 Apr 23 0949:02	  199:17:43:43	EX65.1/FE17,EX65.2/FE17,SPXC2:3/MS2,EX65.2/FE17,EX65.3/CDR,EX66/CDR,SPXC2:5/MS2
   1315	VG	PS	SS2-21/CP	Unity 21	H00345	Pilot	Frederick C.J. Sturckow, Col USMC Ret.,Virgin Galactic	Col USMC (ret.)	VGX	VGX	AS-00391	2021 May 22 1526	    0:00:16 	-
   1316	VG	PS	SS2-21/COP	Unity 21	H00345	Copilot	David Mackay, Virgin Galactic	-	VGX	VGX	AS-00569	2021 May 22 1526	    0:00:16 	-
-  1317	CN	M	SZ12/ZZ	Shenzhou-12	H00346	Zhilingzhang	Nie Haisheng, MajGen. PLASSF	Maj.Gen. PLASSF	HYD/ZLZB	HYD	AS-00448	2021 Jun 17 0122:32	   92:04:11 	TG3EX1,SZ12:3
-  1318	CN	M	SZ12/CS1	Shenzhou-12	H00346	Caozou Shou 1	Liu Boming, MajGen PLASSF	Maj.Gen. PLASSF	HYD/ZLZB	HYD	AS-00490	2021 Jun 17 0122:32	   92:04:11 	TG3EX1,SZ12:3
-  1319	CN	M	SZ12/CS2	Shenzhou-12	H00346	Caozou Shou 2	Tang Hongbo, Snr. Col. PLASSF	Snr. Col. PLASSF	HYD/ZLZB	HYD	AS-00580	2021 Jun 17 0122:32	   92:04:11 	TG3EX1,SZ12:3
+  1317	CN	M	SZ12/ZZ	Shenzhou-12	H00346	Zhilingzhang	Nie Haisheng, MajGen. PLASSF	Maj.Gen. PLASSF	HYD/ZLZB	HYD	AS-00448	2021 Jun 17 0122:32	   92:04:11:38	TGZR1,SZ12:3
+  1318	CN	M	SZ12/CS1	Shenzhou-12	H00346	Caozou Shou 1	Liu Boming, MajGen PLASSF	Maj.Gen. PLASSF	HYD/ZLZB	HYD	AS-00490	2021 Jun 17 0122:32	   92:04:11:38	TGZR1,SZ12:3
+  1319	CN	M	SZ12/CS2	Shenzhou-12	H00346	Caozou Shou 2	Tang Hongbo, Snr. Col. PLASSF	Snr. Col. PLASSF	HYD/ZLZB	HYD	AS-00580	2021 Jun 17 0122:32	   92:04:11:38	TGZR1,SZ12:3
   1320	VG	PS	SS2-22/CP	Unity 22	H00347	Pilot	David Mackay, Virgin Galactic	-	VGX	VGX	AS-00569	2021 Jul 11 1525:00?	    0:00:15:14	-
   1321	VG	PS	SS2-22/COP	Unity 22	H00347	Copilot	Michael J. Masucci, LtCol USAF ret. Virgin Galactic	LtCol. USAF (ret.)	VGX	VGX	AS-00570	2021 Jul 11 1525:00?	    0:00:15:14	-
-  1322	VG	PS	SS2-22/A01	Unity 22	H00347	Astronaut 001	Richard Branson, Virgin Galactic	-	VGX	VGX	AS-00581	2021 Jul 11 1525:00?	    0:00:15:14	-
-  1323	VG	PS	SS2-22/A02	Unity 22	H00347	Astronaut 002	Beth Moses, Virgin Galactic	-	VGX	VGX	AS-00571	2021 Jul 11 1525:00?	    0:00:15:14	-
-  1324	VG	PS	SS2-22/A03	Unity 22	H00347	Astronaut 003	Colin Bennett, Virgin Galactic	-	VGX	VGX	AS-00582	2021 Jul 11 1525:00?	    0:00:15:14	-
-  1325	VG	PS	SS2-22/A04	Unity 22	H00347	Astronaut 004	Sirisha Bandla, Virgin Galactic	-	VGX	VGX	AS-00583	2021 Jul 11 1525:00?	    0:00:15:14	-
-  1326	BO	PS	NS16/A6	NS-16	H00348	Tourist Seat 6	Jeffey Bezos, Blue Origin	-	BLOR	BLOR	AS-00584	2021 Jul 20 1311:00?	    0:00:10:18	-
-  1327	BO	PT	NS16/A4	NS-16	H00348	Tourist Seat 4	Mark Bezos	-	-	BLOR	AS-00585	2021 Jul 20 1311:00?	    0:00:10:18	-
-  1328	BO	PT	NS16/A3	NS-16	H00348	Tourist Seat 3	Wally Funk	-	-	BLOR	AS-00586	2021 Jul 20 1311:00?	    0:00:10:18	-
-  1329	BO	PT	NS16/A1	NS-16	H00348	Tourist Seat 1	Oliver Daemen	-	-	BLOR	AS-00587	2021 Jul 20 1311:00?	    0:00:10:18	-
+  1322	VG	PS	SS2-22/A01	Unity 22	H00347	Astronaut A001	Richard Branson, Virgin Galactic	-	VGX	VGX	AS-00581	2021 Jul 11 1525:00?	    0:00:15:14	-
+  1323	VG	PS	SS2-22/A02	Unity 22	H00347	Astronaut A002	Beth Moses, Virgin Galactic	-	VGX	VGX	AS-00571	2021 Jul 11 1525:00?	    0:00:15:14	-
+  1324	VG	PS	SS2-22/A03	Unity 22	H00347	Astronaut A003	Colin Bennett, Virgin Galactic	-	VGX	VGX	AS-00582	2021 Jul 11 1525:00?	    0:00:15:14	-
+  1325	VG	PS	SS2-22/A04	Unity 22	H00347	Astronaut A004	Sirisha Bandla, Virgin Galactic	-	VGX	VGX	AS-00583	2021 Jul 11 1525:00?	    0:00:15:14	-
+  1326	BO	PS	NS16/A6	NS-16	H00348	Tourist Seat 6	Jeffey Bezos, Blue Origin	-	BLOR	BLOR	AS-00584	2021 Jul 20 1311:00?	    0:00:10:11	-
+  1327	BO	PT	NS16/A4	NS-16	H00348	Tourist Seat 4	Mark Bezos	-	-	BLOR	AS-00585	2021 Jul 20 1311:00?	    0:00:10:11	-
+  1328	BO	PT	NS16/A3	NS-16	H00348	Tourist Seat 3	Wally Funk	-	-	BLOR	AS-00586	2021 Jul 20 1311:00?	    0:00:10:11	-
+  1329	BO	PT	NS16/A1	NS-16	H00348	Tourist Seat 1	Oliver Daemen	-	-	BLOR	AS-00587	2021 Jul 20 1311:00?	    0:00:10:11	-
   1330	SPX	PT	INSP4/CDR	Inspiration4	H00349	Commander	Jared Isaacman	-	-	SPX	AS-00588	2021 Sep 16 0002:56	    2:23:03:53	-
-  1331	SPX	PT	INSP4/MO	Inspiration4	H00349	Medical Officer	Hayley Arceneaux	-	-	SPX	AS-00589	2021 Sep 16 0002:56	    2:23:03:53	-
+  1331	SPX	PT	INSP4/PLT	Inspiration4	H00349	Pilot	Sian Proctor, Ph.D.	-	-	SPX	AS-00591	2021 Sep 16 0002:56	    2:23:03:53	-
   1332	SPX	PT	INSP4/MS	Inspiration4	H00349	Mission Specialist	Chris Sembroski	Staff Sgt USAF (ret.)	-	SPX	AS-00590	2021 Sep 16 0002:56	    2:23:03:53	-
-  1333	SPX	PT	INSP4/PLT	Inspiration4	H00349	Pilot	Sian Proctor, Ph.D.	-	-	SPX	AS-00591	2021 Sep 16 0002:56	    2:23:03:53	-
+  1333	SPX	PT	INSP4/MO	Inspiration4	H00349	Medical Officer	Hayley Arceneaux	-	-	SPX	AS-00589	2021 Sep 16 0002:56	    2:23:03:53	-
   1334	RU	C	MS19/KDR	Soyuz MS-19	H00350	Komandir	Anton Shkaplerov, Pol. VVS (ret.), Roskosmos	Pol. VVS (ret.)	TSPKR	TSPKR	AS-00530	2021 Oct  5 0855:02	  176:02:33:34	EX65.3/FE7,EX66/FE4,EX66.2/CDR,MS19:3/KDR
   1335	RU	PB	MS19/UP1	Soyuz MS-19	H00350	Uchastnik Kos. Poleta-1	Klim Shipenko	-	PERVK	TSKPR/PERVK	AS-00592	2021 Oct  5 0855:02	   11:19:40:42	ISSEP20A/UP1,MS18:5/UP1
   1336	RU	PB	MS19/UP2	Soyuz MS-19	H00350	Uchastnik Kos. Poleta-2	Yuliya Peresil'd	-	PERVK	TSKPR/PERVK	AS-00593	2021 Oct  5 0855:02	   11:19:40:42	ISSEP20A/UP2,MS18:5/UP2
@@ -1343,13 +1343,13 @@
   1338	BO	PT	NS18/A6	NS-18	H00351	Tourist Seat 6	Glen de Vries	-	-	BLOR	AS-00595	2021 Oct 13 1449:00?	    0:00:10 	-
   1339	BO	PS	NS18/A1	NS-18	H00351	Tourist Seat 1	Audrey K. Powers	-	BLOR	BLOR	AS-00596	2021 Oct 13 1449:00?	    0:00:10 	-
   1340	BO	PT	NS18/A3	NS-18	H00351	Tourist Seat 3	William Shatner	-	-	BLOR	AS-00597	2021 Oct 13 1449:00?	    0:00:10 	-
-  1341	CN	M	SZ13/ZZ	Shenzhou-13	H00352	Zhilingzhang	Zhai Zhigang, MajGen PLASSF	Maj.Gen. PLASSF	HYD/ZLZB	HYD	AS-00489	2021 Oct 15 1623:44	  182:09:32 	TG3EX2,SZ13:3
-  1342	CN	M	SZ13/CS1	Shenzhou-13	H00352	Caozou Shou 1?	Wang Yaping, Col. PLASSF	Col. PLASSF	HYD/ZLZB	HYD	AS-00540	2021 Oct 15 1623:44	  182:09:32 	TG3EX2,SZ13:3
-  1343	CN	M	SZ13/CS2	Shenzhou-13	H00352	Caozou Shou 2?	Ye Guangfu, Col. PLASSF	Col. PLASSF	HYD/ZLZB	HYD	AS-00598	2021 Oct 15 1623:44	  182:09:32 	TG3EX2,SZ13:3
-  1344	SPX	C	SPXC3/CDR	Dragon Crew-3	H00353	Spacecraft commander	Raja Chari, Col. USAF	Col.  USAF	USAF	NASA	AS-00599	2021 Nov 11 0203:31	  176:02:39 	EX66.2/FE10,EX67.1/FE10,SPXC3:3/CDR
+  1341	CN	M	SZ13/ZZ	Shenzhou-13	H00352	Zhilingzhang	Zhai Zhigang, MajGen PLASSF	Maj.Gen. PLASSF	HYD/ZLZB	HYD	AS-00489	2021 Oct 15 1623:44	  182:09:32:53	TGZR2,SZ13:3
+  1342	CN	M	SZ13/H1	Shenzhou-13	H00352	Hangtianyuan 1	Wang Yaping, Col. PLASSF	Col. PLASSF	HYD/ZLZB	HYD	AS-00540	2021 Oct 15 1623:44	  182:09:32:53	TGZR2,SZ13:3
+  1343	CN	M	SZ13/H2	Shenzhou-13	H00352	Hangtianyuan 2	Ye Guangfu, Col. PLASSF	Col. PLASSF	HYD/ZLZB	HYD	AS-00598	2021 Oct 15 1623:44	  182:09:32:53	TGZR2,SZ13:3
+  1344	SPX	M	SPXC3/CDR	Dragon Crew-3	H00353	Spacecraft commander	Raja Chari, Col. USAF	Col.  USAF	USAF	NASA	AS-00599	2021 Nov 11 0203:31	  176:02:39 	EX66.2/FE10,EX67.1/FE10,SPXC3:3/CDR
   1345	SPX	C	SPXC3/PLT	Dragon Crew-3	H00353	Pilot	Thomas H. Marshburn, M.D.	-	NASA	NASA	AS-00507	2021 Nov 11 0203:31	  176:02:39 	EX66.2/FE11,EX67.1/CDR,SPXC3:3/PLT
   1346	SPX	C	SPXC3/MS1	Dragon Crew-3	H00353	Mission Specialist 1	Matthias Maurer, Ph.D.	-	ESA	ESA	AS-00600	2021 Nov 11 0203:31	  176:02:39 	EX66.2/FE13,EX67.1/FE12,SPXC3:3/MS1
-  1347	SPX	C	SPXC3/MS2	Dragon Crew-3	H00353	Mission Specialist 2	Kayla Barron, LtCdr USN	Lt.Cdr. USN	USN	NASA	AS-00601	2021 Nov 11 0203:31	  176:02:39 	EX66.2/FE12,EX67.1/FE13,SPXC3:3/MS2
+  1347	SPX	M	SPXC3/MS2	Dragon Crew-3	H00353	Mission Specialist 2	Kayla Barron, LtCdr USN	Lt.Cdr. USN	USN	NASA	AS-00601	2021 Nov 11 0203:31	  176:02:39 	EX66.2/FE12,EX67.1/FE13,SPXC3:3/MS2
   1348	RU	C	MS20/KDR	Soyuz MS-20	H00354	Komandir	Aleksandr Misurkin, Podpol VVS (ret), Roskosmos	Podpol. VVS (ret.)	TSPKR	TSPKR	AS-00537	2021 Dec  8 0738:15	   11:19:35:25	ISSEP20/KDR,MS20:3/KDR
   1349	RU	PT	MS20/UP1	Soyuz MS-20	H00354	Uchastnik Kos. Poleta-1	Maezawa Yusaku	-	SPAD	TSKPR	AS-00602	2021 Dec  8 0738:15	   11:19:35:25	ISSEP20/UP1,MS20:3/UP1
   1350	RU	PT	MS20/UP2	Soyuz MS-20	H00354	Uchastnik Kos. Poleta-2	Hirano Yozo	-	SPAD	TSKPR	AS-00603	2021 Dec  8 0738:15	   11:19:35:25	ISSEP20/UP2,MS20:3/UP2
@@ -1359,23 +1359,131 @@
   1354	BO	PT	NS19/A4	NS-19	H00355	Tourist Seat 4	Lane Bess	-	-	BLOR	AS-00607	2021 Dec 11 1500:49	    0:00:10:06	-
   1355	BO	PT	NS19/A5	NS-19	H00355	Tourist Seat 5	Cameron Bess	-	-	BLOR	AS-00608	2021 Dec 11 1500:49	    0:00:10:06	-
   1356	BO	PT	NS19/A6	NS-19	H00355	Tourist Seat 6	Evan L. Dick	-	-	BLOR	AS-00609	2021 Dec 11 1500:49	    0:00:10:06	-
-  1357	RU	C	MS21/KDR	Soyuz MS-21	H00356	Komandir	Oleg Artem'ev, Roskosmos	-	TSPKR	TSPKR	AS-00543	2022 Mar 18 1555:18	   76:11:15 *	EX66.2/FE1,EX67.1/FE1,EX67.2/CDR
-  1358	RU	C	MS21/BI1	Soyuz MS-21	H00356	Bortinzhener-1	Denis Matveev, Roskosmos	-	TSPKR	TSPKR	AS-00610	2022 Mar 18 1555:18	   76:11:15 *	EX66.2/FE2,EX67.1/FE2,EX67.2/FE2
-  1359	RU	C	MS21/BI2	Soyuz MS-21	H00356	Bortinzhener-2	Sergey Korsakov, Roskosmos	-	TSPKR	TSPKR	AS-00611	2022 Mar 18 1555:18	   76:11:15 *	EX66.2/FE3,EX67.1/FE3,EX67.2/FE3
-  1360	BO	PT	NS20/A1	NS-20	H00357	Tourist Seat 1	Gary Lai	-	-	BLOR	AS-00615	2022 Mar 31 1358:02	    0:00:09:57	-
+  1357	RU	C	MS21/KDR	Soyuz MS-21	H00356	Komandir	Oleg Artem'ev, Roskosmos	-	TSPKR	TSPKR	AS-00543	2022 Mar 18 1555:18	  194:19:01 	EX66.2/FE1,EX67.1/FE1,EX67.2/CDR,MS21:3/KDR
+  1358	RU	C	MS21/BI1	Soyuz MS-21	H00356	Bortinzhener-1	Denis Matveev, Roskosmos	-	TSPKR	TSPKR	AS-00610	2022 Mar 18 1555:18	  194:19:01 	EX66.2/FE2,EX67.1/FE2,EX67.2/FE2,MS21:3/BI1
+  1359	RU	C	MS21/BI2	Soyuz MS-21	H00356	Bortinzhener-2	Sergey Korsakov, Roskosmos	-	TSPKR	TSPKR	AS-00611	2022 Mar 18 1555:18	  194:19:01 	EX66.2/FE3,EX67.1/FE3,EX67.2/FE3,MS21:3/BI2
+  1360	BO	PS	NS20/A1	NS-20	H00357	Tourist Seat 1	Gary Lai	-	-	BLOR	AS-00615	2022 Mar 31 1358:02	    0:00:09:57	-
   1361	BO	PT	NS20/A2	NS-20	H00357	Tourist Seat 2	George Nield, Ph.D.	-	-	BLOR	AS-00617	2022 Mar 31 1358:02	    0:00:09:57	-
   1362	BO	PT	NS20/A3	NS-20	H00357	Tourist Seat 3	Jim Kitchen	-	-	BLOR	AS-00616	2022 Mar 31 1358:02	    0:00:09:57	-
   1363	BO	PT	NS20/A4	NS-20	H00357	Tourist Seat 4	Marty Allen	-	-	BLOR	AS-00612	2022 Mar 31 1358:02	    0:00:09:57	-
   1364	BO	PT	NS20/A5	NS-20	H00357	Tourist Seat 5	Sharon Hagle	-	-	BLOR	AS-00613	2022 Mar 31 1358:02	    0:00:09:57	-
-  1365	BO	PS	NS20/A6	NS-20	H00357	Tourist Seat 6	Marc Hagle	-	-	BLOR	AS-00614	2022 Mar 31 1358:02	    0:00:09:57	-
+  1365	BO	PT	NS20/A6	NS-20	H00357	Tourist Seat 6	Marc Hagle	-	-	BLOR	AS-00614	2022 Mar 31 1358:02	    0:00:09:57	-
   1366	SPX	PS	AX1/CDR	Axiom Ax-1	H00358	Commander	Michael Lopez-Alegria, Capt. USN (ret.)	Capt. USN (ret.)	AXIOM	AXIOM	AS-00341	2022 Apr  8 1517:11	   17:01:48 	ISSAX1/CDR,AX1:3/CDR
   1367	SPX	PT	AX1/PLT	Axiom Ax-1	H00358	Pilot	Larry Connor	-	AXIOM	AXIOM	AS-00618	2022 Apr  8 1517:11	   17:01:48 	ISSAX1/PLT,AX1:3/PLT
   1368	SPX	PT	AX1/MS1	Axiom Ax-1	H00358	Mission Specialist 1	Eytan Stibbe, Col. IAF (ret.)	-	AXIOM	AXIOM	AS-00619	2022 Apr  8 1517:11	   17:01:48 	ISSAX1/MS1,AX1:3/MS1
   1369	SPX	PT	AX1/MS2	Axiom Ax-1	H00358	Mission Specialist 2	Mark Pathy	-	AXIOM	AXIOM	AS-00620	2022 Apr  8 1517:11	   17:01:48 	ISSAX1/MS2,AX1:3/MS2
-  1370	SPX	C	SPXC4/CDR	Dragon Crew-4	H00359	Spacecraft commander	Kjell Lindgren, MD, NASA	-	NASA	NASA	AS-00549	2022 Apr 27 0752:55	   36:19:17 *	EX67.1/FE14,EX67.2/FE14
-  1371	SPX	C	SPXC4/PLT	Dragon Crew-4	H00359	Pilot	Robert Hines, NASA, LtCol USAF (ret.)	Lt.Col USAF (ret.)	NASA	NASA	AS-00621	2022 Apr 27 0752:55	   36:19:17 *	EX67.1/FE15,EX67.2/FE15
-  1372	SPX	C	SPXC4/MS1	Dragon Crew-4	H00359	Mission Specialist 1	Samantha Cristoforetti, ESA, Capt. IAF (ret)	Capt. IAF (ret.)	AMI	ESA	AS-00547	2022 Apr 27 0752:55	   36:19:17 *	EX67.1/FE17,EX67.2/FE17
-  1373	SPX	C	SPXC4/MS2	Dragon Crew-4	H00359	Mission Specialist 2	Jessica A. Watkins, PhD	-	NASA	NASA	AS-00622	2022 Apr 27 0752:55	   36:19:17 *	EX67.1/FE16,EX67.2/FE16
+  1370	SPX	C	SPXC4/CDR	Dragon Crew-4	H00359	Spacecraft commander	Kjell Lindgren, MD, NASA	-	NASA	NASA	AS-00549	2022 Apr 27 0752:55	  170:13:02:08	EX67.1/FE14,EX67.2/FE14,EX68/FE1,SPXC4:3/CDR
+  1371	SPX	C	SPXC4/PLT	Dragon Crew-4	H00359	Pilot	Robert Hines, NASA, LtCol USAF (ret.)	Lt.Col USAF (ret.)	NASA	NASA	AS-00621	2022 Apr 27 0752:55	  170:13:02:08	EX67.1/FE15,EX67.2/FE15,EX68/FE2,SPXC4:3/PLT
+  1372	SPX	C	SPXC4/MS1	Dragon Crew-4	H00359	Mission Specialist 1	Samantha Cristoforetti, ESA, Capt. IAF (ret)	Capt. IAF (ret.)	AMI	ESA	AS-00547	2022 Apr 27 0752:55	  170:13:02:08	EX67.1/FE17,EX67.2/FE17,EX68/CDR,SPXC4:3/MS1
+  1373	SPX	C	SPXC4/MS2	Dragon Crew-4	H00359	Mission Specialist 2	Jessica A. Watkins, PhD	-	NASA	NASA	AS-00622	2022 Apr 27 0752:55	  170:13:02:08	EX67.1/FE16,EX67.2/FE16,EX68/FE3,SPXC4:3/MS2
+  1374	BO	PT	NS21/A1	NS-21	H00360	Tourist Seat 1	Evan L. Dick	-	-	BLOR	AS-00609	2022 Jun  4 1325:09	    0:00:09:58	-
+  1375	BO	PT	NS21/A2	NS-21	H00360	Tourist Seat 2	Victor Correa Hespanha	-	-	BLOR	AS-00623	2022 Jun  4 1325:09	    0:00:09:58	-
+  1376	BO	PT	NS21/A3	NS-21	H00360	Tourist Seat 3	G. Hamish L. Harding	-	-	BLOR	AS-00624	2022 Jun  4 1325:09	    0:00:09:58	-
+  1377	BO	PT	NS21/A4	NS-21	H00360	Tourist Seat 4	Victor Vescovo	-	-	BLOR	AS-00625	2022 Jun  4 1325:09	    0:00:09:58	-
+  1378	BO	PT	NS21/A5	NS-21	H00360	Tourist Seat 5	Katya Echazarreta	-	-	BLOR	AS-00626	2022 Jun  4 1325:09	    0:00:09:58	-
+  1379	BO	PT	NS21/A6	NS-21	H00360	Tourist Seat 6	Jaison Robinson	-	-	BLOR	AS-00627	2022 Jun  4 1325:09	    0:00:09:58	-
+  1380	CN	M	SZ14/ZZ	Shenzhou-14	H00361	Zhilingzhang	Chen Dong, Sr.Col. PLASSF	Sr.Col. PLASSF	HYD/ZLZB	HYD	AS-00556	2022 Jun  5 0244:10	  182:09:24 	TGZR3,SZ14:3
+  1381	CN	M	SZ14/H1	Shenzhou-14	H00361	Hangtianyuan 1	Liu Yang, Sr.Col. PLASSF	Sr.Col. PLASSF	HYD/ZLZB	HYD	AS-00534	2022 Jun  5 0244:10	  182:09:24 	TGZR3,SZ14:3
+  1382	CN	M	SZ14/H2	Shenzhou-14	H00361	Hangtianyuan 2	Cai Xuzhe. Sr. Col. PLASSF	Sr.Col. PLASSF	HYD/ZLZB	HYD	AS-00628	2022 Jun  5 0244:10	  182:09:24 	TGZR3,SZ14:3
+  1383	BO	PT	NS22/A1	NS-22	H00362	Tourist Seat 1	Sara Sabry	-	-	BLOR	AS-00629	2022 Aug  4 1356:14	    0:00:10:13	-
+  1384	BO	PT	NS22/A2	NS-22	H00362	Tourist Seat 2	Mario Ferreira	-	-	BLOR	AS-00630	2022 Aug  4 1356:14	    0:00:10:13	-
+  1385	BO	PT	NS22/A3	NS-22	H00362	Tourist Seat 3	Clinton Kelly III, PhD	-	-	BLOR	AS-00631	2022 Aug  4 1356:14	    0:00:10:13	-
+  1386	BO	PT	NS22/A4	NS-22	H00362	Tourist Seat 4	Coby Cotton	-	-	BLOR	AS-00632	2022 Aug  4 1356:14	    0:00:10:13	-
+  1387	BO	PT	NS22/A5	NS-22	H00362	Tourist Seat 5	Steve A. Young	-	-	BLOR	AS-00633	2022 Aug  4 1356:14	    0:00:10:13	-
+  1388	BO	PT	NS22/A6	NS-22	H00362	Tourist Seat 6	Vanessa O'Brien	-	-	BLOR	AS-00634	2022 Aug  4 1356:14	    0:00:10:13	-
+  1389	RU	M	MS22/KDR	Soyuz MS-22	H00363	Komandir	Sergey Prokop'ev, Podpol VKS, Roskosmos	Popdpol. VKS	TSPKR	TSPKR	AS-00563	2022 Sep 21 1354:49	  370:21:22 	EX67.2/FE4,EX68/FE4,EX68.2/CDR,EX69/CDR,MS23:3/KDR,EX69/CDR,MS23:5/KDR
+  1390	RU	C	MS22/BI1	Soyuz MS-22	H00363	Bortinzhener-1	Dmitriy Petelin, Roskosmos	-	TSPKR	TSPKR	AS-00635	2022 Sep 21 1354:49	  370:21:22 	EX67.2/FE5,EX68/FE5,EX68.2/FE5,EX69/FE1,MS23:3/BI1,EX69/FE1,MS23:5/BI1
+  1391	RU	M	MS22/BI2	Soyuz MS-22	H00363	Bortinzhener-2	Frank Rubio, Maj USA, NASA	Maj. USA	USA	NASA	AS-00636	2022 Sep 21 1354:49	  370:21:22 	EX67.2/FE6,EX68/FE6,EX68.2/FE6,EX69/FE2,MS23:3/BI2,EX69/FE2,MS23:5/BI2
+  1392	SPX	M	SPXC5/CDR	Dragon Crew-5	H00364	Spacecraft commander	Nicole V. A. Mann, Col. USMC	Col. USMC	USMC	NASA	AS-00637	2022 Oct  5 1600:57	  157:10:01 	EX68/FE7,EX68.2/FE7,SPXC5:3/CDR
+  1393	SPX	C	SPXC5/PLT	Dragon Crew-5	H00364	Pilot	Josh A. Cassada, PhD, NASA	-	NASA	NASA	AS-00638	2022 Oct  5 1600:57	  157:10:01 	EX68/FE8,EX68.2/FE8,SPXC5:3/PLT
+  1394	SPX	C	SPXC5/MS1	Dragon Crew-5	H00364	Mission Specialist 1	Koichi Wakata, PhD, JAXA	-	JAXA	JAXA	AS-00347	2022 Oct  5 1600:57	  157:10:01 	EX68/FE9,EX68.2/FE9,SPXC5:3/MS1
+  1395	SPX	C	SPXC5/MS2	Dragon Crew-5	H00364	Mission Specialist 2	Anna Yu. Kikina, Roskosmos	-	TSPKR	TSPKR	AS-00639	2022 Oct  5 1600:57	  157:10:01 	EX68/FE10,EX68.2/FE10,SPXC5:3/MS2
+  1396	CN	M	SZ15/ZZ	Shenzhou-15	H00365	Zhilingzhang	Fei Junlong, Maj.Gen. PLASSF	Maj.Gen. PLASSF	HYD/ZLZB	HYD	AS-00447	2022 Nov 29 1508:17	  186:07:24 	TGZR3/H3,TGZR4,SZ15:3
+  1397	CN	M	SZ15/H1	Shenzhou-15	H00365	Hangtianyuan 1	Deng Qingming. Sr.Col. PLASSF	Sr.Col. PLASSF	HYD/ZLZB	HYD	AS-00640	2022 Nov 29 1508:17	  186:07:24 	TGZR3/H4,TGZR4,SZ15:3
+  1398	CN	M	SZ15/H2	Shenzhou-15	H00365	Hangtianyuan 2	Zhang Lu. Sr.Col. PLASSF	Sr.Col. PLASSF	HYD/ZLZB	HYD	AS-00641	2022 Nov 29 1508:17	  186:07:24 	TGZR3/H5,TGZR4,SZ15:3
+  1399	SPX	C	SPXC6/CDR	Dragon Crew-6	H00366	Spacecraft commander	Stephen G. Bowen, Capt USN (ret.), NASA	Capt. USN (ret.)	USN	NASA	AS-00494	2023 Mar  2 0534:14	  185:22:43:09	EX68.2/FE11,EX69/FE3,SPXC6:3/CDR,EX69/FE3,SPXC6:5/CDR
+  1400	SPX	C	SPXC6/PLT	Dragon Crew-6	H00366	Pilot	Warren W. Hoburg, PhD, NASA	-	NASA	NASA	AS-00642	2023 Mar  2 0534:14	  185:22:43:09	EX68.2/FE12,EX69/FE4,SPXC6:3/PLT,EX69/FE4,SPXC6:5/PLT
+  1401	SPX	C	SPXC6/MS1	Dragon Crew-6	H00366	Mission Specialist 1	Sultan Al Neyadi, PhD., MBRSC	-	MBRSC	MBRSC	AS-00643	2023 Mar  2 0534:14	  185:22:43:09	EX68.2/FE13,EX69/FE5,SPXC6:3/MS1,EX69/FE5,SPXC6:5/MS1
+  1402	SPX	C	SPXC6/MS2	Dragon Crew-6	H00366	Mission Specialist 2	Andrey V. Fedyaev	-	TSPKR	TSPKR	AS-00644	2023 Mar  2 0534:14	  185:22:43:09	EX68.2/FE14,EX69/FE6,SPXC6:3/MS2,EX69/FE6,SPXC6:5/MS2
+  1403	SPX	PS	AX2/CDR	Axiom Ax-2	H00367	Commander	Peggy Whitson, PhD	-	AXIOM	AXIOM	AS-00426	2023 May 21 2137:09	    9:05:27:15	ISSAX2,AX2:3
+  1404	SPX	PT	AX2/PLT	Axiom Ax-2	H00367	Pilot	John Shoffner	-	AXIOM	AXIOM	AS-00645	2023 May 21 2137:09	    9:05:27:15	ISSAX2,AX2:3
+  1405	SPX	M	AX2/MS1	Axiom Ax-2	H00367	Mission Specialist 1	Ali Al-Qarni	Capt. RSAF	RSAF	SAUDSC	AS-00646	2023 May 21 2137:09	    9:05:27:15	ISSAX2,AX2:3
+  1406	SPX	C	AX2/MS2	Axiom Ax-2	H00367	Mission Specialist 2	Rayyanah Barnawi	-	SAUDSC	SAUDSC	AS-00647	2023 May 21 2137:09	    9:05:27:15	ISSAX2,AX2:3
+  1407	VG	PS	SS2-25/CP	Unity 25	H00368	Pilot	Michael J. Masucci, LtCol USAF ret. Virgin Galactic	LtCol. USAF (ret.)	VGX	VGX	AS-00570	2023 May 25 1623:04	    0:00:13:56	-
+  1408	VG	PS	SS2-25/COP	Unity 25	H00368	Copilot	Frederick C.J. Sturckow, Col USMC Ret.,Virgin Galactic	Col USMC (ret.)	VGX	VGX	AS-00391	2023 May 25 1623:04	    0:00:13:56	-
+  1409	VG	PS	SS2-25/CAI	Unity 25	H00368	Chief Astronaut Instructor A002	Beth Moses, Virgin Galactic	-	VGX	VGX	AS-00571	2023 May 25 1623:04	    0:00:13:56	-
+  1410	VG	PS	SS2-25/AI	Unity 25	H00368	Astronaut Instructor A005	Luke Mays, Virgin Galactic	-	VGX	VGX	AS-00648	2023 May 25 1623:04	    0:00:13:56	-
+  1411	VG	PS	SS2-25/MS1	Unity 25	H00368	Mission Specialist 1 A006	Chris Huie, Virgin Galactic	-	VGX	VGX	AS-00649	2023 May 25 1623:04	    0:00:13:56	-
+  1412	VG	PS	SS2-25/MS2	Unity 25	H00368	Mission Specialist 2 A007	Jamila Gilbert, Virgin Galactic	-	VGX	VGX	AS-00650	2023 May 25 1623:04	    0:00:13:56	-
+  1413	CN	M	SZ16/ZZ	Shenzhou-16	H00369	Zhilingzhang	Jing Haipeng, Maj.Gen. PLASSF	Maj.Gen. PLASSF	HYD/ZLZB	HYD	AS-00491	2023 May 30 0131:13	  153:22:40:19	TGZR4/H3,TGZR5/ZZ,SZ16:3
+  1414	CN	M	SZ16/HFG	Shenzhou-16	H00369	Hangtian feixing gongchengshi	Zhu Yangzhu, Ph.D., Col. PLASSF	Col. PLASSF	HYD/ZLZB	HYD	AS-00651	2023 May 30 0131:13	  153:22:40:19	TGZR4/H4,TGZR5/HFG,SZ16:3
+  1415	CN	PG	SZ16/ZHZJ	Shenzhou-16	H00369	Zaihe Zhuanjia	Gui Haichao, Ph.D.	-	HYD/ZLZB	HYD	AS-00652	2023 May 30 0131:13	  153:22:40:19	TGZR4/H5,TGZR5/ZHZJ,SZ16:3
+  1416	VG	PS	SS2-G01/CP	Galactic 01	H00370	Pilot	Michael J. Masucci, LtCol USAF ret. Virgin Galactic	LtCol. USAF (ret.)	VGX	VGX	AS-00570	2023 Jun 29 1528:37	    0:00:13:50	-
+  1417	VG	PS	SS2-G01/COP	Galactic 01	H00370	Copilot	Nicola Pecile, Virgin Galactic	-	VGX	VGX	AS-00653	2023 Jun 29 1528:37	    0:00:13:50	-
+  1418	VG	PS	SS2-G01/AI	Galactic 01	H00370	Astronaut Instructor A003	Colin Bennett, Virgin Galactic	-	VGX	VGX	AS-00582	2023 Jun 29 1528:37	    0:00:13:50	-
+  1419	VG	M	SS2-G01/MCDR	Galactic 01	H00370	Mission Commander A008	Walter Villadei, Col. AMI.	Col. AMI	AMI	AMI	AS-00654	2023 Jun 29 1528:37	    0:00:13:50	-
+  1420	VG	M	SS2-G01/P1	Galactic 01	H00370	Passenger 1 A009	Angelo Landolfi, Lt-Col AMI	LtCol AMI	AMI	AMI	AS-00655	2023 Jun 29 1528:37	    0:00:13:50	-
+  1421	VG	C	SS2-G01/P2	Galactic 01	H00370	Passenger 2 A010	Pantaleone Carlucci, CNR	-	CNR	AMI	AS-00656	2023 Jun 29 1528:37	    0:00:13:50	-
+  1422	VG	PS	SS2-G02/CP	Galactic 02	H00371	Pilot	Frederick C.J. Sturckow, Col USMC Ret.,Virgin Galactic	Col USMC (ret.)	VGX	VGX	AS-00391	2023 Aug 10 1517:10	    0:00:15:38	-
+  1423	VG	PS	SS2-G02/COP	Galactic 02	H00371	Copilot	Kelly Latimer, Virgin Galactic	-	VGX	VGX	AS-00657	2023 Aug 10 1517:10	    0:00:15:38	-
+  1424	VG	PS	SS2-G02/AI	Galactic 02	H00371	Chief Astronaut Instructor A002	Beth Moses, Virgin Galactic	-	VGX	VGX	AS-00571	2023 Aug 10 1517:10	    0:00:15:38	-
+  1425	VG	PT	SS2-G02/P1	Galactic 02	H00371	Passenger 1 A011	Jon Stuart Goodwin	-	-	VGX	AS-00658	2023 Aug 10 1517:10	    0:00:15:38	-
+  1426	VG	PT	SS2-G02/P2	Galactic 02	H00371	Passenger 2 A012	Keisha Schahaff	-	-	VGX	AS-00659	2023 Aug 10 1517:10	    0:00:15:38	-
+  1427	VG	PT	SS2-G02/P3	Galactic 02	H00371	Passenger 3 A013	Anastatia Mayers	-	-	VGX	AS-00660	2023 Aug 10 1517:10	    0:00:15:38	-
+  1428	SPX	M	SPXC7/CDR	Dragon Crew-7	H00372	Spacecraft commander	Jasmin Moghbeli, LtCol USMC, NASA	LtCol.USMC	USMC	NASA	AS-00661	2023 Aug 26 0727:27	  199:02:20:17	EX69/FE7,EX70.1/FE4,SPXC7:3/CDR
+  1429	SPX	C	SPXC7/PLT	Dragon Crew-7	H00372	Pilot	Andreas Mogensen, Ph.D., ESA	-	ESA	ESA	AS-00550	2023 Aug 26 0727:27	  199:02:20:17	EX69/FE8,EX70.1/CDR,SPXC7:3/PLT
+  1430	SPX	C	SPXC7/MS1	Dragon Crew-7	H00372	Mission Specialist 1	Satoshi Furukawa, MD, PhD, JAXA	-	JAXA	JAXA	AS-00529	2023 Aug 26 0727:27	  199:02:20:17	EX69/FE9,EX70.1/FE5,SPXC7:3/MS1
+  1431	SPX	C	SPXC7/MS2	Dragon Crew-7	H00372	Mission Specialist 2	Konstantin S. Borisov, Roskosmos	-	TSPKR	TSPKR	AS-00662	2023 Aug 26 0727:27	  199:02:20:17	EX69/FE10,EX70.1/FE6,SPXC7:3/MS2
+  1432	VG	PS	SS2-G03/CP	Galactic 03	H00373	Pilot	Nicola Pecile, Virgin Galactic	-	VGX	VGX	AS-00653	2023 Sep  8 1522:13	    0:00:12 	-
+  1433	VG	PS	SS2-G03/COP	Galactic 03	H00373	Copilot	Michael J. Masucci, LtCol USAF ret. Virgin Galactic	LtCol. USAF (ret.)	VGX	VGX	AS-00570	2023 Sep  8 1522:13	    0:00:12 	-
+  1434	VG	PS	SS2-G03/AI	Galactic 03	H00373	Chief Astronaut Instructor A002	Beth Moses, Virgin Galactic	-	VGX	VGX	AS-00571	2023 Sep  8 1522:13	    0:00:12 	-
+  1435	VG	PT	SS2-G03/P1	Galactic 03	H00373	Passenger 1 A014	Ken Baxter	-	-	VGX	AS-00663	2023 Sep  8 1522:13	    0:00:12 	-
+  1436	VG	PT	SS2-G03/P2	Galactic 03	H00373	Passenger 2 A015	Timothy Nash	-	-	VGX	AS-00664	2023 Sep  8 1522:13	    0:00:12 	-
+  1437	VG	PT	SS2-G03/P3	Galactic 03	H00373	Passenger 3 A016	Adrian J. Reynard	-	-	VGX	AS-00665	2023 Sep  8 1522:13	    0:00:12 	-
+  1438	RU	C	MS24/KDR	Soyuz MS-24	H00374	Komandir	Oleg Kononenko, Roskosmos	-	TSPKR	TSPKR	AS-00482	2023 Sep 15 1544:35	  247:01:10:37*	EX69/FE11,EX70.1/FE1,EX70.2/CDR,EX71/CDR
+  1439	RU	C	MS24/BI1	Soyuz MS-24	H00374	Bortinzhener-1	Nikolai Chub, Roskosmos	-	TSPKR	TSPKR	AS-00666	2023 Sep 15 1544:35	  247:01:10:37*	EX69/FE12,EX70.1/FE2,EX70.2/FE2,EX71/FE2
+  1440	RU	C	MS24/BI2	Soyuz MS-24	H00374	Bortinzhener-2	Loral O'Hara, NASA	-	NASA	NASA	AS-00667	2023 Sep 15 1544:35	  203:15:33:12	EX69/FE13,EX70.1/FE3,EX70.2/FE3,MS24:3/BI
+  1441	VG	PS	SS2-G04/CP	Galactic 04	H00375	Pilot	Kelly Latimer, Virgin Galactic	-	VGX	VGX	AS-00657	2023 Oct  6 1610:30	    0:00:14:23	-
+  1442	VG	PS	SS2-G04/COP	Galactic 04	H00375	Copilot	Frederick C.J. Sturckow, Col USMC Ret.,Virgin Galactic	Col USMC (ret.)	VGX	VGX	AS-00391	2023 Oct  6 1610:30	    0:00:14:23	-
+  1443	VG	PS	SS2-G04/AI	Galactic 04	H00375	Chief Astronaut Instructor A002	Beth Moses, Virgin Galactic	-	VGX	VGX	AS-00571	2023 Oct  6 1610:30	    0:00:14:23	-
+  1444	VG	PT	SS2-G04/P1	Galactic 04	H00375	Passenger 1 A017	Ronald Rosano	-	-	VGX	AS-00668	2023 Oct  6 1610:30	    0:00:14:23	-
+  1445	VG	PT	SS2-G04/P2	Galactic 04	H00375	Passenger 2 A018	Trevor Beattie	-	-	VGX	AS-00669	2023 Oct  6 1610:30	    0:00:14:23	-
+  1446	VG	PT	SS2-G04/P3	Galactic 04	H00375	Passenger 3 A019	Namira Salim	-	-	VGX	AS-00670	2023 Oct  6 1610:30	    0:00:14:23	-
+  1447	CN	M	SZ17/ZZ	Shenzhou-17	H00376	Zhilingzhang	Tang Hongbo, Snr. Col. PLASSF	Snr. Col. PLASSF	HYD/ZLZB	HYD	AS-00580	2023 Oct 26 0314:02	  206:13:41:10*	TGZR5/H3,TGZR6/ZZ
+  1448	CN	M	SZ17/H2	Shenzhou-17	H00376	Hangtianyuan 2	Tang Shengjie, Lt Col. PLASSF	LtCol PLASSF	HYD/ZLZB	HYD	AS-00671	2023 Oct 26 0314:02	  206:13:41:10*	TGZR5/H4,TGZR6/H2
+  1449	CN	M	SZ17/H3	Shenzhou-17	H00376	Hangtianyuan 3	Jiang Xinling, Lt Col. PLASSF	LtCol PLASSF	HYD/ZLZB	HYD	AS-00672	2023 Oct 26 0314:02	  206:13:41:10*	TGZR5/H5,TGZR6/H3
+  1450	VG	PS	SS2-G05/CP	Galactic 05	H00377	Pilot	Michael Masucci, Virgin Galactic	-	VGX	VGX	AS-00570	2023 Nov  2 1544:40	    0:00:14 	-
+  1451	VG	PS	SS2-G05/COP	Galactic 05	H00377	Copilot	Kelly Latimer, Virgin Galactic	-	VGX	VGX	AS-00657	2023 Nov  2 1544:40	    0:00:14 	-
+  1452	VG	PS	SS2-G05/AI	Galactic 05	H00377	Astronaut Instructor A003	Colin Bennett, Virgin Galactic	-	VGX	VGX	AS-00582	2023 Nov  2 1544:40	    0:00:14 	-
+  1453	VG	PT	SS2-G05/P1	Galactic 05	H00377	Passenger 1 A020	Alan Stern. Ph.D.	-                       -	-	VGX	AS-00673	2023 Nov  2 1544:40	    0:00:14 	-
+  1454	VG	PT	SS2-G05/P2	Galactic 05	H00377	Passenger 2 A021	Kellie Gerardi	-                       -	-	VGX	AS-00674	2023 Nov  2 1544:40	    0:00:14 	-
+  1455	VG	PT	SS2-G05/P3	Galactic 05	H00377	Passenger 3 A022	Ketty Maisonrouge	-                       -	-	VGX	AS-00675	2023 Nov  2 1544:40	    0:00:14 	-
+  1456	SPX	PS	AX3/CDR	Axiom Ax-3	H00378	Commander	Michael Lopez-Alegria, Capt. USN (ret.)	Capt. USN (ret.)	AXIOM	AXIOM	AS-00341	2024 Jan 18 2149:11	   21:15:40 	ISSAX3,AX3:3
+  1457	SPX	M	AX3/PLT	Axiom Ax-3	H00378	Pilot	Walter Villadei, Col. AMI.	Col. AMI	AMI	AMI	AS-00654	2024 Jan 18 2149:11	   21:15:40 	ISSAX3,AX3:3
+  1458	SPX	M	AX3/MS1	Axiom Ax-3	H00378	Mission Specialist 1	Alper Gezeravci, Col. Tu. AF	Col. TuAF	TUA	TUA	AS-00676	2024 Jan 18 2149:11	   21:15:40 	ISSAX3,AX3:3
+  1459	SPX	C	AX3/MS2	Axiom Ax-3	H00378	Mission Specialist 2	Marcus Wandt, SwAF (ret.)	-	ESA	ESA	AS-00677	2024 Jan 18 2149:11	   21:15:40 	ISSAX3,AX3:3
+  1460	VG	PS	SS2-G06/CP	Galactic 06	H00379	Pilot	Frederick C.J. Sturckow, Col USMC Ret.,Virgin Galactic	Col USMC (ret.)	VGX	VGX	AS-00391	2024 Jan 26 1742:05	    0:00:13?	-
+  1461	VG	PS	SS2-G06/COP	Galactic 06	H00379	Copilot	Nicola Pecile, Virgin Galactic	-	VGX	VGX	AS-00653	2024 Jan 26 1742:05	    0:00:13?	-
+  1462	VG	PT	SS2-G06/P1	Galactic 06	H00379	Passenger 1 A023	Lina Borozdina-Birch	-                       -	-	VGX	AS-00678	2024 Jan 26 1742:05	    0:00:13?	-
+  1463	VG	PT	SS2-G06/P2	Galactic 06	H00379	Passenger 2 A024	Robie C. Vaughn	-                       -	-	VGX	AS-00679	2024 Jan 26 1742:05	    0:00:13?	-
+  1464	VG	PT	SS2-G06/P3	Galactic 06	H00379	Passenger 3 A025	Franz Haider	-                       -	-	VGX	AS-00680	2024 Jan 26 1742:05	    0:00:13?	-
+  1465	VG	PT	SS2-G06/P4	Galactic 06	H00379	Passenger 4 A026	Neil B. Kornswiet	-                       -	-	VGX	AS-00681	2024 Jan 26 1742:05	    0:00:13?	-
+  1466	SPX	M	SPXC8/CDR	Dragon Crew-8	H00380	Spacecraft commander	Matthew S. Dominick, Cdr USN	Cdr. USN	USN	NASA	AS-00682	2024 Mar  4 0353:38	   76:13:01:34*	EX70.1/FE7,EX70.2/FE7,EX71/FE3
+  1467	SPX	C	SPXC8/PLT	Dragon Crew-8	H00380	Pilot	Michael R. Barratt, MD	-	NASA	NASA	AS-00499	2024 Mar  4 0353:38	   76:13:01:34*	EX70.1/FE8,EX70.2/FE8,EX71/FE4,SPXC8:3,EX71/FE4
+  1468	SPX	C	SPXC8/MS1	Dragon Crew-8	H00380	Mission Specialist 1	Jeanette J. Epps, Ph.D.	-	NASA	NASA	AS-00683	2024 Mar  4 0353:38	   76:13:01:34*	EX70.1/FE9,EX70.2/FE9,EX71/FE5,SPXC8:3,EX71/FE5
+  1469	SPX	C	SPXC8/MS2	Dragon Crew-8	H00380	Mission Specialist 2	Aleksandr S. Grebyonkin, Roskosmos	-	TSPKR	TSPKR	AS-00684	2024 Mar  4 0353:38	   76:13:01:34*	EX70.1/FE10,EX70.2/FE10,EX71/FE6,SPXC8:3,EX71/FE6
+  1470	RU	C	MS25/KDR	Soyuz MS-25	H00381	Komandir	Oleg Novitskiy, Roskosmos	Pol. VVS (ret).	TSPKR	TSPKR	AS-00535	2024 Mar 23 1236:10	   13:18:41:37	ISSEP21/KDR,MS24:3/KDR
+  1471	RU	C	MS25/UP	Soyuz MS-25	H00381	Uchastnik Kos. Poleta	Marina Vasilevskaya, NAKD Belarus	-	NAKD	NAKD	AS-00685	2024 Mar 23 1236:10	   13:18:41:37	ISSEP21/UP,MS24:3/UP
+  1472	RU	C	MS25/BI	Soyuz MS-25	H00381	Bortinzhener	Tracy Caldwell Dyson, NASA	-	NASA	NASA	AS-00467	2024 Mar 23 1236:10	   57:04:19:02*	ISSEP21/BI,EX71:FE1
+  1473	CN	M	SZ18/ZZ	Shenzhou-18	H00382	Zhilingzhang	Ye Guangfu, Col. PLASSF	Col. PLASSF	HYD/ZLZB	HYD	AS-00598	2024 Apr 25 1259:00	   24:03:56:12*	TGZR6/H3
+  1474	CN	M	SZ18/H2	Shenzhou-18	H00382	Hangtianyuan 2	Li Guangsu, Lt Col. PLASSF	LtCol PLASSF	HYD/ZLZB	HYD	AS-00686	2024 Apr 25 1259:00	   24:03:56:12*	TGZR6/H4
+  1475	CN	M	SZ18/H3	Shenzhou-18	H00382	Hangtianyuan 3	Li Cong, Lt Col. PLASSF	LtCol PLASSF	HYD/ZLZB	HYD	AS-00687	2024 Apr 25 1259:00	   24:03:56:12*	TGZR6/H5
+  1476	BO	PT	NS25/A1	NS-25	H00383	Tourist Seat 1	Kenneth L. Hess	-	-	BLOR	AS-00688	2024 May 19 1435:18	    0:00:09:44	-
+  1477	BO	PT	NS25/A2	NS-25	H00383	Tourist Seat 2	Carol A. Shaller	-	-	BLOR	AS-00689	2024 May 19 1435:18	    0:00:09:44	-
+  1478	BO	PT	NS25/A3	NS-25	H00383	Tourist Seat 3	Sylvain P.E. Chiron	-	-	BLOR	AS-00690	2024 May 19 1435:18	    0:00:09:44	-
+  1479	BO	PT	NS25/A4	NS-25	H00383	Tourist Seat 4	Edward J. Dwight, Jr.	-	-	BLOR	AS-00691	2024 May 19 1435:18	    0:00:09:44	-
+  1480	BO	PT	NS25/A5	NS-25	H00383	Tourist Seat 5	Gopichand Thotakura	-	-	BLOR	AS-00692	2024 May 19 1435:18	    0:00:09:44	-
+  1481	BO	PT	NS25/A6	NS-25	H00383	Tourist Seat 6	Mason Angel	-	-	BLOR	AS-00693	2024 May 19 1435:18	    0:00:09:44	-
 #
 # Chimp Space Rides
 #
